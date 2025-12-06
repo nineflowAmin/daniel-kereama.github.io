@@ -3,49 +3,95 @@ layout: default
 ---
 
 <div class="hero-section">
+  <div class="hero-background"></div>
   <div class="hero-content">
     <div class="profile-image-container">
+      <div class="profile-glow"></div>
       <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+      <div class="profile-badge">
+        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI" class="badge-logo">
+      </div>
     </div>
     <div class="hero-text">
+      <div class="hero-badge">
+        <span class="badge-text">Powered by</span>
+        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI Logo" class="hero-toroid-logo">
+        <span class="badge-text">Nineflow.AI</span>
+      </div>
       <h1 class="hero-title">
-        <span class="text-gradient-nineflow">Welcome to {{ site.title }}</span>
+        <span class="text-gradient-nineflow">Daniel Kereama</span>
       </h1>
+      <p class="hero-subtitle">Technical Blog</p>
       <p class="hero-description">{{ site.description }}</p>
-      <div class="hero-logo">
-        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI Logo" class="toroid-logo">
+      <div class="hero-tags">
+        <span class="hero-tag">AI Agents</span>
+        <span class="hero-tag">Architecture</span>
+        <span class="hero-tag">Multi-Agent Systems</span>
+        <span class="hero-tag">Software Development</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#posts" class="btn-primary">Explore Posts</a>
+        <a href="/about" class="btn-secondary">Learn More</a>
       </div>
     </div>
   </div>
+  <div class="hero-scroll-indicator">
+    <span>Scroll to explore</span>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M6 9l6 6 6-6"/>
+    </svg>
+  </div>
 </div>
 
-<div class="content-section neural-grid">
+<div class="content-section neural-grid" id="posts">
   <div class="container">
     <section class="recent-posts">
-      <h2>Recent Posts</h2>
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="text-gradient-nineflow">Recent Posts</span>
+        </h2>
+        <p class="section-description">Insights on AI agents, architecture, and development</p>
+      </div>
       <div class="post-list">
         {% for post in site.posts limit:5 %}
-        <article class="post-card">
-          <h3 class="post-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <div class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        <article class="post-card cyber-card">
+          <div class="post-card-header">
             {% if post.categories %}
-            <span class="post-categories">
+            <div class="post-categories">
               {% for category in post.categories %}
               <span class="category-tag">{{ category }}</span>
               {% endfor %}
-            </span>
+            </div>
             {% endif %}
+            <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date: "%B %d, %Y" }}</time>
           </div>
+          <h3 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
           {% if post.excerpt %}
           <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
           {% endif %}
+          <a href="{{ post.url | relative_url }}" class="post-link">
+            Read More →
+          </a>
         </article>
         {% endfor %}
       </div>
     </section>
+  </div>
+</div>
+
+<div class="brand-section">
+  <div class="container">
+    <div class="brand-content">
+      <div class="brand-logo-large">
+        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI" class="toroid-large-animated">
+      </div>
+      <div class="brand-text">
+        <h3 class="text-gradient-nineflow">Collective Intelligence</h3>
+        <p>Exploring the future of multi-agent systems and AI architecture through thoughtful technical writing.</p>
+      </div>
+    </div>
   </div>
 </div>
 
