@@ -1,0 +1,31 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="toroidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF" />
+      <stop offset="50%" stop-color="#FF00FF" />
+      <stop offset="100%" stop-color="#FFD700" />
+    </linearGradient>
+  </defs>
+  <ellipse
+    cx="24"
+    cy="24"
+    rx="20"
+    ry="8"
+    fill="none"
+    stroke="url(#toroidGradient)"
+    stroke-width="3"
+    transform="rotate(45 24 24)"
+  />
+  <ellipse
+    cx="24"
+    cy="24"
+    rx="20"
+    ry="8"
+    fill="none"
+    stroke="url(#toroidGradient)"
+    stroke-width="2"
+    transform="rotate(-45 24 24)"
+    opacity="0.6"
+  />
+</svg>
+

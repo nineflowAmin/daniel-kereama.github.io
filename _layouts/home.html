@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="hero-section">
+  <div class="hero-content">
+    <div class="profile-image-container">
+      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
+    </div>
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <span class="text-gradient-nineflow">Welcome to {{ site.title }}</span>
+      </h1>
+      <p class="hero-description">{{ site.description }}</p>
+      <div class="hero-logo">
+        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI Logo" class="toroid-logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section neural-grid">
+  <div class="container">
+    <section class="recent-posts">
+      <h2>Recent Posts</h2>
+      <div class="post-list">
+        {% for post in site.posts limit:5 %}
+        <article class="post-card">
+          <h3 class="post-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            {% if post.categories %}
+            <span class="post-categories">
+              {% for category in post.categories %}
+              <span class="category-tag">{{ category }}</span>
+              {% endfor %}
+            </span>
+            {% endif %}
+          </div>
+          {% if post.excerpt %}
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
+

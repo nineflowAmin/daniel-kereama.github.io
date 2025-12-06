@@ -3,6 +3,7 @@ layout: post
 title: "Welcome to My Blog"
 date: 2025-01-12 10:00:00 +0000
 categories: [announcement]
+description: "Welcome to my technical blog where I'll be sharing insights about AI agents, architecture, and software development."
 ---
 
 Welcome to my technical blog! This is where I'll be sharing insights, tutorials, and thoughts about:
