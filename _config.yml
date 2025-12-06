@@ -1,0 +1,28 @@
+# Site settings
+title: "Daniel Kereama's Blog"
+description: "Technical blog about AI agents, architecture, and software development"
+url: "https://nineflowAmin.github.io"
+baseurl: "/daniel-kereama.github.io"
+
+# Author
+author:
+  name: "Daniel Kereama"
+  email: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
