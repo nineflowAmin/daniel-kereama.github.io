@@ -650,6 +650,27 @@ a:hover {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
+/* Toroid ring animations - rings spin in opposite directions */
+.toroid-ring-1 {
+  animation: toroidRotateClockwise 20s linear infinite;
+  transform-origin: 24px 24px;
+}
+
+.toroid-ring-2 {
+  animation: toroidRotateCounterclockwise 15s linear infinite;
+  transform-origin: 24px 24px;
+}
+
+@keyframes toroidRotateClockwise {
+  0% { transform: rotate(45deg); }
+  100% { transform: rotate(405deg); }
+}
+
+@keyframes toroidRotateCounterclockwise {
+  0% { transform: rotate(-45deg); }
+  100% { transform: rotate(-405deg); }
+}
+
 /* Neural Grid Background */
 .neural-grid {
   background-image:
@@ -828,12 +849,16 @@ a:hover {
   width: 120px;
   height: 120px;
   filter: drop-shadow(0 8px 24px rgba(99, 102, 241, 0.3));
-  animation: rotate 20s linear infinite;
 }
 
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.toroid-large-animated .toroid-ring-1 {
+  animation: toroidRotateClockwise 20s linear infinite;
+  transform-origin: 24px 24px;
+}
+
+.toroid-large-animated .toroid-ring-2 {
+  animation: toroidRotateCounterclockwise 15s linear infinite;
+  transform-origin: 24px 24px;
 }
 
 .brand-text h3 {
