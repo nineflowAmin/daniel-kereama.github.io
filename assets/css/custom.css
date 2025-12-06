@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Montserrat:wght@400;700;900&display=swap');
 
 /* CSS Variables */
 :root {
@@ -192,7 +192,195 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-/* Hero Section */
+/* Nineflow Banner Section */
+.nineflow-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: #2b2d31;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, rgba(43, 45, 49, 0.95) 0%, rgba(43, 45, 49, 0.85) 40%, rgba(43, 45, 49, 0.3) 70%, transparent 100%);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  width: 50%;
+  min-width: 500px;
+  color: white;
+}
+
+.banner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 0 1rem 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner-subtitle {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  color: #e0e0e0;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.banner-subtitle .highlight {
+  color: #00ffff;
+  text-shadow: 
+    0 0 10px rgba(0, 255, 255, 0.5),
+    0 0 20px rgba(0, 255, 255, 0.3);
+  font-weight: 600;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { 
+    text-shadow: 
+      0 0 10px rgba(0, 255, 255, 0.5),
+      0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  50% { 
+    text-shadow: 
+      0 0 15px rgba(0, 255, 255, 0.8),
+      0 0 30px rgba(0, 255, 255, 0.5);
+  }
+}
+
+.banner-description {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: var(--font-sans);
+}
+
+.banner-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 14px 32px;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 
+    0 4px 15px rgba(0, 255, 255, 0.3),
+    0 0 20px rgba(255, 0, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 
+    0 6px 20px rgba(0, 255, 255, 0.4),
+    0 0 30px rgba(255, 0, 255, 0.3);
+}
+
+.cta-button-secondary {
+  padding: 14px 32px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cta-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.banner-scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  animation: bounce 2s infinite;
+  z-index: 3;
+  font-family: var(--font-sans);
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+.banner-scroll-indicator svg {
+  opacity: 0.7;
+}
+
+/* Hero Section (Legacy - keeping for reference) */
 .hero-section {
   background: linear-gradient(135deg, var(--nineflow-primary) 0%, var(--nineflow-secondary) 50%, var(--nineflow-accent) 100%);
   padding: 6rem 0 8rem;
@@ -786,6 +974,63 @@ a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+  /* Nineflow Banner Mobile */
+  .nineflow-banner {
+    height: 500px;
+    min-height: 70vh;
+    background-position: center center;
+    justify-content: center;
+  }
+  
+  .nineflow-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(43, 45, 49, 0.85);
+    z-index: 1;
+  }
+  
+  .banner-content {
+    padding: 0 5%;
+    width: 100%;
+  }
+  
+  .banner-text {
+    width: 100%;
+    min-width: auto;
+    text-align: center;
+  }
+  
+  .banner-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .banner-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .banner-description {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .banner-cta {
+    justify-content: center;
+  }
+  
+  .cta-button,
+  .cta-button-secondary {
+    padding: 12px 24px;
+    font-size: 0.875rem;
+  }
+  
+  /* Legacy Hero Section */
   .hero-section {
     padding: 4rem 0 6rem;
     min-height: auto;

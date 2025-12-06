@@ -2,46 +2,26 @@
 layout: default
 ---
 
-<div class="hero-section">
-  <div class="hero-background"></div>
-  <div class="hero-content">
-    <div class="profile-image-container">
-      <div class="profile-glow"></div>
-      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-image">
-      <div class="profile-badge">
-        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI" class="badge-logo">
-      </div>
-    </div>
-    <div class="hero-text">
-      <div class="hero-badge">
-        <span class="badge-text">Powered by</span>
-        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI Logo" class="hero-toroid-logo">
-        <span class="badge-text">Nineflow.AI</span>
-      </div>
-      <h1 class="hero-title">
-        <span class="text-gradient-nineflow">Daniel Kereama</span>
-      </h1>
-      <p class="hero-subtitle">Technical Blog</p>
-      <p class="hero-description">{{ site.description }}</p>
-      <div class="hero-tags">
-        <span class="hero-tag">AI Agents</span>
-        <span class="hero-tag">Architecture</span>
-        <span class="hero-tag">Multi-Agent Systems</span>
-        <span class="hero-tag">Software Development</span>
-      </div>
-      <div class="hero-cta">
-        <a href="#posts" class="btn-primary">Explore Posts</a>
-        <a href="/about" class="btn-secondary">Learn More</a>
+<section class="nineflow-banner" style="background-image: linear-gradient(90deg, #2b2d31 0%, #2b2d31 40%, rgba(43, 45, 49, 0.8) 60%, rgba(43, 45, 49, 0) 100%), url('{{ '/assets/images/profile.jpg' | relative_url }}');">
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <div class="banner-text">
+      <h1 class="banner-title">DANIEL KEREAMA</h1>
+      <p class="banner-subtitle">Architect of <span class="highlight">Nineflow</span></p>
+      <p class="banner-description">{{ site.description }}</p>
+      <div class="banner-cta">
+        <a href="#posts" class="cta-button">Explore Posts</a>
+        <a href="/about" class="cta-button-secondary">Learn More</a>
       </div>
     </div>
   </div>
-  <div class="hero-scroll-indicator">
+  <div class="banner-scroll-indicator">
     <span>Scroll to explore</span>
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M6 9l6 6 6-6"/>
     </svg>
   </div>
-</div>
+</section>
 
 <div class="content-section neural-grid" id="posts">
   <div class="container">
