@@ -55,7 +55,14 @@ layout: default
   </div>
   
   <!-- Related Posts -->
-  {% assign related_posts = site.posts | where_exp:"post", "post.url != page.url" | where_exp:"post", "post.categories contains page.categories[0]" | limit: 3 %}
+  {% assign related_posts = "" | split: "" %}
+  {% if page.categories.size > 0 %}
+    {% assign first_category = page.categories[0] %}
+    {% assign related_posts = site.posts | where_exp:"post", "post.url != page.url" | where_exp:"post", "post.categories contains first_category" | limit: 3 %}
+  {% endif %}
+  {% if related_posts.size == 0 %}
+    {% assign related_posts = site.posts | where_exp:"post", "post.url != page.url" | limit: 3 %}
+  {% endif %}
   {% if related_posts.size > 0 %}
   <aside class="related-posts">
     <h3>Related Posts</h3>
