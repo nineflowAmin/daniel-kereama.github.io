@@ -2540,6 +2540,10 @@ svg .toroid-ring-2 {
   min-width: 120px;
 }
 
+.scores-table th:first-child {
+  text-align: left;
+}
+
 .scores-table th .llm-header {
   display: flex;
   flex-direction: column;
@@ -2595,15 +2599,25 @@ svg .toroid-ring-2 {
 .scores-table th:first-child {
   font-weight: 700;
   max-width: 180px;
+  min-width: 120px;
   font-size: 0.85rem;
   line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  hyphens: auto;
 }
 
 .scores-table td:first-child {
   font-size: 0.85rem;
   line-height: 1.3;
   max-width: 180px;
+  min-width: 120px;
   padding-right: 0.75rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  hyphens: auto;
 }
 
 .scores-table td {
