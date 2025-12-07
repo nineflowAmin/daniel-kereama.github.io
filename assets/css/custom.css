@@ -1998,6 +1998,58 @@ svg .toroid-ring-2 {
   background: linear-gradient(180deg, var(--mediator-color) 0%, var(--oracle-color) 100%);
 }
 
+/* 12D Report Section */
+.transcript-12d-report {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 2px solid var(--border);
+}
+
+.transcript-12d-report h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+  text-align: center;
+}
+
+.report-description {
+  text-align: center;
+  color: var(--foreground-secondary);
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.report-image-container {
+  text-align: center;
+  margin: 2rem 0;
+  background: var(--background-secondary);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.report-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--foreground-tertiary);
+  font-style: italic;
+  margin-top: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
 /* Transcript Footer */
 .transcript-footer {
   margin-top: 3rem;

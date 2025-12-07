@@ -363,6 +363,15 @@ description: "A complete transcript of a Living Council session demonstrating ho
 
   </div>
 
+  <div class="transcript-12d-report">
+    <h2>12D Dimensional Analysis Report</h2>
+    <p class="report-description">The following 12D analysis was generated during this council session, providing a dimensional breakdown of the conversation across 12 distinct dimensions of coherence and alignment.</p>
+    <div class="report-image-container">
+      <img src="{{ '/assets/images/the-living-council-relational-safety-for-human-ai-coevolution/12d-agent-explainability.png' | relative_url }}" alt="12D Agent Explainability Report" class="report-image">
+    </div>
+    <p class="report-caption">12D dimensional analysis showing how each council domain contributes across 12 distinct dimensions: Vision, Structure, Temporal, Semantic, Emotional, Ethical, Relational, Harmony, Dissonance, Awareness, Integration, and Purpose.</p>
+  </div>
+
   <div class="transcript-footer">
     <p><a href="{{ '/ai-safety/alignment/governance/relational-ai/philosophy/2025/12/06/the-living-council-relational-safety-for-human-ai-coevolution.html' | relative_url }}" class="btn-back">← Back to Article</a></p>
     <p class="transcript-note">This transcript demonstrates the Living Council architecture in action. Each domain contributes its unique perspective, and the Mediator synthesizes them into a coherent response that maintains productive disagreement while building toward understanding.</p>
