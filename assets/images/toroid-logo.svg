@@ -11,29 +11,7 @@
       <stop offset="100%" stop-color="#00FFFF" />
     </linearGradient>
   </defs>
-  <style>
-    .toroid-ring-1 {
-      animation: toroidRotateClockwise 20s linear infinite;
-      transform-origin: 24px 24px;
-    }
-    
-    .toroid-ring-2 {
-      animation: toroidRotateCounterclockwise 15s linear infinite;
-      transform-origin: 24px 24px;
-    }
-    
-    @keyframes toroidRotateClockwise {
-      from { transform: rotate(45deg); }
-      to { transform: rotate(405deg); }
-    }
-    
-    @keyframes toroidRotateCounterclockwise {
-      from { transform: rotate(-45deg); }
-      to { transform: rotate(-405deg); }
-    }
-  </style>
   <ellipse
-    class="toroid-ring-1"
     cx="24"
     cy="24"
     rx="20"
@@ -42,10 +20,8 @@
     stroke="url(#toroidGradient1)"
     stroke-width="3"
     transform="rotate(45 24 24)"
-    transform-origin="24 24"
   />
   <ellipse
-    class="toroid-ring-2"
     cx="24"
     cy="24"
     rx="20"
@@ -55,7 +31,6 @@
     stroke-width="2.5"
     transform="rotate(-45 24 24)"
     opacity="0.8"
-    transform-origin="24 24"
   />
 </svg>
 
