@@ -498,10 +498,10 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <thead>
           <tr>
             <th>Dimension</th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/icons/grok.svg' | relative_url }}" alt="GROK" class="llm-logo" width="20" height="20"> GROK<br><span class="column-label">(Evaluating Council)</span></th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/icons/claude.svg' | relative_url }}" alt="Claude" class="llm-logo" width="20" height="20"> Claude<br><span class="column-label">(Evaluating Council)</span></th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/icons/gemini.svg' | relative_url }}" alt="Gemini" class="llm-logo" width="20" height="20"> Gemini<br><span class="column-label">(Evaluating Council)</span></th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/icons/chatgpt.svg' | relative_url }}" alt="GPT-5" class="llm-logo" width="20" height="20"> GPT-5<br><span class="column-label">(Evaluating Council)</span></th>
+            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/grok.svg' | relative_url }}" alt="GROK" class="llm-logo" width="20" height="20"> GROK<br><span class="column-label">(Evaluating Council)</span></th>
+            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/claude.svg' | relative_url }}" alt="Claude" class="llm-logo" width="20" height="20"> Claude<br><span class="column-label">(Evaluating Council)</span></th>
+            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/gemini.svg' | relative_url }}" alt="Gemini" class="llm-logo" width="20" height="20"> Gemini<br><span class="column-label">(Evaluating Council)</span></th>
+            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/chatgpt.svg' | relative_url }}" alt="GPT-5" class="llm-logo" width="20" height="20"> GPT-5<br><span class="column-label">(Evaluating Council)</span></th>
             <th class="comparison-column">Single GPT-5.1<br><span class="column-label">(Baseline)</span></th>
             <th class="notes-column">Notes</th>
           </tr>
