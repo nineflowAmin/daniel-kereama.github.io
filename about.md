@@ -261,18 +261,53 @@ title: "About"
       <div class="tech-ticker-container">
         <div class="tech-ticker tech-ticker-left">
           <div class="tech-ticker-track">
-            <span class="tech-icon">☸️</span><span class="tech-name">Kubernetes</span>
-            <span class="tech-icon">🏗️</span><span class="tech-name">Terraform</span>
-            <span class="tech-icon">☁️</span><span class="tech-name">GKE</span>
-            <span class="tech-icon">🐳</span><span class="tech-name">Docker</span>
-            <span class="tech-icon">☁️</span><span class="tech-name">AWS</span>
-            <span class="tech-icon">☁️</span><span class="tech-name">GCP</span>
-            <span class="tech-icon">☸️</span><span class="tech-name">Kubernetes</span>
-            <span class="tech-icon">🏗️</span><span class="tech-name">Terraform</span>
-            <span class="tech-icon">☁️</span><span class="tech-name">GKE</span>
-            <span class="tech-icon">🐳</span><span class="tech-name">Docker</span>
-            <span class="tech-icon">☁️</span><span class="tech-name">AWS</span>
-            <span class="tech-icon">☁️</span><span class="tech-name">GCP</span>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/kubernetes.svg' | absolute_url }}" alt="Kubernetes" class="tech-icon-img">
+              <span class="tech-name">Kubernetes</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/terraform.svg' | absolute_url }}" alt="Terraform" class="tech-icon-img">
+              <span class="tech-name">Terraform</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GKE" class="tech-icon-img">
+              <span class="tech-name">GKE</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/docker.svg' | absolute_url }}" alt="Docker" class="tech-icon-img">
+              <span class="tech-name">Docker</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">☁️</span><span class="tech-name">AWS</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GCP" class="tech-icon-img">
+              <span class="tech-name">GCP</span>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/kubernetes.svg' | absolute_url }}" alt="Kubernetes" class="tech-icon-img">
+              <span class="tech-name">Kubernetes</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/terraform.svg' | absolute_url }}" alt="Terraform" class="tech-icon-img">
+              <span class="tech-name">Terraform</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GKE" class="tech-icon-img">
+              <span class="tech-name">GKE</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/docker.svg' | absolute_url }}" alt="Docker" class="tech-icon-img">
+              <span class="tech-name">Docker</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">☁️</span><span class="tech-name">AWS</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GCP" class="tech-icon-img">
+              <span class="tech-name">GCP</span>
+            </div>
           </div>
         </div>
       </div>
@@ -281,18 +316,51 @@ title: "About"
       <div class="tech-ticker-container">
         <div class="tech-ticker tech-ticker-right">
           <div class="tech-ticker-track">
-            <span class="tech-icon">💻</span><span class="tech-name">.NET 8</span>
-            <span class="tech-icon">🐍</span><span class="tech-name">Python</span>
-            <span class="tech-icon">⚛️</span><span class="tech-name">React</span>
-            <span class="tech-icon">📘</span><span class="tech-name">TypeScript</span>
-            <span class="tech-icon">🔌</span><span class="tech-name">gRPC</span>
-            <span class="tech-icon">📡</span><span class="tech-name">SignalR</span>
-            <span class="tech-icon">💻</span><span class="tech-name">.NET 8</span>
-            <span class="tech-icon">🐍</span><span class="tech-name">Python</span>
-            <span class="tech-icon">⚛️</span><span class="tech-name">React</span>
-            <span class="tech-icon">📘</span><span class="tech-name">TypeScript</span>
-            <span class="tech-icon">🔌</span><span class="tech-name">gRPC</span>
-            <span class="tech-icon">📡</span><span class="tech-name">SignalR</span>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/dotnet.svg' | absolute_url }}" alt=".NET 8" class="tech-icon-img">
+              <span class="tech-name">.NET 8</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/python.svg' | absolute_url }}" alt="Python" class="tech-icon-img">
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/react.svg' | absolute_url }}" alt="React" class="tech-icon-img">
+              <span class="tech-name">React</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/typescript.svg' | absolute_url }}" alt="TypeScript" class="tech-icon-img">
+              <span class="tech-name">TypeScript</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔌</span><span class="tech-name">gRPC</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">📡</span><span class="tech-name">SignalR</span>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/dotnet.svg' | absolute_url }}" alt=".NET 8" class="tech-icon-img">
+              <span class="tech-name">.NET 8</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/python.svg' | absolute_url }}" alt="Python" class="tech-icon-img">
+              <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/react.svg' | absolute_url }}" alt="React" class="tech-icon-img">
+              <span class="tech-name">React</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/typescript.svg' | absolute_url }}" alt="TypeScript" class="tech-icon-img">
+              <span class="tech-name">TypeScript</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔌</span><span class="tech-name">gRPC</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">📡</span><span class="tech-name">SignalR</span>
+            </div>
           </div>
         </div>
       </div>
@@ -301,18 +369,47 @@ title: "About"
       <div class="tech-ticker-container">
         <div class="tech-ticker tech-ticker-left">
           <div class="tech-ticker-track">
-            <span class="tech-icon">🤖</span><span class="tech-name">LLM Orchestration</span>
-            <span class="tech-icon">🧠</span><span class="tech-name">Multi-Agent Systems</span>
-            <span class="tech-icon">🔮</span><span class="tech-name">OpenAI</span>
-            <span class="tech-icon">🗄️</span><span class="tech-name">PostgreSQL</span>
-            <span class="tech-icon">⚡</span><span class="tech-name">Redis</span>
-            <span class="tech-icon">🔧</span><span class="tech-name">MCP</span>
-            <span class="tech-icon">🤖</span><span class="tech-name">LLM Orchestration</span>
-            <span class="tech-icon">🧠</span><span class="tech-name">Multi-Agent Systems</span>
-            <span class="tech-icon">🔮</span><span class="tech-name">OpenAI</span>
-            <span class="tech-icon">🗄️</span><span class="tech-name">PostgreSQL</span>
-            <span class="tech-icon">⚡</span><span class="tech-name">Redis</span>
-            <span class="tech-icon">🔧</span><span class="tech-name">MCP</span>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🤖</span><span class="tech-name">LLM Orchestration</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🧠</span><span class="tech-name">Multi-Agent Systems</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔮</span><span class="tech-name">OpenAI</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/postgresql.svg' | absolute_url }}" alt="PostgreSQL" class="tech-icon-img">
+              <span class="tech-name">PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/redis.svg' | absolute_url }}" alt="Redis" class="tech-icon-img">
+              <span class="tech-name">Redis</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🤖</span><span class="tech-name">LLM Orchestration</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🧠</span><span class="tech-name">Multi-Agent Systems</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔮</span><span class="tech-name">OpenAI</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/postgresql.svg' | absolute_url }}" alt="PostgreSQL" class="tech-icon-img">
+              <span class="tech-name">PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/redis.svg' | absolute_url }}" alt="Redis" class="tech-icon-img">
+              <span class="tech-name">Redis</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
+            </div>
           </div>
         </div>
       </div>
@@ -1068,9 +1165,10 @@ title: "About"
 
 .logo-ticker-track {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   animation: logo-scroll 50s linear infinite;
   will-change: transform;
+  align-items: center;
 }
 
 .logo-ticker-container:hover .logo-ticker-track {
@@ -1084,38 +1182,30 @@ title: "About"
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  height: 100px;
-  padding: 1rem 2.5rem;
+  height: 80px;
+  padding: 0 3rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  background: var(--background);
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .logo-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
-  border-color: var(--nineflow-primary);
-  background: var(--background-secondary);
+  transform: scale(1.05);
 }
 
 .company-logo {
-  max-height: 45px;
-  max-width: 140px;
+  max-height: 50px;
+  max-width: 160px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0.6);
-  opacity: 0.75;
+  filter: none;
+  opacity: 1;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-item:hover .company-logo {
-  filter: grayscale(0%) brightness(1);
-  opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 
 .company-name {
@@ -1205,10 +1295,24 @@ title: "About"
   animation: tech-scroll-right 35s linear infinite;
 }
 
-.tech-icon {
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.tech-icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.tech-icon-emoji {
   font-size: 1.5rem;
-  margin-right: 0.5rem;
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .tech-name {
@@ -1274,20 +1378,24 @@ title: "About"
   }
 
   .logo-item {
-    height: 90px;
-    padding: 0.75rem 1.5rem;
+    height: 70px;
+    padding: 0 2rem;
     gap: 0.5rem;
   }
   
   .company-logo {
-    max-height: 35px;
-    max-width: 120px;
+    max-height: 40px;
+    max-width: 140px;
   }
   
   .company-name {
     font-size: 0.75rem;
   }
-
+  
+  .logo-ticker-track {
+    gap: 2.5rem;
+  }
+  
   .tech-ticker-container {
     height: 50px;
   }
