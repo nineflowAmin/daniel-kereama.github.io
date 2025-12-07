@@ -370,8 +370,6 @@ This article is based on the original white paper "The Living Council: A Framewo
 
 - **Neuro-Symbolic AI** (2024): [Neuro-Symbolic AI in 2024: A Systematic Review](https://arxiv.org/abs/2501.05435) - Bridging symbolic interpretability and neural adaptability
 
-- **Relational AI Ethics** (2024): Shifting from control to relational governance - Exploring ethical frameworks that emphasize relationship over constraint
-
 ---
 
 *This framework represents ongoing research into relational paradigms for AI safety. It is not a finished solution, but an invitation to dialogue—a living document that evolves through conversation and practice.*
