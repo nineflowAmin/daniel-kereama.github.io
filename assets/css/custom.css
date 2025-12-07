@@ -2610,6 +2610,18 @@ svg .toroid-ring-2 {
   overflow-x: auto;
 }
 
+.evaluation-date {
+  color: var(--foreground-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.evaluation-date strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
 .scores-table {
   width: 100%;
   border-collapse: collapse;

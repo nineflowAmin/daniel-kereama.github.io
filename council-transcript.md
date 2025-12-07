@@ -503,6 +503,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 
     <div class="scores-table-container">
       <h3>Detailed Scores: Multi-Perspective vs Single-Perspective</h3>
+      <p class="evaluation-date"><strong>Evaluation Date:</strong> December 8, 2025</p>
       <p class="table-description">Five LLMs (GROK, Claude, Gemini, GPT-5, DeepSeek) evaluated this Council transcript. The scores compare the Council's multi-agent synthesis against a single GPT-5.1 baseline. Green highlights indicate where multiple perspectives create value beyond what a single mind can achieve.</p>
       <table class="scores-table">
         <thead>
