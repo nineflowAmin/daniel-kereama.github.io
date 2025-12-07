@@ -10,12 +10,12 @@ title: "About"
     </div>
     <div class="about-content">
       <h1 class="text-gradient-nineflow">Daniel Kereama</h1>
-      <p class="about-title">AI Platform Architect | Principal Cloud/Software Architect</p>
+      <p class="about-title">Principal Cloud & Software Architect</p>
       <p class="about-subtitle">Multi-Agent Systems & LLM Orchestration</p>
       <p class="lead">
-        Principal AI & Platform Architect with 20+ years delivering enterprise-grade systems. 
-        Currently architecting production-ready multi-agent AI platforms and exploring the frontier 
-        of collective intelligence through research and development.
+        Principal Cloud & Software Architect with 20+ years of high-value experience leading 
+        enterprise digital transformation and cloud-native modernization. Currently operating 
+        Nineflow.AI as an R&D practice to maintain capability at the architectural frontier.
       </p>
       <div class="about-links">
         <a href="https://www.linkedin.com/in/daniel-kereama/" target="_blank" rel="noopener noreferrer" class="about-link">
@@ -31,16 +31,17 @@ title: "About"
   <div class="about-section">
     <h2 class="section-title">Professional Summary</h2>
     <p class="section-content">
-      Principal AI & Platform Architect with 20+ years delivering enterprise-grade systems and, 
-      most recently, architecting a full end-to-end LLM + multi-agent AI platform deployed on GKE. 
-      Deep hands-on capability across AI orchestration, distributed systems, cloud-native architecture, 
-      and enterprise transformation. Adept at engaging senior stakeholders, shaping AI strategy, and 
-      delivering proof-of-value platforms that accelerate organizational AI adoption.
+      Principal Cloud & Software Architect with 20+ years of high-value experience leading enterprise 
+      digital transformation and cloud-native modernization. Most recently, I architected and deployed 
+      a full end-to-end LLM + multi-agent AI platform on GKE (<strong class="text-gradient-nineflow">Nineflow.AI</strong>), 
+      demonstrating mastery in distributed systems, LLM orchestration, and complex cloud-native architecture. 
+      Adept at engaging senior stakeholders, driving technology roadmaps, and delivering pragmatic, 
+      production-ready platforms across diverse industries (Finance, Energy, Retail).
     </p>
     <p class="section-content">
-      Currently operating <strong class="text-gradient-nineflow">Nineflow.AI</strong> as an R&D practice 
-      to keep technical capability at the frontier while seeking consulting/contract engagements applying 
-      practical AI platform architecture to real-world enterprise programmes.
+      My core value is translating complex business strategy into executable, scalable, and resilient software. 
+      Currently operating <strong class="text-gradient-nineflow">Nineflow.AI</strong> as an R&D practice to 
+      maintain capability at the architectural frontier.
     </p>
   </div>
 
@@ -261,9 +262,10 @@ title: "About"
         combining deep implementation expertise with strategic architectural thinking.</p>
       </div>
       <div class="differentiator-item">
-        <strong>Proven AI Architecture Delivery</strong>
-        <p>Production-deployed AI platform with 17-service microservices architecture, multi-agent orchestration, 
-        and LLM routing delivered in 2 months.</p>
+        <strong>Proof of Advanced Systems Delivery</strong>
+        <p>Production-deployed LLM/Multi-Agent AI platform (17-service microservices architecture, complex orchestration, 
+        GKE deployment) delivered in 2 months—demonstrating ability to solve the most difficult problems in distributed 
+        systems, cloud-native design, and integration at speed.</p>
       </div>
       <div class="differentiator-item">
         <strong>Cross-Layer Architecture Expertise</strong>
@@ -301,8 +303,10 @@ title: "About"
   <div class="about-section contact-section">
     <h2 class="section-title">Connect</h2>
     <p class="section-content">
-      I'm actively seeking 6–18 month consulting or principal architecture engagements focused on AI platforms, 
-      LLM orchestration, enterprise adoption, or multi-agent system integration.
+      Ongoing R&D practice maintaining leading-edge capability in AI and distributed systems architecture. 
+      Actively seeking Principal/Lead Architecture roles or high-impact consulting engagements where 20+ years 
+      of enterprise transformation expertise, combined with cutting-edge cloud and LLM platform delivery, can 
+      drive significant business value. Open to both fixed-term contract and permanent leadership positions.
     </p>
     <div class="contact-links">
       <a href="https://www.linkedin.com/in/daniel-kereama/" target="_blank" rel="noopener noreferrer" class="contact-link">
