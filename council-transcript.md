@@ -869,5 +869,44 @@ function copyPrompt() {
     }, 2000);
   });
 }
+
+// Calculate and display score differences
+function calculateScoreDifferences() {
+  const scoreCells = document.querySelectorAll('.score-cell');
+  scoreCells.forEach(cell => {
+    const score = parseFloat(cell.getAttribute('data-score'));
+    const baseline = parseFloat(cell.getAttribute('data-baseline'));
+    const difference = score - baseline;
+    
+    // Add difference indicator
+    const diffSpan = document.createElement('span');
+    diffSpan.className = 'score-difference';
+    
+    if (Math.abs(difference) < 0.1) {
+      // Similar score (within 0.1)
+      diffSpan.textContent = '±0.0';
+      diffSpan.className += ' score-neutral';
+      cell.classList.add('score-similar');
+    } else if (difference > 0) {
+      // Better score
+      diffSpan.textContent = '+' + difference.toFixed(2);
+      diffSpan.className += ' score-better';
+      cell.classList.add('score-better');
+    } else {
+      // Worse score
+      diffSpan.textContent = difference.toFixed(2);
+      diffSpan.className += ' score-worse';
+      cell.classList.add('score-worse');
+    }
+    
+    // Wrap existing content
+    const originalContent = cell.innerHTML;
+    cell.innerHTML = '<span class="score-value">' + originalContent + '</span>';
+    cell.appendChild(diffSpan);
+  });
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', calculateScoreDifferences);
 </script>
 
