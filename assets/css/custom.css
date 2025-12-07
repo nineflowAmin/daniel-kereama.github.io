@@ -2545,6 +2545,14 @@ svg .toroid-ring-2 {
   padding: 0.875rem 1rem;
   border-bottom: 1px solid var(--border);
   color: var(--foreground-secondary);
+  vertical-align: top;
+}
+
+.scores-table td:last-child {
+  font-size: 0.875rem;
+  color: var(--foreground-tertiary);
+  font-style: italic;
+  max-width: 400px;
 }
 
 .scores-table tbody tr:hover {

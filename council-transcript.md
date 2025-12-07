@@ -416,7 +416,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 
   <div class="llm-evaluation-section">
     <h2>AI Evaluation Scores</h2>
-    <p class="evaluation-intro">Four major LLMs evaluated this Council transcript across seven dimensions, comparing the multi-agent approach against a hypothetical single LLM output. Explore the scores below and add your own ratings.</p>
+    <p class="evaluation-intro">Four major LLMs evaluated this Council transcript across seven dimensions. The scores below compare the multi-agent Council approach (5 agents) against a single GPT-5.1 baseline. Explore the scores and add your own ratings.</p>
     
     <div class="score-explanation">
       <h3>📊 How to Read the Scores</h3>
@@ -426,7 +426,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <li><strong>5</strong> = adequate</li>
         <li><strong>10</strong> = exceptional or near-ideal</li>
       </ul>
-      <p>The scores reflect qualitative judgment of the full session transcript (all agents + mediator synthesis). <strong>Comparison is against a baseline "single-agent" LLM (GPT-5.1, hypothetical)</strong>. Lower scores in "Efficiency / Resource Cost" reflect higher computational overhead—trade-offs inherent to multi-agent systems.</p>
+      <p>The scores reflect qualitative judgment of the full session transcript (all agents + mediator synthesis). <strong>Comparison is against a baseline single GPT-5.1 LLM</strong>. The Council (5 agents) shows stronger emergent, relational intelligence, while single GPT-5.1 is more efficient but less deep. Lower scores in "Efficiency / Resource Cost" for the Council reflect higher computational overhead—trade-offs inherent to multi-agent systems.</p>
       <p class="caveat-note"><em>Because style, nuance and subjectivity influence scoring, these ratings are indicative, not absolute—we welcome you to run your own analysis using the same framework (see prompt section below).</em></p>
     </div>
 
@@ -478,7 +478,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <div class="baseline-info">
           <h4>Baseline Conditions</h4>
           <ul>
-            <li><strong>Comparison LLM:</strong> GPT-5.1 (hypothetical baseline)</li>
+            <li><strong>Comparison LLM:</strong> Single GPT-5.1 (baseline for comparison)</li>
             <li><strong>Prompting Method:</strong> Standard evaluation prompt (see below)</li>
             <li><strong>Evaluation Scope:</strong> Full transcript including all five domain contributions and mediator synthesis</li>
             <li><strong>Scoring Method:</strong> Qualitative judgment by each LLM evaluator</li>
@@ -591,10 +591,8 @@ const dimensions = [
 ];
 
 const evaluations = {
-  grok: [9, 9, 8, 9, 9, 6, 9],
-  claude: [8.5, 9, 7.5, 8, 7, 5, 9],
-  gemini: [10, 10, 9, 10, 9, 6, 10],
-  chatgpt: [8, 3, 7, 6, 8, 9, 6]
+  council: [8, 8, 8, 8, 8, 6, 9],
+  singleGPT: [7, 4, 6, 5, 6, 9, 5]
 };
 
 // Initialize user scores
@@ -646,48 +644,28 @@ let radarChart = new Chart(ctx, {
     labels: dimensions,
     datasets: [
       {
-        label: 'GROK',
-        data: evaluations.grok,
-        fill: true,
-        backgroundColor: 'rgba(59, 130, 246, 0.2)',
-        borderColor: 'rgb(59, 130, 246)',
-        pointBackgroundColor: 'rgb(59, 130, 246)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(59, 130, 246)'
-      },
-      {
-        label: 'Claude',
-        data: evaluations.claude,
+        label: 'Council (5 agents)',
+        data: evaluations.council,
         fill: true,
         backgroundColor: 'rgba(16, 185, 129, 0.2)',
         borderColor: 'rgb(16, 185, 129)',
+        borderWidth: 2,
         pointBackgroundColor: 'rgb(16, 185, 129)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
         pointHoverBorderColor: 'rgb(16, 185, 129)'
       },
       {
-        label: 'Gemini',
-        data: evaluations.gemini,
+        label: 'Single GPT-5.1',
+        data: evaluations.singleGPT,
         fill: true,
-        backgroundColor: 'rgba(245, 158, 11, 0.2)',
-        borderColor: 'rgb(245, 158, 11)',
-        pointBackgroundColor: 'rgb(245, 158, 11)',
+        backgroundColor: 'rgba(107, 114, 128, 0.2)',
+        borderColor: 'rgb(107, 114, 128)',
+        borderWidth: 2,
+        pointBackgroundColor: 'rgb(107, 114, 128)',
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(245, 158, 11)'
-      },
-      {
-        label: 'ChatGPT',
-        data: evaluations.chatgpt,
-        fill: true,
-        backgroundColor: 'rgba(239, 68, 68, 0.2)',
-        borderColor: 'rgb(239, 68, 68)',
-        pointBackgroundColor: 'rgb(239, 68, 68)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(239, 68, 68)'
+        pointHoverBorderColor: 'rgb(107, 114, 128)'
       },
       {
         label: 'Your Rating',
