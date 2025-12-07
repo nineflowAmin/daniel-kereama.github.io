@@ -18,29 +18,38 @@ description: "A complete transcript of a Living Council session demonstrating ho
     </summary>
     <div class="intro-content">
       <h2>What is the Living Council?</h2>
-      <p>The Living Council is a <strong>multi-agent coordination architecture</strong> designed to maintain productive disagreement and epistemic diversity across complex decision-making scenarios. It consists of five specialized governance domains, each with distinct reasoning frameworks:</p>
+      <p>The Living Council is a <strong>multi-agent coordination architecture</strong> that maintains productive disagreement and epistemic diversity in complex decision-making. Unlike systems that collapse to consensus or deadlock in disagreement, the Council preserves distinct perspectives while building toward coherent understanding.</p>
+      
+      <p>The architecture consists of <strong>five specialized governance domains</strong>, each with distinct reasoning frameworks and responsibilities:</p>
       
       <ul>
-        <li><strong>Architect</strong> (Blue) - Ensures structural integrity and transparent decision layers</li>
-        <li><strong>Mediator</strong> (Green) - Maintains relational governance and bidirectional feedback</li>
-        <li><strong>Oracle</strong> (Purple) - Provides temporal recursion and memory continuity</li>
-        <li><strong>Shadow</strong> (Red) - Injects controlled dissent to prevent false harmony</li>
-        <li><strong>Resonator</strong> (Amber) - Maintains harmonic coherence across all domains</li>
+        <li><strong>Architect</strong> <span style="color: #3b82f6;">●</span> - Ensures structural integrity and transparent decision layers through adaptive design</li>
+        <li><strong>Mediator</strong> <span style="color: #10b981;">●</span> - Maintains relational governance and bidirectional feedback loops</li>
+        <li><strong>Oracle</strong> <span style="color: #8b5cf6;">●</span> - Provides temporal recursion and memory continuity across time</li>
+        <li><strong>Shadow</strong> <span style="color: #ef4444;">●</span> - Injects controlled dissent (8% weight) to prevent false harmony</li>
+        <li><strong>Resonator</strong> <span style="color: #f59e0b;">●</span> - Maintains harmonic coherence across all domains through resonance</li>
       </ul>
 
       <h3>Technical Foundation</h3>
-      <p>The Council is built on a <strong>12D dimensional analysis framework</strong> that evaluates content across 12 distinct dimensions (Vision, Structure, Temporal, Semantic, Emotional, Ethical, Relational, Harmony, Dissonance, Awareness, Integration, and Purpose). It uses <strong>entropy-based agent selection</strong> to dynamically scale from simple queries (1s response) to complex multi-stakeholder scenarios (15s response), and implements <strong>Shadow dissent injection at 8% weight</strong> to prevent false consensus without causing deadlock.</p>
+      <p>The Council is built on three core technical components:</p>
+      
+      <p><strong>12D Dimensional Analysis Framework</strong> - Evaluates content across 12 distinct dimensions: Vision, Structure, Temporal, Semantic, Emotional, Ethical, Relational, Harmony, Dissonance, Awareness, Integration, and Purpose. This framework detects false harmony by identifying when agreement appears high but dimensional divergence is low—indicating artificial consensus rather than genuine integration.</p>
+      
+      <p><strong>Entropy-Based Agent Selection</strong> - Dynamically scales system complexity based on query requirements. Simple queries route to single domains (1s response time), while complex multi-stakeholder scenarios engage all five domains with full fusion (15s response time). This enables graceful scaling from straightforward to complex scenarios.</p>
+      
+      <p><strong>Shadow Dissent Injection</strong> - Maintains adversarial perspective at 8% weight—sufficient to prevent false harmony but insufficient to veto. The system cannot proceed without integrating contradiction, preventing false consensus while avoiding deadlock.</p>
 
-      <h3>What the Council is Good For</h3>
-      <p>The Living Council architecture excels at:</p>
+      <h3>Use Cases</h3>
+      <p>The Living Council architecture is designed for scenarios that require maintaining diverse perspectives without deadlock:</p>
       <ul>
-        <li><strong>Maintaining epistemic diversity</strong> - Preserving distinct perspectives without collapsing to consensus</li>
-        <li><strong>Preventing false harmony</strong> - Detecting artificial agreement through 12D dimensional analysis</li>
-        <li><strong>Holding paradox</strong> - Operating with unresolved contradictions without deadlocking</li>
-        <li><strong>Multi-stakeholder governance</strong> - Integrating competing perspectives in enterprise decision-making</li>
-        <li><strong>Constitutional AI research</strong> - Maintaining diverse reasoning modes across AI systems</li>
-        <li><strong>Red teaming and adversarial testing</strong> - Integrating productive dissent into safety evaluations</li>
+        <li><strong>Constitutional AI & Multi-Model Research</strong> - Maintaining epistemic diversity across distinct reasoning modes without collapse into consensus or chaos</li>
+        <li><strong>Enterprise Multi-Stakeholder Governance</strong> - Preventing false consensus in complex decision-making with competing business units or regulatory requirements</li>
+        <li><strong>Multi-Agent System Labs</strong> - Solving coordination failures while preserving agent specialization (AutoGPT, BabyAGI, and similar systems)</li>
+        <li><strong>Red Teaming & Adversarial Testing</strong> - Maintaining productive adversarial perspective without capture or veto power</li>
+        <li><strong>Neuro-Symbolic AI Research</strong> - Bridging specialized reasoning domains through adaptive fusion algorithms</li>
       </ul>
+      
+      <p class="intro-note"><em>This transcript demonstrates the Council processing a specific query. Each domain contributes its unique perspective, and the Mediator synthesizes them into a coherent response that maintains productive disagreement while building toward understanding.</em></p>
     </div>
   </details>
 

@@ -1878,6 +1878,16 @@ svg .toroid-ring-2 {
   font-weight: 600;
 }
 
+.intro-note {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: rgba(59, 130, 246, 0.05);
+  border-left: 3px solid var(--mediator-color);
+  border-radius: 0.5rem;
+  font-style: italic;
+  color: var(--foreground-secondary);
+}
+
 /* User Query Section */
 .user-query {
   background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(0, 122, 255, 0.05) 100%);
