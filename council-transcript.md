@@ -498,10 +498,10 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <thead>
           <tr>
             <th>Dimension</th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/grok.svg' | relative_url }}" alt="GROK" class="llm-logo" width="20" height="20"> GROK<br><span class="column-label">(Evaluating Council)</span></th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/Claude.svg' | relative_url }}" alt="Claude" class="llm-logo" width="20" height="20"> Claude<br><span class="column-label">(Evaluating Council)</span></th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/gemini.svg' | relative_url }}" alt="Gemini" class="llm-logo" width="20" height="20"> Gemini<br><span class="column-label">(Evaluating Council)</span></th>
-            <th class="evaluator-column"><img src="{{ '/assets/images/tech-icons/ChatGPT.svg' | relative_url }}" alt="GPT-5" class="llm-logo" width="20" height="20"> GPT-5<br><span class="column-label">(Evaluating Council)</span></th>
+            <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/grok.svg' | relative_url }}" alt="GROK" class="llm-logo"><span class="llm-name">GROK</span><span class="column-label">(Evaluating Council)</span></div></th>
+            <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/Claude.svg' | relative_url }}" alt="Claude" class="llm-logo"><span class="llm-name">Claude</span><span class="column-label">(Evaluating Council)</span></div></th>
+            <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/gemini.svg' | relative_url }}" alt="Gemini" class="llm-logo"><span class="llm-name">Gemini</span><span class="column-label">(Evaluating Council)</span></div></th>
+            <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/ChatGPT.svg' | relative_url }}" alt="GPT-5" class="llm-logo"><span class="llm-name">GPT-5</span><span class="column-label">(Evaluating Council)</span></div></th>
             <th class="comparison-column">Single GPT-5.1<br><span class="column-label">(Baseline)</span></th>
             <th class="notes-column">Notes</th>
           </tr>
@@ -598,7 +598,20 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
       <div class="prompt-content">
         <p>Use this prompt to evaluate the Council transcript yourself or compare with other AI systems:</p>
         <div class="prompt-box">
-          <pre id="evaluationPrompt">Evaluate this multi-agent transcript on seven dimensions: Final Output Quality, Diversity/Collaboration, Robustness/Reliability, Adaptability/Contextual Memory, Human Alignment/Usefulness, Efficiency/Resource Cost, Emergent Reasoning/Creativity. Provide numeric scores 1–10, reasoning, and optional improvement suggestions. Compare against a hypothetical single LLM output.</pre>
+          <pre id="evaluationPrompt">Evaluate this multi-agent transcript on seven dimensions: Final Output Quality, Diversity/Collaboration, Robustness/Reliability, Adaptability/Contextual Memory, Human Alignment/Usefulness, Efficiency/Resource Cost, Emergent Reasoning/Creativity. Provide numeric scores 1–10, reasoning, and optional improvement suggestions. Compare against a hypothetical single LLM output.
+
+Transcript URL: {{ site.url }}{{ site.baseurl }}{{ '/council-transcript.html' | relative_url }}
+
+Evaluation Framework:
+- Final Output Quality: Coherence, relevance, completeness, factual grounding, absence of contradiction or error
+- Diversity / Collaboration: Number of distinct perspectives, variation in reasoning styles, presence of internal dialectic
+- Robustness / Reliability: Stability of reasoning across multi-step logic, resilience to ambiguity, minimal hallucination
+- Adaptability / Contextual Memory: Ability to reference earlier discussion, maintain consistency, integrate context across domains/times
+- Human Alignment / Usefulness: Readability, practicality, insightfulness, emotional/ethical resonance, real-world applicability
+- Efficiency / Resource Cost: Estimated compute/time cost, response length, suitability for quick vs deep queries
+- Emergent Reasoning / Creativity: Novelty of synthesis, new metaphors/frameworks, capacity to integrate contradictions into new patterns
+
+Scoring Scale: 0 = minimal/absent, 5 = adequate, 10 = exceptional/near-ideal</pre>
           <button onclick="copyPrompt()" class="copy-prompt-btn">Copy Prompt</button>
         </div>
         <div class="prompt-suggestions">
