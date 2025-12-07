@@ -12,7 +12,7 @@ post_slug: "the-living-council-relational-safety-for-human-ai-coevolution"
 
 *This article is based on an original white paper exploring relational paradigms for AI safety and alignment.*
 
-![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/banner.png)
+![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/banner.jpg)
 *The Living Council: Where safety emerges through relationship, not control.*
 
 ## The Problem with Control
