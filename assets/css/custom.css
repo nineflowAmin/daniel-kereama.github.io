@@ -1788,49 +1788,92 @@ svg .toroid-ring-2 {
 .transcript-intro {
   background: var(--background-secondary);
   border-radius: 0.75rem;
-  padding: 2rem;
   margin-bottom: 2.5rem;
   border: 1px solid var(--border);
+  overflow: hidden;
 }
 
-.transcript-intro h2 {
+.transcript-intro summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: var(--foreground);
+  background: var(--background-secondary);
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.transcript-intro summary::-webkit-details-marker {
+  display: none;
+}
+
+.transcript-intro summary:hover {
+  background: var(--background-tertiary);
+}
+
+.transcript-intro summary:focus {
+  outline: 2px solid var(--nineflow-primary);
+  outline-offset: -2px;
+}
+
+.info-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.summary-text {
+  flex: 1;
+}
+
+.intro-content {
+  padding: 0 1.5rem 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+}
+
+.intro-content h2 {
   font-size: 1.75rem;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
   color: var(--foreground);
   border-bottom: 2px solid var(--border);
   padding-bottom: 0.75rem;
 }
 
-.transcript-intro h3 {
+.intro-content h3 {
   font-size: 1.25rem;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   color: var(--foreground);
 }
 
-.transcript-intro p {
+.intro-content p {
   margin-bottom: 1rem;
   line-height: 1.7;
   color: var(--foreground-secondary);
 }
 
-.transcript-intro p strong {
+.intro-content p strong {
   color: var(--foreground);
   font-weight: 600;
 }
 
-.transcript-intro ul {
+.intro-content ul {
   margin: 1rem 0 1.5rem 1.5rem;
   padding-left: 0;
 }
 
-.transcript-intro ul li {
+.intro-content ul li {
   margin-bottom: 0.75rem;
   line-height: 1.6;
   color: var(--foreground-secondary);
 }
 
-.transcript-intro ul li strong {
+.intro-content ul li strong {
   color: var(--foreground);
   font-weight: 600;
 }

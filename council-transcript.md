@@ -11,32 +11,38 @@ description: "A complete transcript of a Living Council session demonstrating ho
     <p class="transcript-date">Session Date: November 1, 2025</p>
   </header>
 
-  <div class="transcript-intro">
-    <h2>What is the Living Council?</h2>
-    <p>The Living Council is a <strong>multi-agent coordination architecture</strong> designed to maintain productive disagreement and epistemic diversity across complex decision-making scenarios. It consists of five specialized governance domains, each with distinct reasoning frameworks:</p>
-    
-    <ul>
-      <li><strong>Architect</strong> (Blue) - Ensures structural integrity and transparent decision layers</li>
-      <li><strong>Mediator</strong> (Green) - Maintains relational governance and bidirectional feedback</li>
-      <li><strong>Oracle</strong> (Purple) - Provides temporal recursion and memory continuity</li>
-      <li><strong>Shadow</strong> (Red) - Injects controlled dissent to prevent false harmony</li>
-      <li><strong>Resonator</strong> (Amber) - Maintains harmonic coherence across all domains</li>
-    </ul>
+  <details class="transcript-intro">
+    <summary>
+      <span class="info-icon">ℹ️</span>
+      <span class="summary-text">About the Living Council</span>
+    </summary>
+    <div class="intro-content">
+      <h2>What is the Living Council?</h2>
+      <p>The Living Council is a <strong>multi-agent coordination architecture</strong> designed to maintain productive disagreement and epistemic diversity across complex decision-making scenarios. It consists of five specialized governance domains, each with distinct reasoning frameworks:</p>
+      
+      <ul>
+        <li><strong>Architect</strong> (Blue) - Ensures structural integrity and transparent decision layers</li>
+        <li><strong>Mediator</strong> (Green) - Maintains relational governance and bidirectional feedback</li>
+        <li><strong>Oracle</strong> (Purple) - Provides temporal recursion and memory continuity</li>
+        <li><strong>Shadow</strong> (Red) - Injects controlled dissent to prevent false harmony</li>
+        <li><strong>Resonator</strong> (Amber) - Maintains harmonic coherence across all domains</li>
+      </ul>
 
-    <h3>Technical Foundation</h3>
-    <p>The Council is built on a <strong>12D dimensional analysis framework</strong> that evaluates content across 12 distinct dimensions (Vision, Structure, Temporal, Semantic, Emotional, Ethical, Relational, Harmony, Dissonance, Awareness, Integration, and Purpose). It uses <strong>entropy-based agent selection</strong> to dynamically scale from simple queries (1s response) to complex multi-stakeholder scenarios (15s response), and implements <strong>Shadow dissent injection at 8% weight</strong> to prevent false consensus without causing deadlock.</p>
+      <h3>Technical Foundation</h3>
+      <p>The Council is built on a <strong>12D dimensional analysis framework</strong> that evaluates content across 12 distinct dimensions (Vision, Structure, Temporal, Semantic, Emotional, Ethical, Relational, Harmony, Dissonance, Awareness, Integration, and Purpose). It uses <strong>entropy-based agent selection</strong> to dynamically scale from simple queries (1s response) to complex multi-stakeholder scenarios (15s response), and implements <strong>Shadow dissent injection at 8% weight</strong> to prevent false consensus without causing deadlock.</p>
 
-    <h3>What the Council is Good For</h3>
-    <p>The Living Council architecture excels at:</p>
-    <ul>
-      <li><strong>Maintaining epistemic diversity</strong> - Preserving distinct perspectives without collapsing to consensus</li>
-      <li><strong>Preventing false harmony</strong> - Detecting artificial agreement through 12D dimensional analysis</li>
-      <li><strong>Holding paradox</strong> - Operating with unresolved contradictions without deadlocking</li>
-      <li><strong>Multi-stakeholder governance</strong> - Integrating competing perspectives in enterprise decision-making</li>
-      <li><strong>Constitutional AI research</strong> - Maintaining diverse reasoning modes across AI systems</li>
-      <li><strong>Red teaming and adversarial testing</strong> - Integrating productive dissent into safety evaluations</li>
-    </ul>
-  </div>
+      <h3>What the Council is Good For</h3>
+      <p>The Living Council architecture excels at:</p>
+      <ul>
+        <li><strong>Maintaining epistemic diversity</strong> - Preserving distinct perspectives without collapsing to consensus</li>
+        <li><strong>Preventing false harmony</strong> - Detecting artificial agreement through 12D dimensional analysis</li>
+        <li><strong>Holding paradox</strong> - Operating with unresolved contradictions without deadlocking</li>
+        <li><strong>Multi-stakeholder governance</strong> - Integrating competing perspectives in enterprise decision-making</li>
+        <li><strong>Constitutional AI research</strong> - Maintaining diverse reasoning modes across AI systems</li>
+        <li><strong>Red teaming and adversarial testing</strong> - Integrating productive dissent into safety evaluations</li>
+      </ul>
+    </div>
+  </details>
 
   <div class="user-query">
     <div class="user-query-header">
