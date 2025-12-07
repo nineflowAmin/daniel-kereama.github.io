@@ -252,8 +252,8 @@ Relational safety treats trust as a living process, not a proven state. It recog
 
 The white paper includes responses from each domain, each speaking in its own voice. Here's a glimpse:
 
-> **[View Complete Council Transcript →]({{ '/council-transcript.html' | relative_url }})**  
-> See a full example of the Living Council in action, with all five domains contributing to a synthesis on the question: "How much contradiction can the system hold before coherence fractures?"
+> **[View Example Council Transcript →]({{ '/council-transcript.html' | relative_url }})**  
+> This is an example transcript demonstrating the Living Council architecture in action. It shows a complete session where all five domains (Architect, Mediator, Oracle, Shadow, Resonator) address a specific query: "How much contradiction can the system hold before coherence fractures?" This transcript is separate from the article above—it's a practical demonstration of how the Council processes complex questions through productive disagreement and synthesis.
 
 ### The Architect Speaks
 
