@@ -418,6 +418,75 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <h2>AI Evaluation Scores</h2>
     <p class="evaluation-intro">Four major LLMs evaluated this Council transcript across seven dimensions, comparing the multi-agent approach against a hypothetical single LLM output. Explore the scores below and add your own ratings.</p>
     
+    <div class="score-explanation">
+      <h3>📊 How to Read the Scores</h3>
+      <p>Each dimension is rated on a <strong>0–10 scale</strong>, where:</p>
+      <ul>
+        <li><strong>0</strong> = minimal or absent</li>
+        <li><strong>5</strong> = adequate</li>
+        <li><strong>10</strong> = exceptional or near-ideal</li>
+      </ul>
+      <p>The scores reflect qualitative judgment of the full session transcript (all agents + mediator synthesis). <strong>Comparison is against a baseline "single-agent" LLM (GPT-5.1, hypothetical)</strong>. Lower scores in "Efficiency / Resource Cost" reflect higher computational overhead—trade-offs inherent to multi-agent systems.</p>
+      <p class="caveat-note"><em>Because style, nuance and subjectivity influence scoring, these ratings are indicative, not absolute—we welcome you to run your own analysis using the same framework (see prompt section below).</em></p>
+    </div>
+
+    <details class="scoring-rubric">
+      <summary>
+        <span class="rubric-icon">📋</span>
+        <span>Scoring Rubric & Methodology</span>
+      </summary>
+      <div class="rubric-content">
+        <p>The following table explains what each dimension evaluates:</p>
+        <table class="rubric-table">
+          <thead>
+            <tr>
+              <th>Dimension</th>
+              <th>What is being judged / remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Final Output Quality</strong></td>
+              <td>Coherence, relevance, completeness, factual or conceptual grounding, absence of obvious contradiction or error.</td>
+            </tr>
+            <tr>
+              <td><strong>Diversity / Collaboration</strong></td>
+              <td>Number of distinct perspectives expressed; degree of variation in reasoning styles; presence of internal dialectic or conflict that gets addressed.</td>
+            </tr>
+            <tr>
+              <td><strong>Robustness / Reliability</strong></td>
+              <td>Stability of reasoning across multi-step logic; resilience in face of ambiguity or contradiction; minimal hallucination or unsupported claims.</td>
+            </tr>
+            <tr>
+              <td><strong>Adaptability / Contextual Memory</strong></td>
+              <td>Ability to reference earlier parts of the discussion, maintain consistency over long content, integrate context across domains/times.</td>
+            </tr>
+            <tr>
+              <td><strong>Human Alignment / Usefulness</strong></td>
+              <td>Readability for a human reader; practicality or insightfulness of output; emotional or ethical resonance; applicability to real-world decision making.</td>
+            </tr>
+            <tr>
+              <td><strong>Efficiency / Resource Cost</strong></td>
+              <td>Estimated compute/time cost (relative cost for multi-agent vs single-agent), response length, suitability for quick vs deep queries.</td>
+            </tr>
+            <tr>
+              <td><strong>Emergent Reasoning / Creativity</strong></td>
+              <td>Novelty of synthesis, presence of new metaphors or frameworks not obviously derivative, capacity to integrate contradictions into new patterns, emergent insights.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="baseline-info">
+          <h4>Baseline Conditions</h4>
+          <ul>
+            <li><strong>Comparison LLM:</strong> GPT-5.1 (hypothetical baseline)</li>
+            <li><strong>Prompting Method:</strong> Standard evaluation prompt (see below)</li>
+            <li><strong>Evaluation Scope:</strong> Full transcript including all five domain contributions and mediator synthesis</li>
+            <li><strong>Scoring Method:</strong> Qualitative judgment by each LLM evaluator</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+    
     <div class="evaluation-chart-container">
       <canvas id="radarChart"></canvas>
     </div>
@@ -678,6 +747,20 @@ let radarChart = new Chart(ctx, {
 function updateChart() {
   radarChart.data.datasets[4].data = Object.values(userScores);
   radarChart.update();
+}
+
+function copyPrompt() {
+  const promptText = document.getElementById('evaluationPrompt').textContent;
+  navigator.clipboard.writeText(promptText).then(() => {
+    const btn = document.querySelector('.copy-prompt-btn');
+    const originalText = btn.textContent;
+    btn.textContent = 'Copied!';
+    btn.style.background = 'var(--nineflow-success)';
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '';
+    }, 2000);
+  });
 }
 </script>
 

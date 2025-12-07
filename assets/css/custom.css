@@ -2204,6 +2204,282 @@ svg .toroid-ring-2 {
   border-top: 2px solid var(--border);
 }
 
+.score-explanation {
+  background: var(--background-secondary);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+}
+
+.score-explanation h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.score-explanation p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--foreground-secondary);
+}
+
+.score-explanation ul {
+  margin: 1rem 0 1.5rem 1.5rem;
+  padding-left: 0;
+}
+
+.score-explanation ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: var(--foreground-secondary);
+}
+
+.score-explanation p strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.caveat-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: rgba(245, 158, 11, 0.1);
+  border-left: 3px solid var(--resonator-color);
+  border-radius: 0.5rem;
+  font-style: italic;
+  color: var(--foreground-secondary);
+}
+
+.scoring-rubric {
+  background: var(--background-secondary);
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.scoring-rubric summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: var(--foreground);
+  background: var(--background-secondary);
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.scoring-rubric summary::-webkit-details-marker {
+  display: none;
+}
+
+.scoring-rubric summary:hover {
+  background: var(--background-tertiary);
+}
+
+.rubric-icon {
+  font-size: 1.25rem;
+}
+
+.rubric-content {
+  padding: 0 1.5rem 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+}
+
+.rubric-content p {
+  margin-bottom: 1rem;
+  color: var(--foreground-secondary);
+  line-height: 1.7;
+}
+
+.rubric-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: var(--background);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.rubric-table thead {
+  background: var(--background-tertiary);
+}
+
+.rubric-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--foreground);
+  border-bottom: 2px solid var(--border);
+}
+
+.rubric-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--foreground-secondary);
+  vertical-align: top;
+}
+
+.rubric-table td:first-child {
+  font-weight: 600;
+  color: var(--foreground);
+  min-width: 200px;
+}
+
+.rubric-table tbody tr:hover {
+  background: var(--background-secondary);
+}
+
+.rubric-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.baseline-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(59, 130, 246, 0.05);
+  border-left: 3px solid var(--architect-color);
+  border-radius: 0.5rem;
+}
+
+.baseline-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.baseline-info ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.baseline-info ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  color: var(--foreground-secondary);
+}
+
+.baseline-info ul li strong {
+  color: var(--foreground);
+}
+
+.prompt-explorer {
+  background: var(--background-secondary);
+  border-radius: 0.75rem;
+  margin-top: 2rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.prompt-explorer summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: var(--foreground);
+  background: var(--background-secondary);
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.prompt-explorer summary::-webkit-details-marker {
+  display: none;
+}
+
+.prompt-explorer summary:hover {
+  background: var(--background-tertiary);
+}
+
+.prompt-icon {
+  font-size: 1.25rem;
+}
+
+.prompt-content {
+  padding: 0 1.5rem 2rem 1.5rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+}
+
+.prompt-content p {
+  margin-bottom: 1rem;
+  color: var(--foreground-secondary);
+  line-height: 1.7;
+}
+
+.prompt-box {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.prompt-box pre {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--foreground);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.copy-prompt-btn {
+  margin-top: 1rem;
+  padding: 0.625rem 1.25rem;
+  background: var(--nineflow-primary);
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.copy-prompt-btn:hover {
+  background: var(--nineflow-secondary);
+  transform: translateY(-1px);
+}
+
+.prompt-suggestions {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.prompt-suggestions h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.prompt-suggestions ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.prompt-suggestions ul li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--foreground-secondary);
+}
+
+.prompt-suggestions ul li strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
 .llm-evaluation-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -2434,6 +2710,27 @@ svg .toroid-ring-2 {
   .scores-table th,
   .scores-table td {
     padding: 0.75rem 0.5rem;
+  }
+
+  .score-explanation {
+    padding: 1.5rem;
+  }
+
+  .rubric-table {
+    font-size: 0.875rem;
+  }
+
+  .rubric-table th,
+  .rubric-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .rubric-table td:first-child {
+    min-width: 150px;
+  }
+
+  .prompt-box pre {
+    font-size: 0.8rem;
   }
 }
 
