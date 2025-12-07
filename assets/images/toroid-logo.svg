@@ -11,6 +11,27 @@
       <stop offset="100%" stop-color="#00FFFF" />
     </linearGradient>
   </defs>
+  <style>
+    .toroid-ring-1 {
+      animation: toroidRotateClockwise 20s linear infinite;
+      transform-origin: 24px 24px;
+    }
+    
+    .toroid-ring-2 {
+      animation: toroidRotateCounterclockwise 15s linear infinite;
+      transform-origin: 24px 24px;
+    }
+    
+    @keyframes toroidRotateClockwise {
+      from { transform: rotate(45deg); }
+      to { transform: rotate(405deg); }
+    }
+    
+    @keyframes toroidRotateCounterclockwise {
+      from { transform: rotate(-45deg); }
+      to { transform: rotate(-405deg); }
+    }
+  </style>
   <ellipse
     class="toroid-ring-1"
     cx="24"
