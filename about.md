@@ -281,10 +281,12 @@ title: "About"
               <span class="tech-name">GCP</span>
             </div>
             <div class="tech-item">
-              <span class="tech-icon-emoji">☁️</span><span class="tech-name">AWS</span>
+              <img src="{{ '/assets/images/tech-icons/aws.svg' | absolute_url }}" alt="AWS" class="tech-icon-img">
+              <span class="tech-name">AWS</span>
             </div>
             <div class="tech-item">
-              <span class="tech-icon-emoji">☁️</span><span class="tech-name">Azure</span>
+              <img src="{{ '/assets/images/tech-icons/azure.svg' | absolute_url }}" alt="Azure" class="tech-icon-img">
+              <span class="tech-name">Azure</span>
             </div>
             <div class="tech-item">
               <span class="tech-icon-emoji">⚙️</span><span class="tech-name">GitHub Actions</span>
@@ -311,10 +313,12 @@ title: "About"
               <span class="tech-name">GCP</span>
             </div>
             <div class="tech-item">
-              <span class="tech-icon-emoji">☁️</span><span class="tech-name">AWS</span>
+              <img src="{{ '/assets/images/tech-icons/aws.svg' | absolute_url }}" alt="AWS" class="tech-icon-img">
+              <span class="tech-name">AWS</span>
             </div>
             <div class="tech-item">
-              <span class="tech-icon-emoji">☁️</span><span class="tech-name">Azure</span>
+              <img src="{{ '/assets/images/tech-icons/azure.svg' | absolute_url }}" alt="Azure" class="tech-icon-img">
+              <span class="tech-name">Azure</span>
             </div>
             <div class="tech-item">
               <span class="tech-icon-emoji">⚙️</span><span class="tech-name">GitHub Actions</span>
