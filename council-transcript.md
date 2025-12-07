@@ -589,6 +589,33 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
       <div id="userRatings"></div>
       <button onclick="updateChart()" class="update-chart-btn">Update Chart with Your Ratings</button>
     </div>
+
+    <details class="prompt-explorer">
+      <summary>
+        <span class="prompt-icon">🎯</span>
+        <span>Try It Yourself: Evaluation Prompt</span>
+      </summary>
+      <div class="prompt-content">
+        <p>Use this prompt to evaluate the Council transcript yourself or compare with other AI systems:</p>
+        <div class="prompt-box">
+          <pre id="evaluationPrompt">Evaluate this multi-agent transcript on seven dimensions: Final Output Quality, Diversity/Collaboration, Robustness/Reliability, Adaptability/Contextual Memory, Human Alignment/Usefulness, Efficiency/Resource Cost, Emergent Reasoning/Creativity. Provide numeric scores 1–10, reasoning, and optional improvement suggestions. Compare against a hypothetical single LLM output.</pre>
+          <button onclick="copyPrompt()" class="copy-prompt-btn">Copy Prompt</button>
+        </div>
+        <div class="prompt-suggestions">
+          <h4>Suggested Exploration Prompts</h4>
+          <ul>
+            <li><strong>General Analysis:</strong> "Analyze the Council transcript for cognitive diversity and emergent reasoning."</li>
+            <li><strong>Agent-Specific:</strong> "Summarize the Shadow agent contributions and how they challenge coherence."</li>
+            <li><strong>Meta-Analysis:</strong> "Rate the transcript using the 7-dimension framework and explain each score."</li>
+            <li><strong>Comparison:</strong> "Identify patterns that a single LLM could not generate."</li>
+            <li><strong>Diversity Analysis:</strong> "Compare Mediator vs Resonator in handling emotional content."</li>
+            <li><strong>Contradiction Handling:</strong> "Identify any contradictions between agents and how they are resolved."</li>
+            <li><strong>Emergent Patterns:</strong> "Highlight emergent patterns that a single LLM could not generate."</li>
+            <li><strong>Oracle Analysis:</strong> "List all Oracle agent metaphors and explain their significance."</li>
+          </ul>
+        </div>
+      </div>
+    </details>
   </div>
 
   <div class="transcript-footer">
