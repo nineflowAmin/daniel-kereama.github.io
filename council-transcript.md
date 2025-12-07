@@ -493,7 +493,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 
     <div class="scores-table-container">
       <h3>Detailed Scores: Council Transcript Evaluations</h3>
-      <p class="table-description">All scores below rate the Council's output performance. Four LLMs (GROK, Claude, Gemini, GPT-5) evaluated the Council transcript. The Council and Single GPT-5.1 columns provide a direct comparison baseline.</p>
+      <p class="table-description">All scores below rate the Council's output performance. Five LLMs (GROK, Claude, Gemini, GPT-5, DeepSeek) evaluated the Council transcript. The Council and Single GPT-5.1 columns provide a direct comparison baseline.</p>
       <table class="scores-table">
         <thead>
           <tr>
@@ -503,6 +503,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/Claude.svg' | relative_url }}" alt="Claude" class="llm-logo"><span class="llm-name">Claude</span><span class="column-label">(Evaluating Council)</span></div></th>
             <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/gemini.svg' | relative_url }}" alt="Gemini" class="llm-logo"><span class="llm-name">Gemini</span><span class="column-label">(Evaluating Council)</span></div></th>
             <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/ChatGPT.svg' | relative_url }}" alt="GPT-5" class="llm-logo"><span class="llm-name">GPT-5</span><span class="column-label">(Evaluating Council)</span></div></th>
+            <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/DeepSeek.svg' | relative_url }}" alt="DeepSeek" class="llm-logo"><span class="llm-name">DeepSeek</span><span class="column-label">(Evaluating Council)</span></div></th>
           </tr>
         </thead>
         <tbody>
@@ -513,6 +514,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>8.5</td>
             <td>10.0</td>
             <td>8.0</td>
+            <td>8.0</td>
           </tr>
           <tr>
             <td>Diversity / Collaboration</td>
@@ -521,6 +523,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>9.0</td>
             <td>10.0</td>
             <td>8.0</td>
+            <td>9.0</td>
           </tr>
           <tr>
             <td>Robustness / Reliability</td>
@@ -529,6 +532,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>7.5</td>
             <td>9.0</td>
             <td>8.0</td>
+            <td>7.0</td>
           </tr>
           <tr>
             <td>Adaptability / Contextual Memory</td>
@@ -537,6 +541,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>8.0</td>
             <td>10.0</td>
             <td>8.0</td>
+            <td>6.0</td>
           </tr>
           <tr>
             <td>Human Alignment / Usefulness</td>
@@ -544,6 +549,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>9.0</td>
             <td>7.0</td>
             <td>9.0</td>
+            <td>8.0</td>
             <td>8.0</td>
           </tr>
           <tr>
@@ -553,6 +559,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>5.0</td>
             <td>6.0</td>
             <td>6.0</td>
+            <td>5.0</td>
           </tr>
           <tr>
             <td>Emergent Reasoning / Creativity</td>
@@ -561,6 +568,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>9.0</td>
             <td>10.0</td>
             <td>9.0</td>
+            <td>7.0</td>
           </tr>
           <tr class="average-row">
             <td><strong>Average</strong></td>
@@ -569,6 +577,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td><strong>7.57</strong></td>
             <td><strong>9.14</strong></td>
             <td><strong>7.9</strong></td>
+            <td><strong>7.14</strong></td>
           </tr>
         </tbody>
       </table>
@@ -645,6 +654,7 @@ const evaluations = {
   claude: [8.5, 9, 7.5, 8, 7, 5, 9],
   gemini: [10, 10, 9, 10, 9, 6, 10],
   chatgpt: [8, 3, 7, 6, 8, 9, 6],
+  deepseek: [8, 9, 7, 6, 8, 5, 7],
   council: [8, 8, 8, 8, 8, 6, 9],
   singleGPT: [7, 4, 6, 5, 6, 9, 5]
 };
@@ -772,6 +782,19 @@ let radarChart = new Chart(ctx, {
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
         pointHoverBorderColor: 'rgb(239, 68, 68)'
+      },
+      {
+        label: 'DeepSeek',
+        data: evaluations.deepseek,
+        fill: false,
+        backgroundColor: 'rgba(34, 197, 94, 0.1)',
+        borderColor: 'rgb(34, 197, 94)',
+        borderWidth: 1.5,
+        borderDash: [3, 3],
+        pointBackgroundColor: 'rgb(34, 197, 94)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(34, 197, 94)'
       },
       {
         label: 'Your Rating',

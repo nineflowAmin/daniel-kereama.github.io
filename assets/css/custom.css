@@ -2586,6 +2586,16 @@ svg .toroid-ring-2 {
 
 .scores-table th:first-child {
   font-weight: 700;
+  max-width: 180px;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.scores-table td:first-child {
+  font-size: 0.85rem;
+  line-height: 1.3;
+  max-width: 180px;
+  padding-right: 0.75rem;
 }
 
 .scores-table td {
