@@ -124,6 +124,9 @@ Dissonance           █░░░░░░░░░ -0.1
 ![Resonance Matrix]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-resonance-matrix.jpg)
 *The 12-dimensional resonance matrix measures "vibes" across Vision, Structure, Ethics, and Dissonance—influence propagates like a gravity field, determining system state.*
 
+![Agent Selection Transparency]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/12d-radar-chart.png)
+*Interactive radar chart showing agent activation weights based on 12D alignment. Each colored polygon represents an agent's activation profile across all dimensions—Oracle, Architect, Resonator, Shadow, and Mediator each have distinct resonance signatures that determine their engagement.*
+
 ### LLMs as Natural Resonance Scorers
 
 Large Language Models inherently produce probability distributions. Every token prediction comes with a [0,1] confidence score that sums to 1. This probabilistic nature makes LLMs ideal for producing resonance scores along our 12 dimensions.
@@ -148,6 +151,9 @@ Score:
 * Optionally, multiple passes and averaging reduce variance.
 
 This creates a natural mapping from LLM intuition to a structured numeric representation.
+
+![Agent Reasoning Explainability]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/12d-agent-explainability.png)
+*The 12D multi-dimensional explainability interface shows how each dimension is analyzed and scored. Each dimension—from Vision (95%) to Dissonance (82%)—includes transparent reasoning quotes explaining why the AI arrived at its conclusions, making the reasoning process clear and accountable.*
 
 ![Probabilistic Distribution]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/07-probabilistic-distribution.jpg)
 *LLMs naturally produce probability distributions—every token prediction comes with confidence scores that map perfectly to our 12-dimensional resonance framework.*
