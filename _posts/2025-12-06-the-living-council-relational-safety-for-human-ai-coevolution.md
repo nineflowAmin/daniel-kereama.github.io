@@ -46,9 +46,13 @@ The Living Council is a **multi-agent coordination architecture** with five spec
 
 **Key Technical Components:**
 - **Shadow dissent injection**: Maintains adversarial perspective at 8% weight (cannot veto, cannot be ignored)
-- **12D false harmony detection**: Dimensional analysis framework that detects artificial vs. genuine agreement
-- **Entropy-based agent selection**: Dynamic complexity assessment (1s for simple queries, 15s for complex)
+- **12D false harmony detection**: Dimensional analysis framework that detects artificial vs. genuine agreement across 12 dimensions
+- **Entropy-based agent selection**: Dynamic complexity assessment (1s for simple queries, 15s for complex) using entropy thresholds
 - **Adaptive fusion algorithm**: Integrates diverse domain outputs without collapsing to consensus
+
+**12D Framework Details:** The dimensional analysis evaluates agreement across 12 distinct dimensions (structural, temporal, relational, emotional, logical, etc.). False harmony is detected when agreement appears high but dimensional divergence is low—indicating artificial consensus rather than genuine integration.
+
+**Entropy-Based Selection:** System complexity is assessed through entropy calculation. Simple queries (< threshold) route to single domain (1s response). Complex queries (> threshold) engage all five domains with full fusion (15s response). This enables graceful scaling from straightforward to multi-stakeholder scenarios.
 
 ![Relational Safety]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/02-relational-safety.jpg)
 *Bidirectional feedback loops between human and AI systems creating emergent safety through continuous co-adaptation rather than static constraints.*
