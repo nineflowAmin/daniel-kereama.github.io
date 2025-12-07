@@ -4,6 +4,7 @@ title: "What Building a Multi-Agent AI System Taught Me After 20 Years as a .NET
 date: 2025-11-28 10:00:00 +0000
 categories: [architecture, multi-agent-systems, .net]
 description: "Reflections on building multi-agent AI systems after two decades of .NET architecture experience."
+excerpt: "After 20 years of building software around well-understood patterns, building a multi-agent AI system taught me new lessons about system design, emergence, and the intersection of psychology and system physics."
 ---
 
 *This article was originally published on [LinkedIn](https://www.linkedin.com/pulse/what-building-multi-agent-ai-system-taught-me-after-20-daniel-kereama-af5fc/) on November 28, 2025.*
