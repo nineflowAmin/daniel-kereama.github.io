@@ -498,86 +498,77 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <thead>
           <tr>
             <th>Dimension</th>
+            <th class="comparison-column">Single GPT-5.1<br><span class="column-label">(Baseline)</span></th>
             <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/grok.svg' | relative_url }}" alt="GROK" class="llm-logo"><span class="llm-name">GROK</span><span class="column-label">(Evaluating Council)</span></div></th>
             <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/Claude.svg' | relative_url }}" alt="Claude" class="llm-logo"><span class="llm-name">Claude</span><span class="column-label">(Evaluating Council)</span></div></th>
             <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/gemini.svg' | relative_url }}" alt="Gemini" class="llm-logo"><span class="llm-name">Gemini</span><span class="column-label">(Evaluating Council)</span></div></th>
             <th class="evaluator-column"><div class="llm-header"><img src="{{ '/assets/images/tech-icons/ChatGPT.svg' | relative_url }}" alt="GPT-5" class="llm-logo"><span class="llm-name">GPT-5</span><span class="column-label">(Evaluating Council)</span></div></th>
-            <th class="comparison-column">Single GPT-5.1<br><span class="column-label">(Baseline)</span></th>
-            <th class="notes-column">Notes</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Final Output Quality</td>
+            <td>7.0</td>
             <td>9.0</td>
             <td>8.5</td>
             <td>10.0</td>
             <td>8.0</td>
-            <td>7.0</td>
-            <td>Council outputs are more coherent across multi-step reasoning, include synthesis of viewpoints; single LLM often produces linear or narrower reasoning.</td>
           </tr>
           <tr>
             <td>Diversity / Collaboration</td>
+            <td>4.0</td>
             <td>9.0</td>
             <td>9.0</td>
             <td>10.0</td>
             <td>8.0</td>
-            <td>4.0</td>
-            <td>Council produces multiple perspectives, internal critique, emergent consensus; single LLM typically gives a single "best guess" answer.</td>
           </tr>
           <tr>
             <td>Robustness / Reliability</td>
+            <td>6.0</td>
             <td>8.0</td>
             <td>7.5</td>
             <td>9.0</td>
             <td>8.0</td>
-            <td>6.0</td>
-            <td>Council maintains context better, catches internal contradictions more effectively; single LLM can drift or hallucinate more easily in long interactions.</td>
           </tr>
           <tr>
             <td>Adaptability / Contextual Memory</td>
+            <td>5.0</td>
             <td>9.0</td>
             <td>8.0</td>
             <td>10.0</td>
             <td>8.0</td>
-            <td>5.0</td>
-            <td>Council carries relational context across multi-step threads; single LLM has limited short-term context (or session-limited memory).</td>
           </tr>
           <tr>
             <td>Human Alignment / Usefulness</td>
+            <td>6.0</td>
             <td>9.0</td>
             <td>7.0</td>
             <td>9.0</td>
             <td>8.0</td>
-            <td>6.0</td>
-            <td>Council reasoning feels deeper and more reflective, providing insight and nuance; single LLM produces useful but more generic, surface-level outputs.</td>
           </tr>
           <tr>
             <td>Efficiency / Resource Cost</td>
+            <td>9.0</td>
             <td>6.0</td>
             <td>5.0</td>
             <td>6.0</td>
             <td>6.0</td>
-            <td>9.0</td>
-            <td>Council is more computationally expensive, longer responses; single LLM is fast and lightweight.</td>
           </tr>
           <tr>
             <td>Emergent Reasoning / Creativity</td>
+            <td>5.0</td>
             <td>9.0</td>
             <td>9.0</td>
             <td>10.0</td>
             <td>9.0</td>
-            <td>5.0</td>
-            <td>Council shows emergent synthesis, handling contradictory inputs and generating nuanced insights; single LLM rarely reaches the same depth.</td>
           </tr>
           <tr class="average-row">
             <td><strong>Average</strong></td>
+            <td><strong>6.0</strong></td>
             <td><strong>8.43</strong></td>
             <td><strong>7.57</strong></td>
             <td><strong>9.14</strong></td>
             <td><strong>7.9</strong></td>
-            <td><strong>6.0</strong></td>
-            <td><strong>Council shows stronger emergent, relational intelligence; single LLM is efficient but less deep.</strong></td>
           </tr>
         </tbody>
       </table>
