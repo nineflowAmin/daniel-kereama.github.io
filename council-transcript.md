@@ -591,6 +591,10 @@ const dimensions = [
 ];
 
 const evaluations = {
+  grok: [9, 9, 8, 9, 9, 6, 9],
+  claude: [8.5, 9, 7.5, 8, 7, 5, 9],
+  gemini: [10, 10, 9, 10, 9, 6, 10],
+  chatgpt: [8, 3, 7, 6, 8, 9, 6],
   council: [8, 8, 8, 8, 8, 6, 9],
   singleGPT: [7, 4, 6, 5, 6, 9, 5]
 };
@@ -666,6 +670,58 @@ let radarChart = new Chart(ctx, {
         pointBorderColor: '#fff',
         pointHoverBackgroundColor: '#fff',
         pointHoverBorderColor: 'rgb(107, 114, 128)'
+      },
+      {
+        label: 'GROK',
+        data: evaluations.grok,
+        fill: false,
+        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+        borderColor: 'rgb(59, 130, 246)',
+        borderWidth: 1.5,
+        borderDash: [3, 3],
+        pointBackgroundColor: 'rgb(59, 130, 246)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(59, 130, 246)'
+      },
+      {
+        label: 'Claude',
+        data: evaluations.claude,
+        fill: false,
+        backgroundColor: 'rgba(139, 92, 246, 0.1)',
+        borderColor: 'rgb(139, 92, 246)',
+        borderWidth: 1.5,
+        borderDash: [3, 3],
+        pointBackgroundColor: 'rgb(139, 92, 246)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(139, 92, 246)'
+      },
+      {
+        label: 'Gemini',
+        data: evaluations.gemini,
+        fill: false,
+        backgroundColor: 'rgba(245, 158, 11, 0.1)',
+        borderColor: 'rgb(245, 158, 11)',
+        borderWidth: 1.5,
+        borderDash: [3, 3],
+        pointBackgroundColor: 'rgb(245, 158, 11)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(245, 158, 11)'
+      },
+      {
+        label: 'ChatGPT',
+        data: evaluations.chatgpt,
+        fill: false,
+        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+        borderColor: 'rgb(239, 68, 68)',
+        borderWidth: 1.5,
+        borderDash: [3, 3],
+        pointBackgroundColor: 'rgb(239, 68, 68)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(239, 68, 68)'
       },
       {
         label: 'Your Rating',
