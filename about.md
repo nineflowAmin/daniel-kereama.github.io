@@ -361,6 +361,10 @@ title: "About"
 
   <div class="about-section">
     <h2 class="section-title">Key Professional Experience</h2>
+    <p class="experience-note" style="color: var(--foreground-secondary); font-size: 0.9375rem; margin-bottom: 2rem; font-style: italic;">
+      <strong>20+ years of IT experience</strong> since 2005. The following highlights key recent roles and significant achievements. 
+      Additional experience includes software development, consulting, and architecture roles across finance, retail, energy, and technology sectors.
+    </p>
     
     <div class="experience-item">
       <div class="experience-header">
@@ -1270,7 +1274,18 @@ title: "About"
   }
 
   .logo-item {
-    font-size: 1.25rem;
+    height: 90px;
+    padding: 0.75rem 1.5rem;
+    gap: 0.5rem;
+  }
+  
+  .company-logo {
+    max-height: 35px;
+    max-width: 120px;
+  }
+  
+  .company-name {
+    font-size: 0.75rem;
   }
 
   .tech-ticker-container {
