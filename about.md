@@ -52,77 +52,77 @@ title: "About"
       <div class="logo-ticker">
         <div class="logo-ticker-track">
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/equifax.png' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Equifax</span>
+            <img src="{{ '/assets/images/logos/equifax.png' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Equifax</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/dominos.png' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Domino's Pizza</span>
+            <img src="{{ '/assets/images/logos/dominos.png' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Domino's Pizza</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/rio-tinto.png' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Rio Tinto</span>
+            <img src="{{ '/assets/images/logos/rio-tinto.png' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Rio Tinto</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/spark-nz.png' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Spark New Zealand</span>
+            <img src="{{ '/assets/images/logos/spark-nz.png' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Spark New Zealand</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Automated Electrics</span>
+            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Automated Electrics</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Pipefish</span>
+            <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Pipefish</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/gbst.png' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">GBST</span>
+            <img src="{{ '/assets/images/logos/gbst.png' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">GBST</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Tatts Group</span>
+            <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Tatts Group</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Zespri</span>
+            <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Zespri</span>
           </div>
           <!-- Duplicate for seamless loop -->
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/equifax.png' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Equifax</span>
+            <img src="{{ '/assets/images/logos/equifax.png' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Equifax</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/dominos.png' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Domino's Pizza</span>
+            <img src="{{ '/assets/images/logos/dominos.png' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Domino's Pizza</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/rio-tinto.png' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Rio Tinto</span>
+            <img src="{{ '/assets/images/logos/rio-tinto.png' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Rio Tinto</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/spark-nz.png' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Spark New Zealand</span>
+            <img src="{{ '/assets/images/logos/spark-nz.png' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Spark New Zealand</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Automated Electrics</span>
+            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Automated Electrics</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Pipefish</span>
+            <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Pipefish</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/gbst.png' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">GBST</span>
+            <img src="{{ '/assets/images/logos/gbst.png' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">GBST</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Tatts Group</span>
+            <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Tatts Group</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="logo-fallback">Zespri</span>
+            <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">Zespri</span>
           </div>
         </div>
       </div>
@@ -1064,8 +1064,8 @@ title: "About"
 
 .logo-ticker-track {
   display: flex;
-  gap: 4rem;
-  animation: logo-scroll 40s linear infinite;
+  gap: 2rem;
+  animation: logo-scroll 50s linear infinite;
   will-change: transform;
 }
 
@@ -1076,45 +1076,69 @@ title: "About"
 .logo-item {
   flex-shrink: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  padding: 0 2rem;
-  transition: all 0.3s ease;
+  gap: 0.75rem;
+  height: 100px;
+  padding: 1rem 2.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  background: var(--background);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.logo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+  border-color: var(--nineflow-primary);
+  background: var(--background-secondary);
 }
 
 .company-logo {
-  max-height: 50px;
-  max-width: 150px;
+  max-height: 45px;
+  max-width: 140px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%) brightness(0.7);
-  opacity: 0.8;
-  transition: all 0.3s ease;
+  filter: grayscale(100%) brightness(0.6);
+  opacity: 0.75;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-item:hover .company-logo {
   filter: grayscale(0%) brightness(1);
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-.logo-fallback {
-  display: none;
-  font-size: 1.25rem;
+.company-name {
+  display: block;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--foreground-secondary);
-  opacity: 0.7;
+  opacity: 0.8;
   white-space: nowrap;
   font-family: var(--font-display);
   letter-spacing: 0.02em;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-item:hover .logo-fallback {
+.logo-item:hover .company-name {
   opacity: 1;
   color: var(--nineflow-primary);
+  transform: translateY(-2px);
+}
+
+/* Fallback for missing logos */
+.logo-item:has(.company-logo[style*="display: none"]) .company-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--foreground);
+  opacity: 1;
 }
 
 @keyframes logo-scroll {
