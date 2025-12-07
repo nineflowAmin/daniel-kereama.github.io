@@ -69,7 +69,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <!-- Mediator -->
     <div class="transcript-message council-message-mediator">
       <div class="message-header">
-        <span class="message-icon">🌊</span>
+        <img src="{{ '/assets/images/icons/mediator.svg' | relative_url }}" alt="Mediator" class="message-icon" width="24" height="24">
         <span class="message-name">The Mediator</span>
         <span class="message-time">09:07:01</span>
       </div>
@@ -342,7 +342,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <!-- Mediator Synthesis -->
     <div class="transcript-message council-message-mediator synthesis-message">
       <div class="message-header">
-        <span class="message-icon">🌊</span>
+        <img src="{{ '/assets/images/icons/mediator.svg' | relative_url }}" alt="Mediator" class="message-icon" width="24" height="24">
         <span class="message-name">The Mediator — Synthesis</span>
         <span class="message-time">09:08:18</span>
       </div>
