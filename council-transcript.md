@@ -493,7 +493,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 
     <div class="scores-table-container">
       <h3>Detailed Scores: Council Transcript Evaluations</h3>
-      <p class="table-description">All scores below rate the Council's output performance. Three LLMs (GROK, Claude, Gemini) evaluated the Council transcript. The Council and Single GPT-5.1 columns provide a direct comparison baseline.</p>
+      <p class="table-description">All scores below rate the Council's output performance. Four LLMs (GROK, Claude, Gemini, GPT-5) evaluated the Council transcript. The Council and Single GPT-5.1 columns provide a direct comparison baseline.</p>
       <table class="scores-table">
         <thead>
           <tr>
