@@ -493,15 +493,15 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 
     <div class="scores-table-container">
       <h3>LLM Evaluations of Council Transcript</h3>
-      <p class="table-description">Four major LLMs evaluated the Council transcript. Scores below show how each LLM rated the Council's performance:</p>
+      <p class="table-description">Three major LLMs evaluated the Council transcript. The ChatGPT column shows the Council vs Single GPT-5.1 comparison scores:</p>
       <table class="scores-table">
         <thead>
           <tr>
             <th>Dimension</th>
-            <th>GROK</th>
-            <th>Claude</th>
-            <th>Gemini</th>
-            <th>ChatGPT</th>
+            <th><img src="{{ '/assets/images/icons/grok.svg' | relative_url }}" alt="GROK" class="llm-logo" width="20" height="20"> GROK</th>
+            <th><img src="{{ '/assets/images/icons/claude.svg' | relative_url }}" alt="Claude" class="llm-logo" width="20" height="20"> Claude</th>
+            <th><img src="{{ '/assets/images/icons/gemini.svg' | relative_url }}" alt="Gemini" class="llm-logo" width="20" height="20"> Gemini</th>
+            <th><img src="{{ '/assets/images/icons/chatgpt.svg' | relative_url }}" alt="ChatGPT" class="llm-logo" width="20" height="20"> Council vs GPT-5.1</th>
           </tr>
         </thead>
         <tbody>
@@ -510,56 +510,56 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
             <td>9.0</td>
             <td>8.5</td>
             <td>10.0</td>
-            <td>8.0</td>
+            <td>8.0 / 7.0</td>
           </tr>
           <tr>
             <td>Diversity / Collaboration</td>
             <td>9.0</td>
             <td>9.0</td>
             <td>10.0</td>
-            <td>3.0</td>
+            <td>8.0 / 4.0</td>
           </tr>
           <tr>
             <td>Robustness / Reliability</td>
             <td>8.0</td>
             <td>7.5</td>
             <td>9.0</td>
-            <td>7.0</td>
+            <td>8.0 / 6.0</td>
           </tr>
           <tr>
             <td>Adaptability / Contextual Memory</td>
             <td>9.0</td>
             <td>8.0</td>
             <td>10.0</td>
-            <td>6.0</td>
+            <td>8.0 / 5.0</td>
           </tr>
           <tr>
             <td>Human Alignment / Usefulness</td>
             <td>9.0</td>
             <td>7.0</td>
             <td>9.0</td>
-            <td>8.0</td>
+            <td>8.0 / 6.0</td>
           </tr>
           <tr>
             <td>Efficiency / Resource Cost</td>
             <td>6.0</td>
             <td>5.0</td>
             <td>6.0</td>
-            <td>9.0</td>
+            <td>6.0 / 9.0</td>
           </tr>
           <tr>
             <td>Emergent Reasoning / Creativity</td>
             <td>9.0</td>
             <td>9.0</td>
             <td>10.0</td>
-            <td>6.0</td>
+            <td>9.0 / 5.0</td>
           </tr>
           <tr class="average-row">
             <td><strong>Average</strong></td>
             <td><strong>8.43</strong></td>
             <td><strong>7.57</strong></td>
             <td><strong>9.14</strong></td>
-            <td><strong>6.71</strong></td>
+            <td><strong>7.9 / 6.0</strong></td>
           </tr>
         </tbody>
       </table>
