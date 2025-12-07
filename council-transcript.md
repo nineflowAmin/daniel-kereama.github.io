@@ -53,6 +53,12 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     </div>
   </details>
 
+  <div class="evaluation-framing">
+    <h2>When One Perspective Isn't Enough</h2>
+    <p class="evaluation-intro">Some questions are so slippery that a single perspective—no matter how brilliant—misses entire dimensions.</p>
+    <p class="evaluation-intro">Here's what happens when five specialized minds hold the same question together.</p>
+  </div>
+
   <div class="user-query">
     <div class="user-query-header">
       <img src="{{ '/assets/images/icons/user.svg' | relative_url }}" alt="User" class="user-icon" width="24" height="24">
@@ -415,12 +421,6 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
   </div>
 
   <div class="llm-evaluation-section">
-    <div class="evaluation-framing">
-      <h2>When One Perspective Isn't Enough</h2>
-      <p class="evaluation-intro">Some questions are so slippery that a single perspective—no matter how brilliant—misses entire dimensions.</p>
-      <p class="evaluation-intro">Here's what happens when five specialized minds hold the same question together.</p>
-    </div>
-
     <div class="score-explanation">
       <h3>📊 How to Read the Scores</h3>
       <p>Each dimension is rated on a <strong>0–10 scale</strong>, where:</p>
