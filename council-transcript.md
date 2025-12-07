@@ -7,7 +7,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 <div class="transcript-page">
   <header class="transcript-header">
     <h1>Nineflow.AI Council Transcript</h1>
-    <p class="transcript-subtitle">Example Session: The Fractal Coherence of Contradiction</p>
+    <p class="transcript-subtitle">Example Session: How the Council Handles Contradiction</p>
     <p class="transcript-date">Session Date: November 1, 2025</p>
   </header>
 
@@ -347,7 +347,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <span class="message-time">09:08:18</span>
       </div>
       <div class="message-content">
-        <h3>🎭 MEDIATOR SYNTHESIS: The Fractal Coherence of Contradiction</h3>
+        <h3>🎭 MEDIATOR SYNTHESIS: How the Council Handles Contradiction</h3>
         
         <h4>🌟 Layer 1: Within-Domain Integrations</h4>
         
