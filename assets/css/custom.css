@@ -2544,6 +2544,25 @@ svg .toroid-ring-2 {
   display: inline-block;
 }
 
+.scores-table th .column-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--foreground-tertiary);
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
+.evaluator-column {
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.comparison-column {
+  background: rgba(16, 185, 129, 0.05);
+  border-left: 2px solid var(--mediator-color);
+  border-right: 2px solid var(--mediator-color);
+}
+
 .scores-table th:first-child {
   font-weight: 700;
 }
