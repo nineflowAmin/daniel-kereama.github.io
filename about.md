@@ -51,23 +51,71 @@ title: "About"
     <div class="logo-ticker-container">
       <div class="logo-ticker">
         <div class="logo-ticker-track">
-          <div class="logo-item">Equifax</div>
-          <div class="logo-item">Domino's Pizza</div>
-          <div class="logo-item">Rio Tinto</div>
-          <div class="logo-item">Spark New Zealand</div>
-          <div class="logo-item">Automated Electrics</div>
-          <div class="logo-item">Pipefish</div>
-          <div class="logo-item">GBST</div>
-          <div class="logo-item">Tatts Group</div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/equifax.svg' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Equifax</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/dominos.svg' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Domino's Pizza</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/rio-tinto.svg' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Rio Tinto</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/spark-nz.svg' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Spark New Zealand</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/automated-electrics.svg' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Automated Electrics</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/pipefish.svg' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Pipefish</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/gbst.svg' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">GBST</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/tatts-group.svg' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Tatts Group</span>
+          </div>
           <!-- Duplicate for seamless loop -->
-          <div class="logo-item">Equifax</div>
-          <div class="logo-item">Domino's Pizza</div>
-          <div class="logo-item">Rio Tinto</div>
-          <div class="logo-item">Spark New Zealand</div>
-          <div class="logo-item">Automated Electrics</div>
-          <div class="logo-item">Pipefish</div>
-          <div class="logo-item">GBST</div>
-          <div class="logo-item">Tatts Group</div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/equifax.svg' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Equifax</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/dominos.svg' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Domino's Pizza</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/rio-tinto.svg' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Rio Tinto</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/spark-nz.svg' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Spark New Zealand</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/automated-electrics.svg' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Automated Electrics</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/pipefish.svg' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Pipefish</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/gbst.svg' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">GBST</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/tatts-group.svg' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Tatts Group</span>
+          </div>
         </div>
       </div>
     </div>
@@ -970,20 +1018,46 @@ title: "About"
 
 .logo-item {
   flex-shrink: 0;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.company-logo {
+  max-height: 50px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.7);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.logo-item:hover .company-logo {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.logo-fallback {
+  display: none;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--foreground-secondary);
   opacity: 0.7;
-  transition: all 0.3s ease;
   white-space: nowrap;
   font-family: var(--font-display);
   letter-spacing: 0.02em;
 }
 
-.logo-item:hover {
+.logo-item:hover .logo-fallback {
   opacity: 1;
   color: var(--nineflow-primary);
-  transform: scale(1.05);
 }
 
 @keyframes logo-scroll {
