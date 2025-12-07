@@ -595,12 +595,7 @@ title: "About"
     <div class="education-grid">
       <div class="education-item">
         <div class="education-icon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-            <path d="M10 2v20"></path>
-            <path d="M2 12h8"></path>
-          </svg>
+          <img src="{{ '/assets/images/logos/waikato-university.svg' | absolute_url }}" alt="University of Waikato" class="education-logo">
         </div>
         <div class="education-content">
           <strong>BSc (Software Engineering)</strong>
@@ -1047,6 +1042,13 @@ title: "About"
   background: rgba(99, 102, 241, 0.1);
   border-radius: 0.5rem;
   padding: 0.75rem;
+}
+
+.education-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .microsoft-icon {
