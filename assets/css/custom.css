@@ -651,6 +651,7 @@ a:hover {
 }
 
 /* Toroid ring animations - rings spin in opposite directions */
+/* When animated, rings start from 0 degrees and rotate to 360/-360 */
 .toroid-ring-1 {
   animation: toroidRotateClockwise 20s linear infinite;
   transform-origin: 24px 24px;
@@ -662,13 +663,13 @@ a:hover {
 }
 
 @keyframes toroidRotateClockwise {
-  0% { transform: rotate(45deg); }
-  100% { transform: rotate(405deg); }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes toroidRotateCounterclockwise {
-  0% { transform: rotate(-45deg); }
-  100% { transform: rotate(-405deg); }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
 }
 
 /* Neural Grid Background */
