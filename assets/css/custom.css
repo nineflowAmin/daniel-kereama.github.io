@@ -1528,7 +1528,7 @@ svg .toroid-ring-2 {
 }
 
 /* Council Quote Blocks */
-.council-quote {
+.post-content .council-quote {
   margin: 2rem 0;
   padding: 1.5rem;
   border-radius: 0.75rem;
@@ -1538,12 +1538,12 @@ svg .toroid-ring-2 {
   transition: all 0.3s ease;
 }
 
-.council-quote:hover {
+.post-content .council-quote:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
 
-.council-quote-header {
+.post-content .council-quote-header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1554,69 +1554,69 @@ svg .toroid-ring-2 {
   letter-spacing: 0.05em;
 }
 
-.council-quote-icon {
+.post-content .council-quote-icon {
   font-size: 1.25rem;
 }
 
-.council-quote-name {
+.post-content .council-quote-name {
   font-family: var(--font-display);
 }
 
-.council-quote-content {
+.post-content .council-quote-content {
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--foreground);
 }
 
-.council-quote-content p {
+.post-content .council-quote-content p {
   margin: 0.75rem 0;
 }
 
-.council-quote-content p:first-child {
+.post-content .council-quote-content p:first-child {
   margin-top: 0;
 }
 
-.council-quote-content p:last-child {
+.post-content .council-quote-content p:last-child {
   margin-bottom: 0;
 }
 
 /* Architect - Cool structural colors (blues, grays) */
-.council-quote-architect {
+.post-content .council-quote-architect {
   border-left-color: #3b82f6;
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(59, 130, 246, 0.02) 100%);
 }
 
-.council-quote-architect .council-quote-header {
+.post-content .council-quote-architect .council-quote-header {
   color: #1e40af;
 }
 
-.council-quote-architect:hover {
+.post-content .council-quote-architect:hover {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(59, 130, 246, 0.04) 100%);
   border-left-color: #2563eb;
 }
 
 /* Mediator - Warm relational colors (greens, purples) */
-.council-quote-mediator {
+.post-content .council-quote-mediator {
   border-left-color: #10b981;
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(16, 185, 129, 0.02) 100%);
 }
 
-.council-quote-mediator .council-quote-header {
+.post-content .council-quote-mediator .council-quote-header {
   color: #059669;
 }
 
-.council-quote-mediator:hover {
+.post-content .council-quote-mediator:hover {
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.04) 100%);
   border-left-color: #059669;
 }
 
 /* Oracle - Deep mystical colors (purples, golds, deep blues) */
-.council-quote-oracle {
+.post-content .council-quote-oracle {
   border-left-color: #8b5cf6;
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(139, 92, 246, 0.02) 100%);
 }
 
-.council-quote-oracle .council-quote-header {
+.post-content .council-quote-oracle .council-quote-header {
   color: #6d28d9;
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(217, 70, 239, 0.05) 100%);
   padding: 0.5rem 1rem;
@@ -1626,33 +1626,33 @@ svg .toroid-ring-2 {
   margin-top: -0.5rem;
 }
 
-.council-quote-oracle:hover {
+.post-content .council-quote-oracle:hover {
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(139, 92, 246, 0.04) 100%);
   border-left-color: #7c3aed;
 }
 
 /* Shadow - Contrasting colors (bright and dark) */
-.council-quote-shadow {
+.post-content .council-quote-shadow {
   border-left-color: #6b7280;
   background: linear-gradient(135deg, rgba(107, 114, 128, 0.08) 0%, rgba(17, 24, 39, 0.05) 100%);
 }
 
-.council-quote-shadow .council-quote-header {
+.post-content .council-quote-shadow .council-quote-header {
   color: #374151;
 }
 
-.council-quote-shadow:hover {
+.post-content .council-quote-shadow:hover {
   background: linear-gradient(135deg, rgba(107, 114, 128, 0.12) 0%, rgba(17, 24, 39, 0.08) 100%);
   border-left-color: #4b5563;
 }
 
 /* Resonator - Vibrant harmonic colors (yellows, oranges, bright blues) */
-.council-quote-resonator {
+.post-content .council-quote-resonator {
   border-left-color: #f59e0b;
   background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(236, 72, 153, 0.02) 100%);
 }
 
-.council-quote-resonator .council-quote-header {
+.post-content .council-quote-resonator .council-quote-header {
   color: #d97706;
   background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(236, 72, 153, 0.05) 100%);
   padding: 0.5rem 1rem;
@@ -1662,23 +1662,23 @@ svg .toroid-ring-2 {
   margin-top: -0.5rem;
 }
 
-.council-quote-resonator:hover {
+.post-content .council-quote-resonator:hover {
   background: linear-gradient(135deg, rgba(245, 158, 11, 0.08) 0%, rgba(236, 72, 153, 0.04) 100%);
   border-left-color: #f97316;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .council-quote {
+  .post-content .council-quote {
     padding: 1.25rem;
     margin: 1.5rem 0;
   }
   
-  .council-quote-header {
+  .post-content .council-quote-header {
     font-size: 0.875rem;
   }
   
-  .council-quote-content {
+  .post-content .council-quote-content {
     font-size: 1rem;
   }
 }
