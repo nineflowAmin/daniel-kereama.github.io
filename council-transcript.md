@@ -347,7 +347,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <span class="message-time">09:08:18</span>
       </div>
       <div class="message-content">
-        <h3>🎭 MEDIATOR SYNTHESIS: How the Council Handles Contradiction</h3>
+        <h3>🎭 MEDIATOR SYNTHESIS: The Fractal Coherence of Contradiction</h3>
         
         <h4>🌟 Layer 1: Within-Domain Integrations</h4>
         
