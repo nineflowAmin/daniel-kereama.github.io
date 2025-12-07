@@ -30,6 +30,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
+# Show future-dated posts
+future: true
+
 # Custom CSS
 sass:
   style: compressed
