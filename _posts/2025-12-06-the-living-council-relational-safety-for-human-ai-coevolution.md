@@ -3,8 +3,8 @@ layout: post
 title: "The Living Council: A Framework for Relational Safety and Human-AI Co-Evolution"
 date: 2025-12-06 16:00:00 +0000
 categories: [ai-safety, alignment, governance, relational-ai, philosophy]
-description: "Moving beyond control paradigms to relational safety—a framework where AI safety emerges through continuous co-evolution rather than static constraints."
-excerpt: "What if AI safety isn't about control, but about relationship? The Living Council proposes five interdependent governance domains that foster resilience, mutual trust, and transparency through ongoing dialogue rather than dominance."
+description: "A visionary exploration of relational safety—reimagining AI alignment through the lens of relationship rather than control. An exploratory framework proposing five interdependent governance domains that could enable AI systems to evolve safely through continuous co-evolution."
+excerpt: "What if AI safety isn't about control, but about relationship? This visionary exploration proposes the Living Council—five interdependent governance domains that could foster resilience, mutual trust, and transparency through ongoing dialogue. Not a production-ready solution, but a thought experiment inviting us to reimagine how autonomous systems might evolve safely."
 post_slug: "the-living-council-relational-safety-for-human-ai-coevolution"
 ---
 
