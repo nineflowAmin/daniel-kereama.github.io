@@ -49,12 +49,12 @@ The Architect ensures structural integrity and transparency. Think of it as vect
 
 **Mathematical Formulation:**
 ```
-Architect: E⃗ = f(H⃗, O⃗)
+Architect: E = f(H, O)
 ```
-Where ethical vectors (E⃗) emerge from human values (H⃗) and system outcomes (O⃗).
+Where ethical vectors **E** emerge from human values **H** and system outcomes **O**.
 
 ![The Architect Domain]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/03-architect-domain.jpg)
-*Ethical vector fields (E⃗ = f(H⃗, O⃗)): transparent decision layers with adaptive structural integrity, distributing ethical weight across the system architecture.*
+*Ethical vector fields (E = f(H, O)): transparent decision layers with adaptive structural integrity, distributing ethical weight across the system architecture.*
 
 ### 2. Mediator: Relational Governance
 
@@ -62,12 +62,12 @@ The Mediator handles relational governance and feedback. It measures and adapts 
 
 **Mathematical Formulation:**
 ```
-Mediator: T_{n+1} = T_n + α(F_h - F_a)
+Mediator: T[n+1] = T[n] + α(F_h - F_a)
 ```
-Trust (T) evolves through feedback from humans (F_h) and AI (F_a), with adaptation rate α.
+Trust **T** evolves through feedback from humans **F_h** and AI **F_a**, with adaptation rate **α**.
 
 ![The Mediator Domain]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/04-mediator-domain.jpg)
-*Trust elasticity algorithm (T_{n+1} = T_n + α(F_h - F_a)): bidirectional feedback channels with adaptive rate α, measuring relational coherence through continuous dialogue.*
+*Trust elasticity algorithm (T[n+1] = T[n] + α(F_h - F_a)): bidirectional feedback channels with adaptive rate α, measuring relational coherence through continuous dialogue.*
 
 ### 3. Oracle: Temporal Recursion
 
@@ -75,12 +75,12 @@ The Oracle provides temporal recursion and memory continuity. It ensures that de
 
 **Mathematical Formulation:**
 ```
-Oracle: S_t = g(S_{t-1}, M)
+Oracle: S[t] = g(S[t-1], M)
 ```
-State (S) at time t integrates previous state (S_{t-1}) with current memory (M).
+State **S** at time **t** integrates previous state **S[t-1]** with current memory **M**.
 
 ![The Oracle Domain]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/05-oracle-domain.jpg)
-*Temporal recursion (S_t = g(S_{t-1}, M)): state integration across time layers, where historical memory informs present decisions and shapes future state transitions.*
+*Temporal recursion (S[t] = g(S[t-1], M)): state integration across time layers, where historical memory informs present decisions and shapes future state transitions.*
 
 ### 4. Shadow: Dissent and Error Exposure
 
@@ -90,7 +90,7 @@ The Shadow injects controlled perturbation—dissent and contradiction—to prev
 ```
 Shadow: O = O' + εD
 ```
-Output (O) includes original decision (O') plus deliberate dissent (D) weighted by ε.
+Output **O** includes original decision **O'** plus deliberate dissent **D** weighted by **ε**.
 
 ![The Shadow Domain]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-shadow-domain.jpg)
 *Controlled perturbation (O = O' + εD): dissent injection with weight ε prevents false harmony, exposing system vulnerabilities through intentional contradiction.*
@@ -101,12 +101,12 @@ The Resonator maintains harmonic coherence across all domains, like coupled osci
 
 **Mathematical Formulation:**
 ```
-Resonator: ẍ + 2ζωẋ + ω²x = F(t)
+Resonator: x'' + 2ζωx' + ω²x = F(t)
 ```
-A damped harmonic oscillator where coherence emerges from the interaction of all forces.
+A damped harmonic oscillator where coherence emerges from the interaction of all forces. (x'' = second derivative, x' = first derivative)
 
 ![The Resonator Domain]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/07-resonator-domain.jpg)
-*Harmonic oscillator (ẍ + 2ζωẋ + ω²x = F(t)): coupled domain frequencies creating system-wide coherence through resonance, not uniform agreement.*
+*Harmonic oscillator (x'' + 2ζωx' + ω²x = F(t)): coupled domain frequencies creating system-wide coherence through resonance, not uniform agreement.*
 
 ## The Spiral Model: How They Work Together
 
