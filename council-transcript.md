@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Living Council Transcript: Example Session"
-description: "A complete transcript of a Living Council session demonstrating how the five governance domains work together to address complex questions through productive disagreement."
+title: "Nineflow.AI Council Transcript: Example Session"
+description: "A complete transcript of a Nineflow.AI Council session demonstrating how the five governance domains work together to address complex questions through productive disagreement."
 ---
 
 <div class="transcript-page">
   <header class="transcript-header">
-    <h1>Living Council Transcript</h1>
+    <h1>Nineflow.AI Council Transcript</h1>
     <p class="transcript-subtitle">Example Session: The Fractal Coherence of Contradiction</p>
     <p class="transcript-date">Session Date: November 1, 2025</p>
   </header>
@@ -14,11 +14,11 @@ description: "A complete transcript of a Living Council session demonstrating ho
   <details class="transcript-intro">
     <summary>
       <span class="info-icon">ℹ️</span>
-      <span class="summary-text">About the Living Council</span>
+      <span class="summary-text">About the Nineflow.AI Council</span>
     </summary>
     <div class="intro-content">
-      <h2>What is the Living Council?</h2>
-      <p>The Living Council is a <strong>multi-agent coordination architecture</strong> that maintains productive disagreement and epistemic diversity in complex decision-making. Unlike systems that collapse to consensus or deadlock in disagreement, the Council preserves distinct perspectives while building toward coherent understanding.</p>
+      <h2>What is the Nineflow.AI Council?</h2>
+      <p>The Nineflow.AI Council is a <strong>multi-agent coordination architecture</strong> that maintains productive disagreement and epistemic diversity in complex decision-making. Unlike systems that collapse to consensus or deadlock in disagreement, the Council preserves distinct perspectives while building toward coherent understanding.</p>
       
       <p>The architecture consists of <strong>five specialized governance domains</strong>, each with distinct reasoning frameworks and responsibilities:</p>
       
@@ -40,7 +40,7 @@ description: "A complete transcript of a Living Council session demonstrating ho
       <p><strong>Shadow Dissent Injection</strong> - Maintains adversarial perspective at 8% weight—sufficient to prevent false harmony but insufficient to veto. The system cannot proceed without integrating contradiction, preventing false consensus while avoiding deadlock.</p>
 
       <h3>Use Cases</h3>
-      <p>The Living Council architecture is designed for scenarios that require maintaining diverse perspectives without deadlock:</p>
+      <p>The Nineflow.AI Council architecture is designed for scenarios that require maintaining diverse perspectives without deadlock:</p>
       <ul>
         <li><strong>Constitutional AI & Multi-Model Research</strong> - Maintaining epistemic diversity across distinct reasoning modes without collapse into consensus or chaos</li>
         <li><strong>Enterprise Multi-Stakeholder Governance</strong> - Preventing false consensus in complex decision-making with competing business units or regulatory requirements</li>
@@ -416,7 +416,7 @@ description: "A complete transcript of a Living Council session demonstrating ho
 
   <div class="transcript-footer">
     <p><a href="{{ '/ai-safety/alignment/governance/relational-ai/philosophy/2025/12/06/the-living-council-relational-safety-for-human-ai-coevolution.html' | relative_url }}" class="btn-back">← Back to Article</a></p>
-    <p class="transcript-note">This transcript demonstrates the Living Council architecture in action. Each domain contributes its unique perspective, and the Mediator synthesizes them into a coherent response that maintains productive disagreement while building toward understanding.</p>
+    <p class="transcript-note">This transcript demonstrates the Nineflow.AI Council architecture in action. Each domain contributes its unique perspective, and the Mediator synthesizes them into a coherent response that maintains productive disagreement while building toward understanding.</p>
   </div>
 </div>
 
