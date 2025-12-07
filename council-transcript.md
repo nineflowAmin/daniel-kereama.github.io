@@ -415,9 +415,12 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
   </div>
 
   <div class="llm-evaluation-section">
-    <h2>AI Evaluation Scores</h2>
-    <p class="evaluation-intro">Four major LLMs evaluated this Council transcript across seven dimensions. The scores below compare the multi-agent Council approach (5 agents) against a single GPT-5.1 baseline. Explore the scores and add your own ratings.</p>
-    
+    <div class="evaluation-framing">
+      <h2>When One Perspective Isn't Enough</h2>
+      <p class="evaluation-intro">Some questions are so slippery that a single perspective—no matter how brilliant—misses entire dimensions.</p>
+      <p class="evaluation-intro">Here's what happens when five specialized minds hold the same question together.</p>
+    </div>
+
     <div class="score-explanation">
       <h3>📊 How to Read the Scores</h3>
       <p>Each dimension is rated on a <strong>0–10 scale</strong>, where:</p>
@@ -426,7 +429,14 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <li><strong>5</strong> = adequate</li>
         <li><strong>10</strong> = exceptional or near-ideal</li>
       </ul>
-      <p>The scores reflect qualitative judgment of the full session transcript (all agents + mediator synthesis). <strong>Comparison is against a baseline single GPT-5.1 LLM</strong>. The Council (5 agents) shows stronger emergent, relational intelligence, while single GPT-5.1 is more efficient but less deep. Lower scores in "Efficiency / Resource Cost" for the Council reflect higher computational overhead—trade-offs inherent to multi-agent systems.</p>
+      <div class="comparison-context">
+        <p><strong>The Comparison:</strong></p>
+        <ul>
+          <li><strong>Single GPT-5.1 (Baseline):</strong> Fast, efficient, excellent for straightforward queries. Represents what a strong single LLM can achieve.</li>
+          <li><strong>Council (5 Specialized Agents):</strong> Something qualitatively different. Multiple perspectives held simultaneously, productive disagreement, emergent synthesis. Worth the extra cost for complex, multi-stakeholder questions.</li>
+        </ul>
+        <p class="key-insight">The scores below show where the Council's multi-perspective approach creates value that a single mind—no matter how capable—cannot access alone. Lower scores in "Efficiency / Resource Cost" reflect the computational overhead of maintaining five specialized agents—a trade-off that makes sense for questions that require epistemic diversity.</p>
+      </div>
       <p class="caveat-note"><em>Because style, nuance and subjectivity influence scoring, these ratings are indicative, not absolute—we welcome you to run your own analysis using the same framework (see prompt section below).</em></p>
     </div>
 
@@ -492,8 +502,8 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     </div>
 
     <div class="scores-table-container">
-      <h3>Detailed Scores: Council Transcript Evaluations</h3>
-      <p class="table-description">All scores below rate the Council's output performance. Five LLMs (GROK, Claude, Gemini, GPT-5, DeepSeek) evaluated the Council transcript. The Council and Single GPT-5.1 columns provide a direct comparison baseline.</p>
+      <h3>Detailed Scores: Multi-Perspective vs Single-Perspective</h3>
+      <p class="table-description">Five LLMs (GROK, Claude, Gemini, GPT-5, DeepSeek) evaluated this Council transcript. The scores compare the Council's multi-agent synthesis against a single GPT-5.1 baseline. Green highlights indicate where multiple perspectives create value beyond what a single mind can achieve.</p>
       <table class="scores-table">
         <thead>
           <tr>
