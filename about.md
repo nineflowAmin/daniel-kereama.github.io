@@ -6,56 +6,329 @@ title: "About"
 <div class="about-page">
   <div class="about-hero">
     <div class="about-image">
-      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-image-large">
+      <img src="{{ '/assets/images/avatar.png' | absolute_url }}" alt="{{ site.author.name }}" class="profile-image-large">
     </div>
     <div class="about-content">
-      <h1 class="text-gradient-nineflow">About Daniel Kereama</h1>
+      <h1 class="text-gradient-nineflow">Daniel Kereama</h1>
+      <p class="about-title">AI Platform Architect | Principal Cloud/Software Architect</p>
+      <p class="about-subtitle">Multi-Agent Systems & LLM Orchestration</p>
       <p class="lead">
-        Welcome to my technical blog! I'm passionate about building intelligent systems, 
-        exploring AI agent architectures, and sharing insights from my journey in software development.
+        Principal AI & Platform Architect with 20+ years delivering enterprise-grade systems. 
+        Currently architecting production-ready multi-agent AI platforms and exploring the frontier 
+        of collective intelligence through research and development.
+      </p>
+      <div class="about-links">
+        <a href="https://www.linkedin.com/in/daniel-kereama/" target="_blank" rel="noopener noreferrer" class="about-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          Connect on LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="section-content">
+      Principal AI & Platform Architect with 20+ years delivering enterprise-grade systems and, 
+      most recently, architecting a full end-to-end LLM + multi-agent AI platform deployed on GKE. 
+      Deep hands-on capability across AI orchestration, distributed systems, cloud-native architecture, 
+      and enterprise transformation. Adept at engaging senior stakeholders, shaping AI strategy, and 
+      delivering proof-of-value platforms that accelerate organizational AI adoption.
+    </p>
+    <p class="section-content">
+      Currently operating <strong class="text-gradient-nineflow">Nineflow.AI</strong> as an R&D practice 
+      to keep technical capability at the frontier while seeking consulting/contract engagements applying 
+      practical AI platform architecture to real-world enterprise programmes.
+    </p>
+  </div>
+
+  <div class="about-section highlight-section">
+    <div class="section-header">
+      <div class="toroid-icon">
+        <img src="{{ '/assets/images/toroid-logo.svg' | absolute_url }}" alt="Nineflow.AI" class="toroid-small">
+      </div>
+      <div>
+        <h2 class="section-title">Nineflow.AI Research Platform</h2>
+        <p class="section-subtitle">Production-Ready Multi-Agent Collective Intelligence</p>
+      </div>
+    </div>
+    
+    <div class="nineflow-content">
+      <p class="section-content">
+        <strong class="text-gradient-nineflow">Nineflow.AI</strong> is a production-ready framework for 
+        multi-agent collective intelligence—a system where specialized AI agents collaborate to solve 
+        complex problems that no single agent could address alone. This research platform represents 
+        years of exploration into emergent AI behavior, dimensional intelligence, and the intersection 
+        of psychology and system physics.
+      </p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Multi-Agent Collaboration</h3>
+          <p>Five specialized agents (Mediator, Oracle, Architect, Resonator, Shadow) work together, 
+          each bringing distinct perspectives to complex problems. Dynamic agent selection based on 
+          query complexity optimizes for both quality and efficiency.</p>
+        </div>
+        <div class="feature-card">
+          <h3>12D Dimensional Intelligence</h3>
+          <p>A novel framework for analyzing content across 12 dimensions: Vision, Structure, Semantic, 
+          Temporal, Emotional, Relational, Ethical, Harmony, Purpose, Integration, Awareness, and 
+          Dissonance. This enables sophisticated understanding and personalization.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Intelligent Orchestration</h3>
+          <p>Model-agnostic routing with adaptive selection reducing vendor lock-in and cost by 40-60%. 
+          Supports GPT-5, GPT-4o, and Ollama with intelligent complexity-based model selection.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Persistent Memory</h3>
+          <p>Vector-based memory system enabling agents to remember past interactions, learn user 
+          preferences, and provide increasingly personalized experiences through 12D profile tracking.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Production Architecture</h3>
+          <p>Enterprise-grade microservices architecture with 17 operational services deployed on 
+          Kubernetes (GKE), with comprehensive health monitoring, observability, and real-time 
+          streaming via SignalR.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Real-World Applications</h3>
+          <p>Strategic decision support, complex problem solving, personalized AI assistants, research 
+          and analysis, team collaboration tools, creative ideation, risk analysis, and system design.</p>
+        </div>
+      </div>
+
+      <div class="tech-stack">
+        <h3>Technology Stack</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">.NET 8</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">React/TypeScript</span>
+          <span class="tech-tag">Kubernetes (GKE)</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">Terraform</span>
+          <span class="tech-tag">SignalR</span>
+          <span class="tech-tag">gRPC</span>
+          <span class="tech-tag">OpenAI/Anthropic APIs</span>
+          <span class="tech-tag">GitHub Actions</span>
+          <span class="tech-tag">Docker</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h2 class="section-title">Core Competencies</h2>
+    <div class="competencies-grid">
+      <div class="competency-category">
+        <h3>AI & Platform Architecture</h3>
+        <ul>
+          <li>LLM Orchestration & Routing</li>
+          <li>Multi-Agent Systems</li>
+          <li>AI Platform Design</li>
+          <li>Model Context Protocol (MCP)</li>
+          <li>Streaming Architectures</li>
+          <li>Ethical AI Principles</li>
+        </ul>
+      </div>
+      <div class="competency-category">
+        <h3>Enterprise Architecture</h3>
+        <ul>
+          <li>Contextual/Conceptual/Logical Architecture</li>
+          <li>Solution Architecture</li>
+          <li>Enterprise Integration Patterns</li>
+          <li>Technology Roadmapping</li>
+          <li>Stakeholder Engagement</li>
+          <li>Business Case Development</li>
+        </ul>
+      </div>
+      <div class="competency-category">
+        <h3>Technical Leadership</h3>
+        <ul>
+          <li>Cloud-Native Architecture (GKE/AWS)</li>
+          <li>Microservices Design</li>
+          <li>Infrastructure as Code (Terraform)</li>
+          <li>CI/CD Pipeline Design</li>
+          <li>Performance Optimization</li>
+          <li>POC Development & Validation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h2 class="section-title">Key Professional Experience</h2>
+    
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Nineflow.AI | Principal Architect & Founder</h3>
+        <span class="experience-date">Oct 2025 – Present</span>
+      </div>
+      <p class="experience-location">Tauranga, New Zealand</p>
+      <p class="experience-description">
+        End-to-end architecture, implementation, and deployment of a production-ready AI platform 
+        validating architectural patterns for LLM orchestration, multi-agent systems, and enterprise-grade 
+        cloud deployment.
+      </p>
+      <ul class="experience-achievements">
+        <li>Architected a 17-service AI platform (6 .NET 8, 3 Python, 2 React) with intelligent LLM routing 
+        gateway supporting GPT-5, GPT-4o, and Ollama</li>
+        <li>Designed model-agnostic routing with &lt;500ms adaptive selection reducing vendor lock-in and cost</li>
+        <li>Implemented multi-agent orchestration system enabling specialized agents to collaboratively solve 
+        complex tasks</li>
+        <li>Deployed complete platform to Google Kubernetes Engine (GKE) using Terraform IaC, Kustomize, 
+        and GitHub Actions CI/CD</li>
+        <li>Delivered functional multi-agent AI chat platform to live users within 2 months, demonstrating 
+        rapid prototyping and practical execution</li>
+        <li>Embedded responsible AI governance: transparency, auditability, and human-centred decision boundaries</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Automated Electrics | Senior R&D Software Engineer – AI & Computer Vision</h3>
+        <span class="experience-date">Mar 2024 – Jul 2025</span>
+      </div>
+      <p class="experience-location">Tauranga, New Zealand</p>
+      <p class="experience-description">
+        Led architecture and implementation of high-throughput industrial imaging platform for AI-based 
+        lumber defect detection during global timber industry's adoption of AI-powered quality control systems.
+      </p>
+      <ul class="experience-achievements">
+        <li>Architected ImageAcquisitionService processing 360 gRPC requests/sec from 16 cameras at 92 FPS 
+        with sub-5ms capture times</li>
+        <li>Developed YOLOv8-based defect detection pipeline, achieving 85-90 MAP for real-time lumber grading</li>
+        <li>Designed event-driven, multithreaded data pipelines with ring buffers and fault-resilient coordination</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Equifax | Lead Quality Assurance Engineer - Automation</h3>
+        <span class="experience-date">May 2022 – Dec 2022</span>
+      </div>
+      <p class="experience-location">Auckland, New Zealand</p>
+      <p class="experience-description">
+        Led technical recovery of $10M+ New Zealand workstream within Equifax's historic US$1.5B+ global 
+        cloud transformation—part of the company's mission to become the world's first cloud-native credit 
+        reporting company.
+      </p>
+      <ul class="experience-achievements">
+        <li>Designed and secured executive sign-off for parallel testing framework validating credit-scoring 
+        outputs across mainframe and cloud environments</li>
+        <li>Architected production test-data pipeline generating anonymized PII datasets with encryption controls</li>
+        <li>Delivered migration release on schedule, achieving 98% pass rate on production vs. cloud-migrated 
+        defect validation</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Spark New Zealand | Lead Solution Architect</h3>
+        <span class="experience-date">Nov 2018 – Oct 2019</span>
+      </div>
+      <p class="experience-location">Waikato, New Zealand</p>
+      <p class="experience-description">
+        Provided architectural guidance for business systems integration supporting Igneo Infrastructure 
+        Partners' consolidation of FirstGas and associated energy assets into Clarus Group—a $2B+ energy 
+        infrastructure portfolio.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Domino's Pizza Enterprises | Senior Consultant</h3>
+        <span class="experience-date">Dec 2016 – Jun 2017</span>
+      </div>
+      <p class="experience-location">Brisbane, Australia</p>
+      <p class="experience-description">
+        Led frontend development for "Order Anywhere" project—pioneering geolocation-based pizza ordering 
+        that evolved into Domino's Hotspots (150,000+ locations). Spearheaded $1M+ CI improvement initiative 
+        optimizing build pipelines.
       </p>
     </div>
   </div>
-  
-  <div class="about-details">
-    <section>
-      <h2>What I Write About</h2>
-      <ul>
-        <li><strong>AI Agent Architecture</strong> - Designing and building intelligent agent systems</li>
-        <li><strong>Multi-Agent Systems</strong> - Exploring collective intelligence and agent collaboration</li>
-        <li><strong>Software Development</strong> - Best practices, patterns, and real-world implementations</li>
-        <li><strong>Technical Deep Dives</strong> - Complex topics explained in detail</li>
-      </ul>
-    </section>
-    
-    <section>
-      <h2>Nineflow.AI</h2>
-      <p>
-        This blog is powered by <strong class="text-gradient-nineflow">Nineflow.AI</strong>, 
-        a platform focused on collective intelligence and multi-agent systems. The toroid logo 
-        represents the interconnected nature of intelligent agents working together.
-      </p>
-      <div class="toroid-display">
-        <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI Toroid Logo" class="toroid-large">
+
+  <div class="about-section">
+    <h2 class="section-title">Key Differentiators</h2>
+    <div class="differentiators-grid">
+      <div class="differentiator-item">
+        <strong>Hands-On Technical Depth + Architectural Breadth</strong>
+        <p>Progressed from developer → senior developer → solution architect → principal architect over 20 years, 
+        combining deep implementation expertise with strategic architectural thinking.</p>
       </div>
-    </section>
+      <div class="differentiator-item">
+        <strong>Proven AI Architecture Delivery</strong>
+        <p>Production-deployed AI platform with 17-service microservices architecture, multi-agent orchestration, 
+        and LLM routing delivered in 2 months.</p>
+      </div>
+      <div class="differentiator-item">
+        <strong>Cross-Layer Architecture Expertise</strong>
+        <p>Demonstrated capability across contextual (business), conceptual (architecture), and logical 
+        (implementation) layers—translating business vision into executable technical solutions.</p>
+      </div>
+      <div class="differentiator-item">
+        <strong>Practitioner-Led Architecture</strong>
+        <p>Validates architectural decisions through hands-on implementation—recently built entire AI platforms 
+        from infrastructure through backend to frontend.</p>
+      </div>
+      <div class="differentiator-item">
+        <strong>Stakeholder Engagement at All Levels</strong>
+        <p>Track record securing executive sign-off for technical initiatives while maintaining credibility with 
+        development teams through deep technical knowledge.</p>
+      </div>
+      <div class="differentiator-item">
+        <strong>Ethical AI Leadership</strong>
+        <p>Embedded responsible AI principles (transparency, accountability, dignity) into architectural design, 
+        establishing governance frameworks that balance innovation with safety.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-section">
+    <h2 class="section-title">Education & Professional Development</h2>
+    <ul class="education-list">
+      <li><strong>BSc (Software Engineering)</strong>, University of Waikato (2005)</li>
+      <li><strong>Microsoft Certified Professional (MCP)</strong></li>
+      <li><strong>Continuous Professional Development</strong> in Advanced AI/ML Technologies, Cloud-Native Architecture, 
+      and Infrastructure as Code</li>
+    </ul>
+  </div>
+
+  <div class="about-section contact-section">
+    <h2 class="section-title">Connect</h2>
+    <p class="section-content">
+      I'm actively seeking 6–18 month consulting or principal architecture engagements focused on AI platforms, 
+      LLM orchestration, enterprise adoption, or multi-agent system integration.
+    </p>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/daniel-kereama/" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+    </div>
   </div>
 </div>
 
 <style>
 .about-page {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 
 .about-hero {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 3rem;
   margin-bottom: 4rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
+  padding-bottom: 3rem;
+  border-bottom: 2px solid var(--border);
 }
 
 .about-image {
@@ -63,71 +336,412 @@ title: "About"
 }
 
 .profile-image-large {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center center;
   border: 4px solid var(--border);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  display: block;
 }
 
 .about-content {
   flex: 1;
 }
 
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.about-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+}
+
+.about-subtitle {
+  font-size: 1rem;
+  color: var(--foreground-secondary);
+  margin-bottom: 1.5rem;
+}
+
 .lead {
   font-size: 1.125rem;
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--foreground-secondary);
+  margin-bottom: 1.5rem;
 }
 
-.about-details {
-  display: grid;
-  gap: 3rem;
+.about-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.about-details section {
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--nineflow-primary);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: all 0.2s ease;
+}
+
+.about-link:hover {
+  background: rgba(99, 102, 241, 0.12);
+  border-color: rgba(99, 102, 241, 0.3);
+  transform: translateY(-1px);
+}
+
+.about-section {
+  margin-bottom: 4rem;
+  padding: 2.5rem;
   background: var(--background-secondary);
-  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.highlight-section {
+  background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background) 100%);
+  border: 2px solid var(--nineflow-primary);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.1);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.toroid-icon {
+  flex-shrink: 0;
+}
+
+.toroid-small {
+  width: 64px;
+  height: 64px;
+  filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+  font-family: var(--font-display);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--foreground-secondary);
+  font-weight: 500;
+}
+
+.section-content {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--foreground-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.section-content:last-child {
+  margin-bottom: 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: var(--background);
   border-radius: 0.75rem;
   border: 1px solid var(--border);
+  transition: all 0.2s ease;
 }
 
-.about-details h2 {
+.feature-card:hover {
+  border-color: var(--nineflow-primary);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+.feature-card h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
+.feature-card p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--foreground-secondary);
+  margin: 0;
+}
+
+.tech-stack {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.tech-stack h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
   margin-bottom: 1rem;
   color: var(--foreground);
 }
 
-.about-details ul {
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground);
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background: var(--nineflow-primary);
+  color: white;
+  border-color: var(--nineflow-primary);
+  transform: translateY(-1px);
+}
+
+.competencies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.competency-category h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.competency-category ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.about-details li {
-  padding: 0.75rem 0;
+.competency-category li {
+  padding: 0.5rem 0;
+  color: var(--foreground-secondary);
   border-bottom: 1px solid var(--border);
+  font-size: 0.9375rem;
 }
 
-.about-details li:last-child {
+.competency-category li:last-child {
   border-bottom: none;
 }
 
-.toroid-display {
-  text-align: center;
-  margin-top: 2rem;
+.experience-item {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
 }
 
-.toroid-large {
-  width: 96px;
-  height: 96px;
-  filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.experience-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.experience-date {
+  font-size: 0.9375rem;
+  color: var(--foreground-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.experience-location {
+  font-size: 0.9375rem;
+  color: var(--foreground-secondary);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experience-description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--foreground-secondary);
+  margin-bottom: 1rem;
+}
+
+.experience-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-achievements li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--foreground-secondary);
+  line-height: 1.6;
+}
+
+.experience-achievements li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--nineflow-primary);
+  font-weight: bold;
+}
+
+.differentiators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.differentiator-item {
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.differentiator-item strong {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.75rem;
+}
+
+.differentiator-item p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--foreground-secondary);
+  margin: 0;
+}
+
+.education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--foreground-secondary);
+  line-height: 1.6;
+}
+
+.education-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-section {
+  text-align: center;
+  background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background) 100%);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: var(--nineflow-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.contact-link:hover {
+  background: var(--nineflow-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
 }
 
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+
+  .feature-grid,
+  .competencies-grid,
+  .differentiators-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    padding: 1.5rem;
   }
 }
 </style>
-
