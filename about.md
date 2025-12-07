@@ -714,9 +714,8 @@ title: "About"
       <div class="education-item">
         <div class="education-icon">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-            <path d="M2 17l10 5 10-5"></path>
-            <path d="M2 12l10 5 10-5"></path>
+            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44L2.5 18.5a2.5 2.5 0 0 1 0-3l4.54-1.44A2.5 2.5 0 0 1 9.5 2Z"></path>
+            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44L21.5 18.5a2.5 2.5 0 0 0 0-3l-4.54-1.44A2.5 2.5 0 0 0 14.5 2Z"></path>
           </svg>
         </div>
         <div class="education-content">
