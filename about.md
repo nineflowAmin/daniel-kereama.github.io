@@ -83,6 +83,10 @@ title: "About"
             <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Tatts Group</span>
           </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Zespri</span>
+          </div>
           <!-- Duplicate for seamless loop -->
           <div class="logo-item">
             <img src="{{ '/assets/images/logos/equifax.png' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
@@ -115,6 +119,59 @@ title: "About"
           <div class="logo-item">
             <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Tatts Group</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="logo-fallback">Zespri</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Career Timeline -->
+  <div class="about-section timeline-section">
+    <h2 class="section-title">Career Timeline & Industry Coverage</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-period">2014-2017</div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Software Development & Consulting</h3>
+          <div class="timeline-industries">
+            <span class="industry-tag">Finance (GBST)</span>
+            <span class="industry-tag">Retail (Domino's)</span>
+          </div>
+          <div class="timeline-focus">
+            <strong>Focus:</strong> Technical depth & delivery
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-period">2017-2019</div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Solution & Enterprise Architecture</h3>
+          <div class="timeline-industries">
+            <span class="industry-tag">Mining (Rio Tinto)</span>
+            <span class="industry-tag">Energy (Spark NZ for Clarus)</span>
+          </div>
+          <div class="timeline-focus">
+            <strong>Focus:</strong> Cross-system integration & stakeholder management
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-period">2022-2025</div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Lead & Principal Architecture</h3>
+          <div class="timeline-industries">
+            <span class="industry-tag">Finance (Equifax)</span>
+            <span class="industry-tag">Industrial Tech (Automated Electrics)</span>
+            <span class="industry-tag">AI Platform (NineFlow.AI)</span>
+          </div>
+          <div class="timeline-focus">
+            <strong>Focus:</strong> Cloud transformation, AI strategy & platform delivery
           </div>
         </div>
       </div>
