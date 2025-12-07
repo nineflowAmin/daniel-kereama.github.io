@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toroid Animation Test</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #1a1a1a;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .test-container {
+            text-align: center;
+            color: white;
+        }
+        
+        /* Toroid ring animations - rings spin in opposite directions */
+        svg .toroid-ring-1 {
+            animation: toroidRotateClockwise 20s linear infinite;
+            transform-origin: 24px 24px;
+        }
+        
+        svg .toroid-ring-2 {
+            animation: toroidRotateCounterclockwise 15s linear infinite;
+            transform-origin: 24px 24px;
+        }
+        
+        @keyframes toroidRotateClockwise {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes toroidRotateCounterclockwise {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(-360deg); }
+        }
+        
+        .toroid-test {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Toroid Animation Test</h1>
+        <p>Rings should spin in opposite directions</p>
+        <div>
+            <svg width="200" height="200" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="toroid-test">
+                <defs>
+                    <linearGradient id="toroidGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00FFFF" />
+                        <stop offset="50%" stop-color="#FF00FF" />
+                        <stop offset="100%" stop-color="#FFD700" />
+                    </linearGradient>
+                    <linearGradient id="toroidGradient2" x1="100%" y1="100%" x2="0%" y2="0%">
+                        <stop offset="0%" stop-color="#FFD700" />
+                        <stop offset="50%" stop-color="#FF00FF" />
+                        <stop offset="100%" stop-color="#00FFFF" />
+                    </linearGradient>
+                </defs>
+                <ellipse
+                    class="toroid-ring-1"
+                    cx="24"
+                    cy="24"
+                    rx="20"
+                    ry="8"
+                    fill="none"
+                    stroke="url(#toroidGradient1)"
+                    stroke-width="3"
+                    transform-origin="24 24"
+                />
+                <ellipse
+                    class="toroid-ring-2"
+                    cx="24"
+                    cy="24"
+                    rx="20"
+                    ry="8"
+                    fill="none"
+                    stroke="url(#toroidGradient2)"
+                    stroke-width="2.5"
+                    opacity="0.8"
+                    transform-origin="24 24"
+                />
+            </svg>
+        </div>
+        <p>Ring 1: Clockwise (20s) | Ring 2: Counterclockwise (15s)</p>
+    </div>
+</body>
+</html>
+

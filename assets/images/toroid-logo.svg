@@ -20,7 +20,6 @@
     fill="none"
     stroke="url(#toroidGradient1)"
     stroke-width="3"
-    transform="rotate(45 24 24)"
     transform-origin="24 24"
   />
   <ellipse
@@ -32,7 +31,6 @@
     fill="none"
     stroke="url(#toroidGradient2)"
     stroke-width="2.5"
-    transform="rotate(-45 24 24)"
     opacity="0.8"
     transform-origin="24 24"
   />
