@@ -254,8 +254,11 @@ title: "About"
   </div>
 
   <!-- Technology Skill Tickers -->
-  <div class="tech-ticker-section">
-    <div class="ticker-label">Technology Expertise</div>
+  <div class="about-section tech-ticker-section">
+    <h2 class="section-title">Technology Expertise</h2>
+    <p class="section-content" style="text-align: center; margin-bottom: 2rem; color: var(--foreground-secondary);">
+      Full-stack experience across 20+ years of enterprise development, cloud architecture, and AI platform delivery.
+    </p>
     <div class="tech-ticker-grid">
       <!-- Cloud & Infrastructure Ticker -->
       <div class="tech-ticker-container">
@@ -270,19 +273,25 @@ title: "About"
               <span class="tech-name">Terraform</span>
             </div>
             <div class="tech-item">
-              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GKE" class="tech-icon-img">
-              <span class="tech-name">GKE</span>
-            </div>
-            <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/docker.svg' | absolute_url }}" alt="Docker" class="tech-icon-img">
               <span class="tech-name">Docker</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GCP" class="tech-icon-img">
+              <span class="tech-name">GCP</span>
             </div>
             <div class="tech-item">
               <span class="tech-icon-emoji">☁️</span><span class="tech-name">AWS</span>
             </div>
             <div class="tech-item">
-              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GCP" class="tech-icon-img">
-              <span class="tech-name">GCP</span>
+              <span class="tech-icon-emoji">☁️</span><span class="tech-name">Azure</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">⚙️</span><span class="tech-name">GitHub Actions</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/jenkins.svg' | absolute_url }}" alt="Jenkins" class="tech-icon-img">
+              <span class="tech-name">Jenkins</span>
             </div>
             <!-- Duplicate for seamless loop -->
             <div class="tech-item">
@@ -294,19 +303,25 @@ title: "About"
               <span class="tech-name">Terraform</span>
             </div>
             <div class="tech-item">
-              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GKE" class="tech-icon-img">
-              <span class="tech-name">GKE</span>
-            </div>
-            <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/docker.svg' | absolute_url }}" alt="Docker" class="tech-icon-img">
               <span class="tech-name">Docker</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GCP" class="tech-icon-img">
+              <span class="tech-name">GCP</span>
             </div>
             <div class="tech-item">
               <span class="tech-icon-emoji">☁️</span><span class="tech-name">AWS</span>
             </div>
             <div class="tech-item">
-              <img src="{{ '/assets/images/tech-icons/gcp.svg' | absolute_url }}" alt="GCP" class="tech-icon-img">
-              <span class="tech-name">GCP</span>
+              <span class="tech-icon-emoji">☁️</span><span class="tech-name">Azure</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">⚙️</span><span class="tech-name">GitHub Actions</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/jenkins.svg' | absolute_url }}" alt="Jenkins" class="tech-icon-img">
+              <span class="tech-name">Jenkins</span>
             </div>
           </div>
         </div>
@@ -317,12 +332,20 @@ title: "About"
         <div class="tech-ticker tech-ticker-right">
           <div class="tech-ticker-track">
             <div class="tech-item">
-              <img src="{{ '/assets/images/tech-icons/dotnet.svg' | absolute_url }}" alt=".NET 8" class="tech-icon-img">
-              <span class="tech-name">.NET 8</span>
+              <img src="{{ '/assets/images/tech-icons/dotnet.svg' | absolute_url }}" alt=".NET" class="tech-icon-img">
+              <span class="tech-name">.NET</span>
             </div>
             <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/python.svg' | absolute_url }}" alt="Python" class="tech-icon-img">
               <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/cpp.svg' | absolute_url }}" alt="C++" class="tech-icon-img">
+              <span class="tech-name">C++</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/javascript.svg' | absolute_url }}" alt="JavaScript" class="tech-icon-img">
+              <span class="tech-name">JavaScript</span>
             </div>
             <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/react.svg' | absolute_url }}" alt="React" class="tech-icon-img">
@@ -331,6 +354,21 @@ title: "About"
             <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/typescript.svg' | absolute_url }}" alt="TypeScript" class="tech-icon-img">
               <span class="tech-name">TypeScript</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/html5.svg' | absolute_url }}" alt="HTML5" class="tech-icon-img">
+              <span class="tech-name">HTML5</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/bootstrap.svg' | absolute_url }}" alt="Bootstrap" class="tech-icon-img">
+              <span class="tech-name">Bootstrap</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/sass.svg' | absolute_url }}" alt="SASS" class="tech-icon-img">
+              <span class="tech-name">SASS</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">💻</span><span class="tech-name">Blazor</span>
             </div>
             <div class="tech-item">
               <span class="tech-icon-emoji">🔌</span><span class="tech-name">gRPC</span>
@@ -340,12 +378,20 @@ title: "About"
             </div>
             <!-- Duplicate for seamless loop -->
             <div class="tech-item">
-              <img src="{{ '/assets/images/tech-icons/dotnet.svg' | absolute_url }}" alt=".NET 8" class="tech-icon-img">
-              <span class="tech-name">.NET 8</span>
+              <img src="{{ '/assets/images/tech-icons/dotnet.svg' | absolute_url }}" alt=".NET" class="tech-icon-img">
+              <span class="tech-name">.NET</span>
             </div>
             <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/python.svg' | absolute_url }}" alt="Python" class="tech-icon-img">
               <span class="tech-name">Python</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/cpp.svg' | absolute_url }}" alt="C++" class="tech-icon-img">
+              <span class="tech-name">C++</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/javascript.svg' | absolute_url }}" alt="JavaScript" class="tech-icon-img">
+              <span class="tech-name">JavaScript</span>
             </div>
             <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/react.svg' | absolute_url }}" alt="React" class="tech-icon-img">
@@ -354,6 +400,21 @@ title: "About"
             <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/typescript.svg' | absolute_url }}" alt="TypeScript" class="tech-icon-img">
               <span class="tech-name">TypeScript</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/html5.svg' | absolute_url }}" alt="HTML5" class="tech-icon-img">
+              <span class="tech-name">HTML5</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/bootstrap.svg' | absolute_url }}" alt="Bootstrap" class="tech-icon-img">
+              <span class="tech-name">Bootstrap</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/sass.svg' | absolute_url }}" alt="SASS" class="tech-icon-img">
+              <span class="tech-name">SASS</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">💻</span><span class="tech-name">Blazor</span>
             </div>
             <div class="tech-item">
               <span class="tech-icon-emoji">🔌</span><span class="tech-name">gRPC</span>
@@ -365,7 +426,7 @@ title: "About"
         </div>
       </div>
       
-      <!-- AI & Data Ticker -->
+      <!-- AI, Data & Testing Ticker -->
       <div class="tech-ticker-container">
         <div class="tech-ticker tech-ticker-left">
           <div class="tech-ticker-track">
@@ -379,6 +440,12 @@ title: "About"
               <span class="tech-icon-emoji">🔮</span><span class="tech-name">OpenAI</span>
             </div>
             <div class="tech-item">
+              <span class="tech-icon-emoji">🤖</span><span class="tech-name">Anthropic</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
+            </div>
+            <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/postgresql.svg' | absolute_url }}" alt="PostgreSQL" class="tech-icon-img">
               <span class="tech-name">PostgreSQL</span>
             </div>
@@ -387,7 +454,17 @@ title: "About"
               <span class="tech-name">Redis</span>
             </div>
             <div class="tech-item">
-              <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
+              <span class="tech-icon-emoji">🗄️</span><span class="tech-name">SQL Server</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/selenium.svg' | absolute_url }}" alt="Selenium" class="tech-icon-img">
+              <span class="tech-name">Selenium</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🧪</span><span class="tech-name">SpecFlow</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🎯</span><span class="tech-name">YOLO/TensorRT</span>
             </div>
             <!-- Duplicate for seamless loop -->
             <div class="tech-item">
@@ -400,6 +477,12 @@ title: "About"
               <span class="tech-icon-emoji">🔮</span><span class="tech-name">OpenAI</span>
             </div>
             <div class="tech-item">
+              <span class="tech-icon-emoji">🤖</span><span class="tech-name">Anthropic</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
+            </div>
+            <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/postgresql.svg' | absolute_url }}" alt="PostgreSQL" class="tech-icon-img">
               <span class="tech-name">PostgreSQL</span>
             </div>
@@ -408,7 +491,17 @@ title: "About"
               <span class="tech-name">Redis</span>
             </div>
             <div class="tech-item">
-              <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
+              <span class="tech-icon-emoji">🗄️</span><span class="tech-name">SQL Server</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/selenium.svg' | absolute_url }}" alt="Selenium" class="tech-icon-img">
+              <span class="tech-name">Selenium</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🧪</span><span class="tech-name">SpecFlow</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon-emoji">🎯</span><span class="tech-name">YOLO/TensorRT</span>
             </div>
           </div>
         </div>
