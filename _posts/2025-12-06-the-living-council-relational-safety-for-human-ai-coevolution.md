@@ -354,12 +354,23 @@ The framework doesn't promise perfect safety. It offers something more honest: *
 
 ---
 
+## Download the White Paper
+
+This article is based on the original white paper "The Living Council: A Framework for Relational Safety and Coherent Co-Evolution Between Human and Artificial Intelligence."
+
+**[Download PDF: The Living Council White Paper]({{ site.baseurl }}/assets/papers/living-council.pdf)** 📄
+
+---
+
 ## Further Reading
 
-- **Constitutional AI** (Anthropic, 2022): Training models to align with normative principles
-- **Cooperative AI** (Dafoe et al., 2020): Multi-agent governance and cooperative safety
-- **Neuro-Symbolic AI** (2024): Bridging symbolic interpretability and neural adaptability
-- **Relational AI Ethics** (2024): Shifting from control to relational governance
+- **Constitutional AI** (Anthropic, 2022): [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) - Training models to align with normative principles via self-feedback
+
+- **Cooperative AI** (Dafoe et al., 2020): [Open Problems in Cooperative AI](https://arxiv.org/abs/2012.08630) - Multi-agent governance and cooperative safety mechanisms
+
+- **Neuro-Symbolic AI** (2024): [Neuro-Symbolic AI in 2024: A Systematic Review](https://arxiv.org/abs/2501.05435) - Bridging symbolic interpretability and neural adaptability
+
+- **Relational AI Ethics** (2024): Shifting from control to relational governance - Exploring ethical frameworks that emphasize relationship over constraint
 
 ---
 
