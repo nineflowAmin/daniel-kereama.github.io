@@ -450,6 +450,14 @@ title: "About"
               <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
             </div>
             <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/nvidia.svg' | absolute_url }}" alt="NVIDIA" class="tech-icon-img">
+              <span class="tech-name">NVIDIA</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/huggingface.svg' | absolute_url }}" alt="Hugging Face" class="tech-icon-img">
+              <span class="tech-name">Hugging Face</span>
+            </div>
+            <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/postgresql.svg' | absolute_url }}" alt="PostgreSQL" class="tech-icon-img">
               <span class="tech-name">PostgreSQL</span>
             </div>
@@ -485,6 +493,14 @@ title: "About"
             </div>
             <div class="tech-item">
               <span class="tech-icon-emoji">🔧</span><span class="tech-name">MCP</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/nvidia.svg' | absolute_url }}" alt="NVIDIA" class="tech-icon-img">
+              <span class="tech-name">NVIDIA</span>
+            </div>
+            <div class="tech-item">
+              <img src="{{ '/assets/images/tech-icons/huggingface.svg' | absolute_url }}" alt="Hugging Face" class="tech-icon-img">
+              <span class="tech-name">Hugging Face</span>
             </div>
             <div class="tech-item">
               <img src="{{ '/assets/images/tech-icons/postgresql.svg' | absolute_url }}" alt="PostgreSQL" class="tech-icon-img">
