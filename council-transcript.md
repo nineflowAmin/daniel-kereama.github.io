@@ -496,10 +496,6 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         </div>
       </div>
     </details>
-    
-    <div class="evaluation-chart-container">
-      <canvas id="radarChart"></canvas>
-    </div>
 
     <div class="scores-table-container">
       <h3>Detailed Scores: Multi-Perspective vs Single-Perspective</h3>
@@ -599,6 +595,10 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
       <p class="ratings-instruction">Rate this transcript on each dimension (1-10) and see how your scores compare to the AI evaluations:</p>
       <div id="userRatings"></div>
       <button onclick="updateChart()" class="update-chart-btn">Update Chart with Your Ratings</button>
+    </div>
+
+    <div class="evaluation-chart-container">
+      <canvas id="radarChart"></canvas>
     </div>
 
     <details class="prompt-explorer">
