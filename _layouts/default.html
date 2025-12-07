@@ -18,7 +18,17 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     
+    <!-- SEO Tags -->
     {% seo %}
+    
+    <!-- Additional Meta Tags -->
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+    {% endif %}
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
   </head>
   <body>
     {% include header.html %}

@@ -2,24 +2,73 @@
 layout: default
 ---
 
-<article class="post-page">
+<!-- Article Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | truncatewords: 30 | escape }}",
+  "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/images/toroid-logo.svg' | absolute_url }}{% endif %}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.url }}{{ site.baseurl }}/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.logo | absolute_url }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+  {% if page.categories %},
+  "keywords": "{{ page.categories | join: ', ' }}"
+  {% endif %}
+}
+</script>
+
+<article class="post-page" itemscope itemtype="https://schema.org/BlogPosting">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
     <div class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>
       {% if page.categories %}
       <span class="post-categories">
         {% for category in page.categories %}
-        <span class="category-tag">{{ category }}</span>
+        <span class="category-tag" itemprop="keywords">{{ category }}</span>
         {% endfor %}
       </span>
       {% endif %}
     </div>
   </header>
   
-  <div class="post-content">
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+  
+  <!-- Related Posts -->
+  {% assign related_posts = site.posts | where_exp:"post", "post.url != page.url" | where_exp:"post", "post.categories contains page.categories[0]" | limit: 3 %}
+  {% if related_posts.size > 0 %}
+  <aside class="related-posts">
+    <h3>Related Posts</h3>
+    <ul>
+      {% for post in related_posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="related-post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
   
   <footer class="post-footer">
     <a href="{{ '/' | relative_url }}" class="btn-back">← Back to Home</a>

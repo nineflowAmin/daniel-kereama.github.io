@@ -3,11 +3,20 @@ title: "Daniel Kereama's Blog"
 description: "Technical blog about AI agents, architecture, and software development"
 url: "https://nineflowamin.github.io"
 baseurl: "/daniel-kereama.github.io"
+lang: "en-US"
+timezone: "UTC"
+
+# SEO Settings
+twitter:
+  username: "" # Add your Twitter handle if you have one
+  card: "summary_large_image"
 
 # Author
 author:
   name: "Daniel Kereama"
   email: ""
+  twitter: "" # Add your Twitter handle if you have one
+  linkedin: "daniel-kereama" # Your LinkedIn username
 
 # Branding
 logo: "/assets/images/toroid-logo.svg"
@@ -48,4 +57,11 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - SEO_OPTIMIZATION_PLAN.md
+
+# SEO Plugin Settings
+jekyll-seo-tag:
+  image: "/assets/images/toroid-logo.svg"
+  image_alt: "Nineflow.AI Toroid Logo"
+  default_image: "/assets/images/toroid-logo.svg"
 
