@@ -2549,11 +2549,19 @@ svg .toroid-ring-2 {
 }
 
 .scores-table th .llm-logo {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  max-width: 48px;
+  max-height: 48px;
   display: block;
   margin: 0 auto;
   flex-shrink: 0;
+  object-fit: contain;
+  object-position: center;
+  padding: 4px;
+  box-sizing: border-box;
 }
 
 .scores-table th .llm-name {
@@ -2790,8 +2798,10 @@ svg .toroid-ring-2 {
   }
 
   .scores-table th .llm-logo {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    object-position: center;
   }
 
   .scores-table th .llm-name {
