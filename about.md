@@ -386,12 +386,55 @@ title: "About"
 
   <div class="about-section">
     <h2 class="section-title">Education & Professional Development</h2>
-    <ul class="education-list">
-      <li><strong>BSc (Software Engineering)</strong>, University of Waikato (2005)</li>
-      <li><strong>Microsoft Certified Professional (MCP)</strong></li>
-      <li><strong>Continuous Professional Development</strong> in Advanced AI/ML Technologies, Cloud-Native Architecture, 
-      and Infrastructure as Code</li>
-    </ul>
+    <div class="education-grid">
+      <div class="education-item">
+        <div class="education-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            <path d="M10 2v20"></path>
+            <path d="M2 12h8"></path>
+          </svg>
+        </div>
+        <div class="education-content">
+          <strong>BSc (Software Engineering)</strong>
+          <p>University of Waikato (2005)</p>
+        </div>
+      </div>
+      
+      <div class="education-item">
+        <div class="education-icon microsoft-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+            <rect x="2" y="2" width="9" height="9" fill="#F25022"/>
+            <rect x="13" y="2" width="9" height="9" fill="#7FBA00"/>
+            <rect x="2" y="13" width="9" height="9" fill="#00A4EF"/>
+            <rect x="13" y="13" width="9" height="9" fill="#FFB900"/>
+          </svg>
+        </div>
+        <div class="education-content">
+          <strong>Microsoft Certified Professional (MCP)</strong>
+          <p>Microsoft Certification</p>
+        </div>
+      </div>
+      
+      <div class="education-item">
+        <div class="education-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <div class="education-content">
+          <strong>Continuous Professional Development</strong>
+          <div class="cpd-tags">
+            <span class="cpd-tag">Advanced AI/ML Technologies</span>
+            <span class="cpd-tag">Cloud-Native Architecture</span>
+            <span class="cpd-tag">Infrastructure as Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="about-section contact-section">
@@ -763,21 +806,90 @@ title: "About"
   margin: 0;
 }
 
-.education-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
-.education-list li {
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--border);
+.education-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.education-item:hover {
+  border-color: var(--nineflow-primary);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+.education-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nineflow-primary);
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.microsoft-icon {
+  background: rgba(0, 164, 239, 0.1);
+}
+
+.education-content {
+  flex: 1;
+}
+
+.education-content strong {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.education-content p {
+  font-size: 0.9375rem;
   color: var(--foreground-secondary);
-  line-height: 1.6;
+  margin: 0;
+  line-height: 1.5;
 }
 
-.education-list li:last-child {
-  border-bottom: none;
+.cpd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.cpd-tag {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  background: var(--background-secondary);
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--foreground-secondary);
+  transition: all 0.2s ease;
+}
+
+.cpd-tag:hover {
+  background: var(--nineflow-primary);
+  color: white;
+  border-color: var(--nineflow-primary);
+  transform: translateY(-1px);
 }
 
 .contact-section {
