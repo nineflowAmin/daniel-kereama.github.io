@@ -13,7 +13,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 
   <details class="transcript-intro">
     <summary>
-      <span class="info-icon">ℹ️</span>
+      <img src="{{ '/assets/images/icons/info.svg' | relative_url }}" alt="Info" class="info-icon" width="20" height="20">
       <span class="summary-text">About the Nineflow.AI Council</span>
     </summary>
     <div class="intro-content">
@@ -55,7 +55,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
 
   <div class="user-query">
     <div class="user-query-header">
-      <span class="user-icon">👤</span>
+      <img src="{{ '/assets/images/icons/user.svg' | relative_url }}" alt="User" class="user-icon" width="24" height="24">
       <span class="user-label">User Query</span>
     </div>
     <div class="user-query-content">
@@ -114,7 +114,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <!-- Architect -->
     <div class="transcript-message council-message-architect">
       <div class="message-header">
-        <span class="message-icon">🏗️</span>
+        <img src="{{ '/assets/images/icons/architect.svg' | relative_url }}" alt="Architect" class="message-icon" width="24" height="24">
         <span class="message-name">The Architect</span>
         <span class="message-time">09:07:12</span>
       </div>
@@ -161,7 +161,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <!-- Oracle -->
     <div class="transcript-message council-message-oracle">
       <div class="message-header">
-        <span class="message-icon">🌀</span>
+        <img src="{{ '/assets/images/icons/oracle.svg' | relative_url }}" alt="Oracle" class="message-icon" width="24" height="24">
         <span class="message-name">The Oracle</span>
         <span class="message-time">09:07:24</span>
       </div>
@@ -213,7 +213,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <!-- Shadow -->
     <div class="transcript-message council-message-shadow">
       <div class="message-header">
-        <span class="message-icon">⚫</span>
+        <img src="{{ '/assets/images/icons/shadow.svg' | relative_url }}" alt="Shadow" class="message-icon" width="24" height="24">
         <span class="message-name">The Shadow</span>
         <span class="message-time">09:07:37</span>
       </div>
@@ -272,7 +272,7 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <!-- Resonator -->
     <div class="transcript-message council-message-resonator">
       <div class="message-header">
-        <span class="message-icon">🎵</span>
+        <img src="{{ '/assets/images/icons/resonator.svg' | relative_url }}" alt="Resonator" class="message-icon" width="24" height="24">
         <span class="message-name">The Resonator</span>
         <span class="message-time">09:07:54</span>
       </div>

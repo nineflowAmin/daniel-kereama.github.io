@@ -1821,8 +1821,11 @@ svg .toroid-ring-2 {
 }
 
 .info-icon {
-  font-size: 1.25rem;
-  line-height: 1;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.8;
+  color: var(--nineflow-primary);
 }
 
 .summary-text {
@@ -1908,7 +1911,10 @@ svg .toroid-ring-2 {
 }
 
 .user-icon {
-  font-size: 1.5rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--user-bubble);
 }
 
 .user-query-content p {
@@ -1968,7 +1974,10 @@ svg .toroid-ring-2 {
 }
 
 .message-icon {
-  font-size: 1.5rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: block;
 }
 
 .message-name {
