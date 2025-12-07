@@ -893,26 +893,55 @@ svg .toroid-ring-2 {
   border-bottom: 1px solid var(--border);
 }
 
-/* Author Blurb */
+/* Author Blurb - World Class Design */
 .author-blurb {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  background: var(--background-secondary);
-  border-radius: 0.75rem;
+  gap: 1.5rem;
+  padding: 1.75rem 2rem;
+  margin: 2.5rem 0;
+  background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background) 100%);
+  border-radius: 1rem;
   border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.author-blurb::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--nineflow-primary), var(--nineflow-secondary), var(--nineflow-accent));
+  opacity: 0.6;
+}
+
+.author-blurb:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+  border-color: var(--border-hover);
 }
 
 .author-avatar {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid var(--border);
+  border: 3px solid var(--border);
   background: var(--background-tertiary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.author-blurb:hover .author-avatar {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
 }
 
 .author-avatar img {
@@ -926,26 +955,34 @@ svg .toroid-ring-2 {
 .author-info {
   flex: 1;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .author-name {
-  font-size: 1.125rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--foreground);
-  margin-bottom: 0.25rem;
+  margin: 0;
   font-family: var(--font-display);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
 }
 
 .author-title {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--foreground-secondary);
-  margin-bottom: 0.75rem;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .author-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
+  margin-top: 0.25rem;
 }
 
 .author-link {
@@ -955,17 +992,75 @@ svg .toroid-ring-2 {
   color: var(--nineflow-primary);
   text-decoration: none;
   font-size: 0.875rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.author-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
 }
 
 .author-link:hover {
   color: var(--nineflow-secondary);
-  text-decoration: underline;
+  background: rgba(139, 92, 246, 0.12);
+  border-color: rgba(139, 92, 246, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+}
+
+.author-link:hover::before {
+  left: 100%;
+}
+
+.author-link:active {
+  transform: translateY(0);
 }
 
 .author-link svg {
   flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.author-link:hover svg {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .author-blurb {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+  
+  .author-info {
+    align-items: center;
+  }
+  
+  .author-links {
+    justify-content: center;
+  }
+  
+  .author-avatar {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .post-content {

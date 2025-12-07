@@ -10,7 +10,7 @@ post_slug: "psychology-as-system-physics-building-emergent-systems"
 
 <div class="author-blurb">
   <div class="author-avatar">
-    <img src="{{ site.baseurl }}/assets/images/profile.jpg" alt="{{ site.author.name }}">
+    <img src="{{ site.baseurl }}/assets/images/avatar.png" alt="{{ site.author.name }}">
   </div>
   <div class="author-info">
     <div class="author-name">{{ site.author.name }}</div>
