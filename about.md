@@ -68,10 +68,6 @@ title: "About"
             <span class="company-name">Spark New Zealand</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none';">
-            <span class="company-name">Automated Electrics</span>
-          </div>
-          <div class="logo-item">
             <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none';">
             <span class="company-name">Pipefish</span>
           </div>
@@ -86,6 +82,10 @@ title: "About"
           <div class="logo-item">
             <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none';">
             <span class="company-name">Zespri</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/news-corp.png' | absolute_url }}" alt="News Corporation" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">News Corporation</span>
           </div>
           <!-- Duplicate for seamless loop -->
           <div class="logo-item">
@@ -105,10 +105,6 @@ title: "About"
             <span class="company-name">Spark New Zealand</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none';">
-            <span class="company-name">Automated Electrics</span>
-          </div>
-          <div class="logo-item">
             <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none';">
             <span class="company-name">Pipefish</span>
           </div>
@@ -123,6 +119,10 @@ title: "About"
           <div class="logo-item">
             <img src="{{ '/assets/images/logos/zespri.png' | absolute_url }}" alt="Zespri" class="company-logo" onerror="this.style.display='none';">
             <span class="company-name">Zespri</span>
+          </div>
+          <div class="logo-item">
+            <img src="{{ '/assets/images/logos/news-corp.png' | absolute_url }}" alt="News Corporation" class="company-logo" onerror="this.style.display='none';">
+            <span class="company-name">News Corporation</span>
           </div>
         </div>
       </div>
