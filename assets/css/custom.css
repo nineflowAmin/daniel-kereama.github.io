@@ -2240,6 +2240,40 @@ svg .toroid-ring-2 {
   font-weight: 600;
 }
 
+.score-explanation .comparison-context {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background: var(--background-tertiary);
+  border-radius: 6px;
+}
+
+.score-explanation .comparison-context p {
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
+.score-explanation .comparison-context ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+}
+
+.score-explanation .comparison-context li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: var(--foreground-secondary);
+}
+
+.score-explanation .key-insight {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-left: 3px solid var(--mediator-color);
+  border-radius: 4px;
+  font-style: italic;
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
 .caveat-note {
   margin-top: 1.5rem;
   padding: 1rem 1.25rem;
