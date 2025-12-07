@@ -47,7 +47,7 @@ title: "About"
 
   <!-- Company Logo Ticker -->
   <div class="logo-ticker-section">
-    <div class="ticker-label">Trusted by Leading Enterprises</div>
+    <div class="ticker-label">Companies I Have Delivered For</div>
     <div class="logo-ticker-container">
       <div class="logo-ticker">
         <div class="logo-ticker-track">
