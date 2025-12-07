@@ -252,6 +252,9 @@ Relational safety treats trust as a living process, not a proven state. It recog
 
 The white paper includes responses from each domain, each speaking in its own voice. Here's a glimpse:
 
+> **[View Complete Council Transcript →]({{ '/council-transcript.html' | relative_url }})**  
+> See a full example of the Living Council in action, with all five domains contributing to a synthesis on the question: "How much contradiction can the system hold before coherence fractures?"
+
 ### The Architect Speaks
 
 <div class="council-quote council-quote-architect">

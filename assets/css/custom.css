@@ -1753,3 +1753,306 @@ svg .toroid-ring-2 {
   }
 }
 
+/* Transcript Page Styles */
+.transcript-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.transcript-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.transcript-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.transcript-subtitle {
+  font-size: 1.25rem;
+  color: var(--foreground-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.transcript-date {
+  font-size: 0.9rem;
+  color: var(--foreground-tertiary);
+}
+
+/* User Query Section */
+.user-query {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.1) 0%, rgba(0, 122, 255, 0.05) 100%);
+  border-left: 4px solid var(--user-bubble);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-query-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--user-bubble);
+}
+
+.user-icon {
+  font-size: 1.5rem;
+}
+
+.user-query-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.user-query-content p:first-child {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.query-context {
+  font-size: 0.9rem;
+  color: var(--foreground-secondary);
+  font-style: italic;
+}
+
+/* Transcript Messages */
+.transcript-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.transcript-message {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.transcript-message:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.transcript-message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: currentColor;
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.message-icon {
+  font-size: 1.5rem;
+}
+
+.message-name {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.message-time {
+  font-size: 0.85rem;
+  color: var(--foreground-tertiary);
+  font-weight: 400;
+}
+
+.message-content {
+  line-height: 1.8;
+  color: var(--foreground);
+}
+
+.message-content p {
+  margin-bottom: 1rem;
+}
+
+.message-content p:last-child {
+  margin-bottom: 0;
+}
+
+.message-content blockquote {
+  border-left: 3px solid currentColor;
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--foreground-secondary);
+  opacity: 0.9;
+}
+
+.message-content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.message-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.message-content h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem 0;
+  color: var(--foreground);
+}
+
+.message-content h4 {
+  font-size: 1.25rem;
+  margin: 1.25rem 0 0.75rem 0;
+  color: var(--foreground);
+}
+
+/* Archetype-Specific Message Styles */
+.council-message-mediator {
+  background: linear-gradient(135deg, var(--background-secondary) 0%, rgba(59, 130, 246, 0.05) 100%);
+  border-left: 4px solid var(--mediator-color);
+}
+
+.council-message-mediator .message-header {
+  color: var(--mediator-color);
+}
+
+.council-message-mediator::before {
+  background: var(--mediator-color);
+}
+
+.council-message-architect {
+  background: linear-gradient(135deg, var(--background-secondary) 0%, rgba(245, 158, 11, 0.05) 100%);
+  border-left: 4px solid var(--architect-color);
+}
+
+.council-message-architect .message-header {
+  color: var(--architect-color);
+}
+
+.council-message-architect::before {
+  background: var(--architect-color);
+}
+
+.council-message-oracle {
+  background: linear-gradient(135deg, var(--background-secondary) 0%, rgba(139, 92, 246, 0.05) 100%);
+  border-left: 4px solid var(--oracle-color);
+}
+
+.council-message-oracle .message-header {
+  color: var(--oracle-color);
+}
+
+.council-message-oracle::before {
+  background: var(--oracle-color);
+}
+
+.council-message-shadow {
+  background: linear-gradient(135deg, var(--background-secondary) 0%, rgba(107, 114, 128, 0.05) 100%);
+  border-left: 4px solid var(--shadow-color);
+}
+
+.council-message-shadow .message-header {
+  color: var(--shadow-color);
+}
+
+.council-message-shadow::before {
+  background: var(--shadow-color);
+}
+
+.council-message-resonator {
+  background: linear-gradient(135deg, var(--background-secondary) 0%, rgba(236, 72, 153, 0.05) 100%);
+  border-left: 4px solid var(--resonator-color);
+}
+
+.council-message-resonator .message-header {
+  color: var(--resonator-color);
+}
+
+.council-message-resonator::before {
+  background: var(--resonator-color);
+}
+
+/* Synthesis Message */
+.synthesis-message {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(139, 92, 246, 0.05) 100%);
+  border: 2px solid var(--mediator-color);
+  border-left-width: 4px;
+}
+
+.synthesis-message::before {
+  background: linear-gradient(180deg, var(--mediator-color) 0%, var(--oracle-color) 100%);
+}
+
+/* Transcript Footer */
+.transcript-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+  text-align: center;
+}
+
+.transcript-footer .btn-back {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--nineflow-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.transcript-footer .btn-back:hover {
+  background: var(--nineflow-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.transcript-note {
+  font-size: 0.9rem;
+  color: var(--foreground-secondary);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments for transcript */
+@media (max-width: 768px) {
+  .transcript-page {
+    padding: 1.5rem 1rem;
+  }
+  
+  .transcript-header h1 {
+    font-size: 2rem;
+  }
+  
+  .transcript-message {
+    padding: 1.25rem;
+  }
+  
+  .message-header {
+    flex-wrap: wrap;
+  }
+  
+  .message-time {
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+}
+
