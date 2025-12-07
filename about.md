@@ -52,68 +52,68 @@ title: "About"
       <div class="logo-ticker">
         <div class="logo-ticker-track">
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/equifax.svg' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/equifax.png' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Equifax</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/dominos.svg' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/dominos.png' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Domino's Pizza</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/rio-tinto.svg' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/rio-tinto.png' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Rio Tinto</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/spark-nz.svg' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/spark-nz.png' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Spark New Zealand</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/automated-electrics.svg' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Automated Electrics</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/pipefish.svg' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Pipefish</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/gbst.svg' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/gbst.png' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">GBST</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/tatts-group.svg' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Tatts Group</span>
           </div>
           <!-- Duplicate for seamless loop -->
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/equifax.svg' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/equifax.png' | absolute_url }}" alt="Equifax" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Equifax</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/dominos.svg' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/dominos.png' | absolute_url }}" alt="Domino's Pizza" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Domino's Pizza</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/rio-tinto.svg' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/rio-tinto.png' | absolute_url }}" alt="Rio Tinto" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Rio Tinto</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/spark-nz.svg' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/spark-nz.png' | absolute_url }}" alt="Spark New Zealand" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Spark New Zealand</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/automated-electrics.svg' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/automated-electrics.png' | absolute_url }}" alt="Automated Electrics" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Automated Electrics</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/pipefish.svg' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/pipefish.png' | absolute_url }}" alt="Pipefish" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Pipefish</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/gbst.svg' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/gbst.png' | absolute_url }}" alt="GBST" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">GBST</span>
           </div>
           <div class="logo-item">
-            <img src="{{ '/assets/images/logos/tatts-group.svg' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <img src="{{ '/assets/images/logos/tatts-group.png' | absolute_url }}" alt="Tatts Group" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <span class="logo-fallback">Tatts Group</span>
           </div>
         </div>
