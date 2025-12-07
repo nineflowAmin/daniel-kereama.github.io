@@ -2642,7 +2642,7 @@ svg .toroid-ring-2 {
   vertical-align: top;
 }
 
-.scores-table td:not(.notes-column) {
+.scores-table td:not(.notes-column):not(:first-child) {
   white-space: nowrap;
 }
 
