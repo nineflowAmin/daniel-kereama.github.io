@@ -414,9 +414,270 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <p class="report-caption">12D dimensional analysis showing how each council domain contributes across 12 distinct dimensions: Vision, Structure, Temporal, Semantic, Emotional, Ethical, Relational, Harmony, Dissonance, Awareness, Integration, and Purpose.</p>
   </div>
 
+  <div class="llm-evaluation-section">
+    <h2>AI Evaluation Scores</h2>
+    <p class="evaluation-intro">Four major LLMs evaluated this Council transcript across seven dimensions, comparing the multi-agent approach against a hypothetical single LLM output. Explore the scores below and add your own ratings.</p>
+    
+    <div class="evaluation-chart-container">
+      <canvas id="radarChart"></canvas>
+    </div>
+
+    <div class="scores-table-container">
+      <h3>Detailed Scores</h3>
+      <table class="scores-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>GROK</th>
+            <th>Claude</th>
+            <th>Gemini</th>
+            <th>ChatGPT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Final Output Quality</td>
+            <td>9.0</td>
+            <td>8.5</td>
+            <td>10.0</td>
+            <td>8.0</td>
+          </tr>
+          <tr>
+            <td>Diversity / Collaboration</td>
+            <td>9.0</td>
+            <td>9.0</td>
+            <td>10.0</td>
+            <td>3.0</td>
+          </tr>
+          <tr>
+            <td>Robustness / Reliability</td>
+            <td>8.0</td>
+            <td>7.5</td>
+            <td>9.0</td>
+            <td>7.0</td>
+          </tr>
+          <tr>
+            <td>Adaptability / Contextual Memory</td>
+            <td>9.0</td>
+            <td>8.0</td>
+            <td>10.0</td>
+            <td>6.0</td>
+          </tr>
+          <tr>
+            <td>Human Alignment / Usefulness</td>
+            <td>9.0</td>
+            <td>7.0</td>
+            <td>9.0</td>
+            <td>8.0</td>
+          </tr>
+          <tr>
+            <td>Efficiency / Resource Cost</td>
+            <td>6.0</td>
+            <td>5.0</td>
+            <td>6.0</td>
+            <td>9.0</td>
+          </tr>
+          <tr>
+            <td>Emergent Reasoning / Creativity</td>
+            <td>9.0</td>
+            <td>9.0</td>
+            <td>10.0</td>
+            <td>6.0</td>
+          </tr>
+          <tr class="average-row">
+            <td><strong>Average</strong></td>
+            <td><strong>8.43</strong></td>
+            <td><strong>7.57</strong></td>
+            <td><strong>9.14</strong></td>
+            <td><strong>6.71</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="user-ratings-section">
+      <h3>Your Ratings</h3>
+      <p class="ratings-instruction">Rate this transcript on each dimension (1-10) and see how your scores compare to the AI evaluations:</p>
+      <div id="userRatings"></div>
+      <button onclick="updateChart()" class="update-chart-btn">Update Chart with Your Ratings</button>
+    </div>
+  </div>
+
   <div class="transcript-footer">
     <p><a href="{{ '/ai-safety/alignment/governance/relational-ai/philosophy/2025/12/06/the-living-council-relational-safety-for-human-ai-coevolution.html' | relative_url }}" class="btn-back">← Back to Article</a></p>
     <p class="transcript-note">This transcript demonstrates the Nineflow.AI Council architecture in action. Each domain contributes its unique perspective, and the Mediator synthesizes them into a coherent response that maintains productive disagreement while building toward understanding.</p>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+const dimensions = [
+  "Final Output Quality",
+  "Diversity / Collaboration",
+  "Robustness / Reliability",
+  "Adaptability / Contextual Memory",
+  "Human Alignment / Usefulness",
+  "Efficiency / Resource Cost",
+  "Emergent Reasoning / Creativity"
+];
+
+const evaluations = {
+  grok: [9, 9, 8, 9, 9, 6, 9],
+  claude: [8.5, 9, 7.5, 8, 7, 5, 9],
+  gemini: [10, 10, 9, 10, 9, 6, 10],
+  chatgpt: [8, 3, 7, 6, 8, 9, 6]
+};
+
+// Initialize user scores
+const userScores = {};
+dimensions.forEach(d => {
+  userScores[d] = 5;
+});
+
+// Create user rating sliders
+const userDiv = document.getElementById("userRatings");
+dimensions.forEach(d => {
+  const container = document.createElement("div");
+  container.className = "rating-item";
+  
+  const label = document.createElement("label");
+  label.textContent = d + ": ";
+  label.htmlFor = d.replace(/\s+/g, '-');
+  label.className = "rating-label";
+  
+  const slider = document.createElement("input");
+  slider.type = "range";
+  slider.min = 1;
+  slider.max = 10;
+  slider.value = 5;
+  slider.step = 0.5;
+  slider.id = d.replace(/\s+/g, '-');
+  slider.className = "rating-slider";
+  
+  const valueDisplay = document.createElement("span");
+  valueDisplay.className = "rating-value";
+  valueDisplay.textContent = "5.0";
+  
+  slider.oninput = () => {
+    userScores[d] = parseFloat(slider.value);
+    valueDisplay.textContent = parseFloat(slider.value).toFixed(1);
+  };
+  
+  container.appendChild(label);
+  container.appendChild(slider);
+  container.appendChild(valueDisplay);
+  userDiv.appendChild(container);
+});
+
+// Initialize radar chart
+const ctx = document.getElementById('radarChart').getContext('2d');
+let radarChart = new Chart(ctx, {
+  type: 'radar',
+  data: {
+    labels: dimensions,
+    datasets: [
+      {
+        label: 'GROK',
+        data: evaluations.grok,
+        fill: true,
+        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+        borderColor: 'rgb(59, 130, 246)',
+        pointBackgroundColor: 'rgb(59, 130, 246)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(59, 130, 246)'
+      },
+      {
+        label: 'Claude',
+        data: evaluations.claude,
+        fill: true,
+        backgroundColor: 'rgba(16, 185, 129, 0.2)',
+        borderColor: 'rgb(16, 185, 129)',
+        pointBackgroundColor: 'rgb(16, 185, 129)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(16, 185, 129)'
+      },
+      {
+        label: 'Gemini',
+        data: evaluations.gemini,
+        fill: true,
+        backgroundColor: 'rgba(245, 158, 11, 0.2)',
+        borderColor: 'rgb(245, 158, 11)',
+        pointBackgroundColor: 'rgb(245, 158, 11)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(245, 158, 11)'
+      },
+      {
+        label: 'ChatGPT',
+        data: evaluations.chatgpt,
+        fill: true,
+        backgroundColor: 'rgba(239, 68, 68, 0.2)',
+        borderColor: 'rgb(239, 68, 68)',
+        pointBackgroundColor: 'rgb(239, 68, 68)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(239, 68, 68)'
+      },
+      {
+        label: 'Your Rating',
+        data: Object.values(userScores),
+        fill: false,
+        borderColor: 'rgb(139, 92, 246)',
+        borderWidth: 3,
+        pointBackgroundColor: 'rgb(139, 92, 246)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(139, 92, 246)',
+        borderDash: [5, 5]
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: true,
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: {
+          padding: 15,
+          font: {
+            size: 12
+          }
+        }
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            return context.dataset.label + ': ' + context.parsed.r.toFixed(1);
+          }
+        }
+      }
+    },
+    scales: {
+      r: {
+        beginAtZero: true,
+        max: 10,
+        ticks: {
+          stepSize: 1,
+          font: {
+            size: 11
+          }
+        },
+        pointLabels: {
+          font: {
+            size: 11
+          }
+        }
+      }
+    }
+  }
+});
+
+function updateChart() {
+  radarChart.data.datasets[4].data = Object.values(userScores);
+  radarChart.update();
+}
+</script>
 
