@@ -5,6 +5,7 @@ date: 2025-11-28 10:00:00 +0000
 categories: [architecture, multi-agent-systems, .net]
 description: "Reflections on building multi-agent AI systems after two decades of .NET architecture experience."
 excerpt: "After 20 years of building software around well-understood patterns, building a multi-agent AI system taught me new lessons about system design, emergence, and the intersection of psychology and system physics."
+post_slug: "what-building-multi-agent-ai-system-taught-me"
 ---
 
 *This article was originally published on [LinkedIn](https://www.linkedin.com/pulse/what-building-multi-agent-ai-system-taught-me-after-20-daniel-kereama-af5fc/) on November 28, 2025.*
@@ -17,7 +18,7 @@ It broke every assumption I had. Multi-agent systems aren't "microservices with 
 
 Here are the biggest lessons — the things I didn't know before I started.
 
-![A visual representation of traditional .NET architecture breaking apart into dynamic, interconnected agent nodes - showing the transformation from rigid monolith to fluid multi-agent system]({{ '/assets/images/placeholder-monolith-to-agents.jpg' | relative_url }})
+![A visual representation of traditional .NET architecture breaking apart into dynamic, interconnected agent nodes - showing the transformation from rigid monolith to fluid multi-agent system]({{ '/assets/images/' | append: page.post_slug | append: '/monolith-to-agents.jpg' | relative_url }})
 *Image prompt: "A visual representation of traditional .NET architecture breaking apart into dynamic, interconnected agent nodes - showing the transformation from rigid monolith to fluid multi-agent system, digital art style"*
 
 ## 1. The Monolith Exploded Under AI Feedback Loops
@@ -55,14 +56,14 @@ The moment I separated the intelligence from the orchestration and memory system
 
 **Lesson:** You can't fix circular architectures with clever DI — only with architectural separation.
 
-![A tangled web of circular dependencies in code, with arrows showing the problematic connections, contrasted with a clean separated architecture]({{ '/assets/images/placeholder-di-hell.jpg' | relative_url }})
+![A tangled web of circular dependencies in code, with arrows showing the problematic connections, contrasted with a clean separated architecture]({{ '/assets/images/' | append: page.post_slug | append: '/di-hell.jpg' | relative_url }})
 *Image prompt: "A tangled web of circular dependencies in code, with arrows showing the problematic connections, contrasted with a clean separated architecture showing distinct layers, technical diagram style"*
 
 ### The GKE Microservices Architecture We Settled On
 
 After extracting core logic and breaking circular dependencies, we needed a deployment architecture that matched our cognitive separation. We moved to Google Kubernetes Engine (GKE) with a microservices architecture that reflects the actual boundaries of our system.
 
-![A detailed microservices architecture diagram showing 11 services across .NET, React, and Python stacks, with network flows and service boundaries clearly marked]({{ '/assets/images/placeholder-gke-architecture.jpg' | relative_url }})
+![A detailed microservices architecture diagram showing 11 services across .NET, React, and Python stacks, with network flows and service boundaries clearly marked]({{ '/assets/images/' | append: page.post_slug | append: '/gke-architecture.jpg' | relative_url }})
 *Image prompt: "A detailed microservices architecture diagram showing 11 services across .NET, React, and Python stacks deployed on Google Kubernetes Engine, with network flows, service boundaries, and infrastructure components clearly marked, technical diagram style"*
 
 ### 11 Microservices Across 3 Technology Stacks
@@ -252,7 +253,7 @@ jobs:
 * **Predictable debugging** — clean health boundaries
 * **Fully reproducible IaC** — Terraform + Kustomize = version-controlled infrastructure
 
-![A visual comparison showing staging vs production infrastructure with pod counts, resource usage, and deployment metrics]({{ '/assets/images/placeholder-infrastructure-scaling.jpg' | relative_url }})
+![A visual comparison showing staging vs production infrastructure with pod counts, resource usage, and deployment metrics]({{ '/assets/images/' | append: page.post_slug | append: '/infrastructure-scaling.jpg' | relative_url }})
 *Image prompt: "A visual comparison showing staging vs production infrastructure with pod counts, resource usage, and deployment metrics displayed in a modern dashboard style, with Kubernetes pods visualized as containers"*
 
 ## 2. Agent Self-Critique and Refinement
@@ -312,7 +313,7 @@ After dozens of iterations:
 
 The final definitions are co-created by the agents themselves, not just designed by me.
 
-![A visual representation of agents in a circle, each critiquing and refining each other, with feedback loops and collaborative refinement shown as flowing connections]({{ '/assets/images/placeholder-agent-critique.jpg' | relative_url }})
+![A visual representation of agents in a circle, each critiquing and refining each other, with feedback loops and collaborative refinement shown as flowing connections]({{ '/assets/images/' | append: page.post_slug | append: '/agent-critique.jpg' | relative_url }})
 *Image prompt: "A visual representation of AI agents in a circle, each critiquing and refining each other, with feedback loops and collaborative refinement shown as flowing connections between agents, abstract digital art style"*
 
 ### Meta-Learning
@@ -349,7 +350,7 @@ await Task.WhenAll(selectedAgents.Select(agent =>
 
 This changed how I build features: Not serially — but collectively.
 
-![A visual showing multiple agents working in parallel, each contributing different aspects simultaneously, like a parallel development team]({{ '/assets/images/placeholder-parallel-agents.jpg' | relative_url }})
+![A visual showing multiple agents working in parallel, each contributing different aspects simultaneously, like a parallel development team]({{ '/assets/images/' | append: page.post_slug | append: '/parallel-agents.jpg' | relative_url }})
 *Image prompt: "A visual showing multiple AI agents working in parallel, each contributing different aspects simultaneously like a parallel development team, with streams of work converging, modern tech illustration style"*
 
 ## 4. The Real Art: Balancing Deterministic and Non-Deterministic Worlds
@@ -364,7 +365,7 @@ Too much structure → scripted. Too little → chaos.
 
 The sweet spot is **structured autonomy**.
 
-![A visual metaphor showing the balance between rigid structure and complete chaos, with the sweet spot of structured autonomy in the middle]({{ '/assets/images/placeholder-structured-autonomy.jpg' | relative_url }})
+![A visual metaphor showing the balance between rigid structure and complete chaos, with the sweet spot of structured autonomy in the middle]({{ '/assets/images/' | append: page.post_slug | append: '/structured-autonomy.jpg' | relative_url }})
 *Image prompt: "A visual metaphor showing the balance between rigid structure (geometric patterns) and complete chaos (organic flowing forms), with the sweet spot of structured autonomy in the middle, abstract conceptual art"*
 
 ## 5. AI Is Not a Magic Genie
@@ -404,7 +405,7 @@ Agents became team members rather than functions.
 
 This shifted the architecture from **technical → sociotechnical**.
 
-![A visual representation of psychological concepts (identity, safety, conflict resolution) being applied to AI agent architecture, showing the intersection of psychology and technology]({{ '/assets/images/placeholder-psychology-agents.jpg' | relative_url }})
+![A visual representation of psychological concepts (identity, safety, conflict resolution) being applied to AI agent architecture, showing the intersection of psychology and technology]({{ '/assets/images/' | append: page.post_slug | append: '/psychology-agents.jpg' | relative_url }})
 *Image prompt: "A visual representation of psychological concepts like identity, safety, conflict resolution being applied to AI agent architecture, showing the intersection of psychology and technology, abstract conceptual illustration"*
 
 ## 7. Memory Is the Heart of Emergence
@@ -422,7 +423,7 @@ It enabled agents to:
 
 This led to Nineflow's **Emergent Memory Architecture** — the system learns as a whole, not as isolated agents.
 
-![A visual representation of memory as a central organizing force, with agents connected through shared memory, showing patterns and learning emerging from the collective]({{ '/assets/images/placeholder-emergent-memory.jpg' | relative_url }})
+![A visual representation of memory as a central organizing force, with agents connected through shared memory, showing patterns and learning emerging from the collective]({{ '/assets/images/' | append: page.post_slug | append: '/emergent-memory.jpg' | relative_url }})
 *Image prompt: "A visual representation of memory as a central organizing force, with AI agents connected through shared memory networks, showing patterns and learning emerging from the collective intelligence, neural network visualization style"*
 
 ## 8. Multi-Agent Systems Are a New Paradigm
@@ -449,7 +450,7 @@ I had to design for:
 
 It has fundamentally changed the way I see software.
 
-![A visual showing the paradigm shift from traditional hierarchical software architecture to non-hierarchical, emergent multi-agent systems]({{ '/assets/images/placeholder-paradigm-shift.jpg' | relative_url }})
+![A visual showing the paradigm shift from traditional hierarchical software architecture to non-hierarchical, emergent multi-agent systems]({{ '/assets/images/' | append: page.post_slug | append: '/paradigm-shift.jpg' | relative_url }})
 *Image prompt: "A visual showing the paradigm shift from traditional hierarchical software architecture (pyramid structure) to non-hierarchical, emergent multi-agent systems (network structure), showing the transformation, conceptual diagram style"*
 
 ## Final Thought
