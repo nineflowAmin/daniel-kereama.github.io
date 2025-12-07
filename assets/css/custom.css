@@ -893,6 +893,75 @@ svg .toroid-ring-2 {
   border-bottom: 1px solid var(--border);
 }
 
+/* Author Blurb */
+.author-blurb {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background: var(--background-secondary);
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+}
+
+.author-avatar {
+  flex-shrink: 0;
+}
+
+.author-avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.author-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.author-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-display);
+}
+
+.author-title {
+  font-size: 0.875rem;
+  color: var(--foreground-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.author-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.author-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--nineflow-primary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.author-link:hover {
+  color: var(--nineflow-secondary);
+  text-decoration: underline;
+}
+
+.author-link svg {
+  flex-shrink: 0;
+}
+
 .post-content {
   font-size: 1rem;
   line-height: 1.7;
