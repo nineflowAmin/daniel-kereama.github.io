@@ -2954,18 +2954,20 @@ svg .toroid-ring-2 {
   }
 
   .rating-item {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
     gap: 0.5rem;
   }
 
   .rating-label {
-    min-width: auto;
     width: 100%;
   }
 
   .rating-slider {
     width: 100%;
+  }
+
+  .rating-value {
+    text-align: left;
   }
 
   .scores-table {
