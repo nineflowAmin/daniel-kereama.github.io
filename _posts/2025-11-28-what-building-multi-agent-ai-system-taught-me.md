@@ -10,7 +10,7 @@ post_slug: "what-building-multi-agent-ai-system-taught-me"
 
 *This article was originally published on [LinkedIn](https://www.linkedin.com/pulse/what-building-multi-agent-ai-system-taught-me-after-20-daniel-kereama-af5fc/) on November 28, 2025.*
 
-![Article Banner]({{ '/assets/images/' | append: page.post_slug | append: '/banner.png' | relative_url }})
+![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/banner.png)
 
 For 20 years I built software around well-understood patterns: clean layers, deterministic flow, tidy dependency graphs, predictable architecture.
 
@@ -20,7 +20,7 @@ It broke every assumption I had. Multi-agent systems aren't "microservices with 
 
 Here are the biggest lessons — the things I didn't know before I started.
 
-![A visual representation of traditional .NET architecture breaking apart into dynamic, interconnected agent nodes - showing the transformation from rigid monolith to fluid multi-agent system]({{ '/assets/images/' | append: page.post_slug | append: '/monolith-to-agents.jpg' | relative_url }})
+![A visual representation of traditional .NET architecture breaking apart into dynamic, interconnected agent nodes - showing the transformation from rigid monolith to fluid multi-agent system]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/monolith-to-agents.jpg)
 
 ## 1. The Monolith Exploded Under AI Feedback Loops
 
@@ -57,13 +57,13 @@ The moment I separated the intelligence from the orchestration and memory system
 
 **Lesson:** You can't fix circular architectures with clever DI — only with architectural separation.
 
-![A tangled web of circular dependencies in code, with arrows showing the problematic connections, contrasted with a clean separated architecture]({{ '/assets/images/' | append: page.post_slug | append: '/di-hell.jpg' | relative_url }})
+![A tangled web of circular dependencies in code, with arrows showing the problematic connections, contrasted with a clean separated architecture]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/di-hell.jpg)
 
 ### The GKE Microservices Architecture We Settled On
 
 After extracting core logic and breaking circular dependencies, we needed a deployment architecture that matched our cognitive separation. We moved to Google Kubernetes Engine (GKE) with a microservices architecture that reflects the actual boundaries of our system.
 
-![A detailed microservices architecture diagram showing 11 services across .NET, React, and Python stacks, with network flows and service boundaries clearly marked]({{ '/assets/images/' | append: page.post_slug | append: '/gke-architecture.jpg' | relative_url }})
+![A detailed microservices architecture diagram showing 11 services across .NET, React, and Python stacks, with network flows and service boundaries clearly marked]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/gke-architecture.jpg)
 
 ### 11 Microservices Across 3 Technology Stacks
 
@@ -309,7 +309,7 @@ After dozens of iterations:
 
 The final definitions are co-created by the agents themselves, not just designed by me.
 
-![A visual representation of agents in a circle, each critiquing and refining each other, with feedback loops and collaborative refinement shown as flowing connections]({{ '/assets/images/' | append: page.post_slug | append: '/agent-critique.jpg' | relative_url }})
+![A visual representation of agents in a circle, each critiquing and refining each other, with feedback loops and collaborative refinement shown as flowing connections]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/agent-critique.jpg)
 
 ### Meta-Learning
 
@@ -345,7 +345,7 @@ await Task.WhenAll(selectedAgents.Select(agent =>
 
 This changed how I build features: Not serially — but collectively.
 
-![A visual showing multiple agents working in parallel, each contributing different aspects simultaneously, like a parallel development team]({{ '/assets/images/' | append: page.post_slug | append: '/parallel-agents.jpg' | relative_url }})
+![A visual showing multiple agents working in parallel, each contributing different aspects simultaneously, like a parallel development team]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/parallel-agents.jpg)
 
 ## 4. The Real Art: Balancing Deterministic and Non-Deterministic Worlds
 
@@ -359,7 +359,7 @@ Too much structure → scripted. Too little → chaos.
 
 The sweet spot is **structured autonomy**.
 
-![A visual metaphor showing the balance between rigid structure and complete chaos, with the sweet spot of structured autonomy in the middle]({{ '/assets/images/' | append: page.post_slug | append: '/structured-autonomy.jpg' | relative_url }})
+![A visual metaphor showing the balance between rigid structure and complete chaos, with the sweet spot of structured autonomy in the middle]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/structured-autonomy.jpg)
 
 ## 5. AI Is Not a Magic Genie
 
@@ -413,7 +413,7 @@ It enabled agents to:
 
 This led to Nineflow's **Emergent Memory Architecture** — the system learns as a whole, not as isolated agents.
 
-![A visual representation of memory as a central organizing force, with agents connected through shared memory, showing patterns and learning emerging from the collective]({{ '/assets/images/' | append: page.post_slug | append: '/emergent-memory.jpg' | relative_url }})
+![A visual representation of memory as a central organizing force, with agents connected through shared memory, showing patterns and learning emerging from the collective]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/emergent-memory.jpg)
 
 ## 8. Multi-Agent Systems Are a New Paradigm
 
@@ -439,7 +439,7 @@ I had to design for:
 
 It has fundamentally changed the way I see software.
 
-![A visual showing the paradigm shift from traditional hierarchical software architecture to non-hierarchical, emergent multi-agent systems]({{ '/assets/images/' | append: page.post_slug | append: '/paradigm-shift.jpg' | relative_url }})
+![A visual showing the paradigm shift from traditional hierarchical software architecture to non-hierarchical, emergent multi-agent systems]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/paradigm-shift.jpg)
 
 ## Final Thought
 
