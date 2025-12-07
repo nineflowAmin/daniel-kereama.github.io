@@ -898,6 +898,26 @@ svg .toroid-ring-2 {
   line-height: 1.7;
 }
 
+.post-content img[alt="Article Banner"] {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.post-content img:not([alt="Article Banner"]) {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
 .post-content h2,
 .post-content h3,
 .post-content h4 {
