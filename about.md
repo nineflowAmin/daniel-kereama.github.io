@@ -45,6 +45,34 @@ title: "About"
     </p>
   </div>
 
+  <!-- Company Logo Ticker -->
+  <div class="logo-ticker-section">
+    <div class="ticker-label">Trusted by Leading Enterprises</div>
+    <div class="logo-ticker-container">
+      <div class="logo-ticker">
+        <div class="logo-ticker-track">
+          <div class="logo-item">Equifax</div>
+          <div class="logo-item">Domino's Pizza</div>
+          <div class="logo-item">Rio Tinto</div>
+          <div class="logo-item">Spark New Zealand</div>
+          <div class="logo-item">Automated Electrics</div>
+          <div class="logo-item">Pipefish</div>
+          <div class="logo-item">GBST</div>
+          <div class="logo-item">Tatts Group</div>
+          <!-- Duplicate for seamless loop -->
+          <div class="logo-item">Equifax</div>
+          <div class="logo-item">Domino's Pizza</div>
+          <div class="logo-item">Rio Tinto</div>
+          <div class="logo-item">Spark New Zealand</div>
+          <div class="logo-item">Automated Electrics</div>
+          <div class="logo-item">Pipefish</div>
+          <div class="logo-item">GBST</div>
+          <div class="logo-item">Tatts Group</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="about-section highlight-section">
     <div class="section-header">
       <div class="toroid-icon">
@@ -103,22 +131,88 @@ title: "About"
 
       <div class="tech-stack">
         <h3>Technology Stack</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">.NET 8</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">React/TypeScript</span>
-          <span class="tech-tag">Kubernetes (GKE)</span>
-          <span class="tech-tag">PostgreSQL</span>
-          <span class="tech-tag">Redis</span>
-          <span class="tech-tag">Terraform</span>
-          <span class="tech-tag">SignalR</span>
-          <span class="tech-tag">gRPC</span>
-          <span class="tech-tag">OpenAI/Anthropic APIs</span>
-          <span class="tech-tag">GitHub Actions</span>
-          <span class="tech-tag">Docker</span>
+      <div class="tech-tags">
+        <span class="tech-tag">.NET 8</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">React/TypeScript</span>
+        <span class="tech-tag">Kubernetes (GKE)</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">Redis</span>
+        <span class="tech-tag">Terraform</span>
+        <span class="tech-tag">SignalR</span>
+        <span class="tech-tag">gRPC</span>
+        <span class="tech-tag">OpenAI/Anthropic APIs</span>
+        <span class="tech-tag">GitHub Actions</span>
+        <span class="tech-tag">Docker</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technology Skill Tickers -->
+  <div class="tech-ticker-section">
+    <div class="ticker-label">Technology Expertise</div>
+    <div class="tech-ticker-grid">
+      <!-- Cloud & Infrastructure Ticker -->
+      <div class="tech-ticker-container">
+        <div class="tech-ticker tech-ticker-left">
+          <div class="tech-ticker-track">
+            <span class="tech-icon">☸️</span><span class="tech-name">Kubernetes</span>
+            <span class="tech-icon">🏗️</span><span class="tech-name">Terraform</span>
+            <span class="tech-icon">☁️</span><span class="tech-name">GKE</span>
+            <span class="tech-icon">🐳</span><span class="tech-name">Docker</span>
+            <span class="tech-icon">☁️</span><span class="tech-name">AWS</span>
+            <span class="tech-icon">☁️</span><span class="tech-name">GCP</span>
+            <span class="tech-icon">☸️</span><span class="tech-name">Kubernetes</span>
+            <span class="tech-icon">🏗️</span><span class="tech-name">Terraform</span>
+            <span class="tech-icon">☁️</span><span class="tech-name">GKE</span>
+            <span class="tech-icon">🐳</span><span class="tech-name">Docker</span>
+            <span class="tech-icon">☁️</span><span class="tech-name">AWS</span>
+            <span class="tech-icon">☁️</span><span class="tech-name">GCP</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Core Development Ticker -->
+      <div class="tech-ticker-container">
+        <div class="tech-ticker tech-ticker-right">
+          <div class="tech-ticker-track">
+            <span class="tech-icon">💻</span><span class="tech-name">.NET 8</span>
+            <span class="tech-icon">🐍</span><span class="tech-name">Python</span>
+            <span class="tech-icon">⚛️</span><span class="tech-name">React</span>
+            <span class="tech-icon">📘</span><span class="tech-name">TypeScript</span>
+            <span class="tech-icon">🔌</span><span class="tech-name">gRPC</span>
+            <span class="tech-icon">📡</span><span class="tech-name">SignalR</span>
+            <span class="tech-icon">💻</span><span class="tech-name">.NET 8</span>
+            <span class="tech-icon">🐍</span><span class="tech-name">Python</span>
+            <span class="tech-icon">⚛️</span><span class="tech-name">React</span>
+            <span class="tech-icon">📘</span><span class="tech-name">TypeScript</span>
+            <span class="tech-icon">🔌</span><span class="tech-name">gRPC</span>
+            <span class="tech-icon">📡</span><span class="tech-name">SignalR</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- AI & Data Ticker -->
+      <div class="tech-ticker-container">
+        <div class="tech-ticker tech-ticker-left">
+          <div class="tech-ticker-track">
+            <span class="tech-icon">🤖</span><span class="tech-name">LLM Orchestration</span>
+            <span class="tech-icon">🧠</span><span class="tech-name">Multi-Agent Systems</span>
+            <span class="tech-icon">🔮</span><span class="tech-name">OpenAI</span>
+            <span class="tech-icon">🗄️</span><span class="tech-name">PostgreSQL</span>
+            <span class="tech-icon">⚡</span><span class="tech-name">Redis</span>
+            <span class="tech-icon">🔧</span><span class="tech-name">MCP</span>
+            <span class="tech-icon">🤖</span><span class="tech-name">LLM Orchestration</span>
+            <span class="tech-icon">🧠</span><span class="tech-name">Multi-Agent Systems</span>
+            <span class="tech-icon">🔮</span><span class="tech-name">OpenAI</span>
+            <span class="tech-icon">🗄️</span><span class="tech-name">PostgreSQL</span>
+            <span class="tech-icon">⚡</span><span class="tech-name">Redis</span>
+            <span class="tech-icon">🔧</span><span class="tech-name">MCP</span>
+          </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <div class="about-section">
@@ -718,6 +812,160 @@ title: "About"
   box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
 }
 
+/* Logo Ticker Styles */
+.logo-ticker-section {
+  margin: 4rem 0;
+  padding: 3rem 0;
+  background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background) 100%);
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-label {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--foreground-secondary);
+  margin-bottom: 2rem;
+  padding: 0 2rem;
+}
+
+.logo-ticker-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-ticker {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-ticker-track {
+  display: flex;
+  gap: 4rem;
+  animation: logo-scroll 40s linear infinite;
+  will-change: transform;
+}
+
+.logo-ticker-container:hover .logo-ticker-track {
+  animation-play-state: paused;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--foreground-secondary);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.logo-item:hover {
+  opacity: 1;
+  color: var(--nineflow-primary);
+  transform: scale(1.05);
+}
+
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Technology Ticker Styles */
+.tech-ticker-section {
+  margin: 4rem 0;
+  padding: 3rem 0;
+  background: var(--background);
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.tech-ticker-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.tech-ticker-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: var(--background-secondary);
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.tech-ticker {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.tech-ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  height: 100%;
+  will-change: transform;
+}
+
+.tech-ticker-left .tech-ticker-track {
+  animation: tech-scroll-left 30s linear infinite;
+}
+
+.tech-ticker-right .tech-ticker-track {
+  animation: tech-scroll-right 35s linear infinite;
+}
+
+.tech-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.tech-name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--foreground);
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@keyframes tech-scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes tech-scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 768px) {
   .about-hero {
     flex-direction: column;
@@ -746,6 +994,28 @@ title: "About"
 
   .about-section {
     padding: 1.5rem;
+  }
+
+  .logo-ticker-section,
+  .tech-ticker-section {
+    margin: 2rem 0;
+    padding: 2rem 0;
+  }
+
+  .logo-item {
+    font-size: 1.25rem;
+  }
+
+  .tech-ticker-container {
+    height: 50px;
+  }
+
+  .tech-name {
+    font-size: 0.875rem;
+  }
+
+  .tech-icon {
+    font-size: 1.25rem;
   }
 }
 </style>
