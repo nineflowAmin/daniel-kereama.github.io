@@ -1144,6 +1144,61 @@ svg .toroid-ring-2 {
   color: white;
 }
 
+/* Related Posts Section */
+.related-posts {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: var(--background-secondary);
+  border-radius: 0.75rem;
+  border-left: 4px solid var(--accent);
+}
+
+.related-posts h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.related-posts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-posts li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.related-posts li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.related-posts a {
+  display: block;
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.related-posts a:hover {
+  color: var(--accent);
+}
+
+.related-post-date {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--foreground-tertiary);
+  font-weight: 400;
+}
+
 /* Footer */
 .site-footer {
   background: var(--background-secondary);
