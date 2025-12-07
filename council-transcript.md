@@ -509,75 +509,75 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
         <tbody>
           <tr>
             <td>Final Output Quality</td>
-            <td>7.0</td>
-            <td>9.0</td>
-            <td>8.5</td>
-            <td>10.0</td>
-            <td>8.0</td>
-            <td>8.0</td>
+            <td class="baseline-score">7.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="7.0">9.0</td>
+            <td class="score-cell" data-score="8.5" data-baseline="7.0">8.5</td>
+            <td class="score-cell" data-score="10.0" data-baseline="7.0">10.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="7.0">8.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="7.0">8.0</td>
           </tr>
           <tr>
             <td>Diversity / Collaboration</td>
-            <td>4.0</td>
-            <td>9.0</td>
-            <td>9.0</td>
-            <td>10.0</td>
-            <td>8.0</td>
-            <td>9.0</td>
+            <td class="baseline-score">4.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="4.0">9.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="4.0">9.0</td>
+            <td class="score-cell" data-score="10.0" data-baseline="4.0">10.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="4.0">8.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="4.0">9.0</td>
           </tr>
           <tr>
             <td>Robustness / Reliability</td>
-            <td>6.0</td>
-            <td>8.0</td>
-            <td>7.5</td>
-            <td>9.0</td>
-            <td>8.0</td>
-            <td>7.0</td>
+            <td class="baseline-score">6.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="6.0">8.0</td>
+            <td class="score-cell" data-score="7.5" data-baseline="6.0">7.5</td>
+            <td class="score-cell" data-score="9.0" data-baseline="6.0">9.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="6.0">8.0</td>
+            <td class="score-cell" data-score="7.0" data-baseline="6.0">7.0</td>
           </tr>
           <tr>
             <td>Adaptability / Contextual Memory</td>
-            <td>5.0</td>
-            <td>9.0</td>
-            <td>8.0</td>
-            <td>10.0</td>
-            <td>8.0</td>
-            <td>6.0</td>
+            <td class="baseline-score">5.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="5.0">9.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="5.0">8.0</td>
+            <td class="score-cell" data-score="10.0" data-baseline="5.0">10.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="5.0">8.0</td>
+            <td class="score-cell" data-score="6.0" data-baseline="5.0">6.0</td>
           </tr>
           <tr>
             <td>Human Alignment / Usefulness</td>
-            <td>6.0</td>
-            <td>9.0</td>
-            <td>7.0</td>
-            <td>9.0</td>
-            <td>8.0</td>
-            <td>8.0</td>
+            <td class="baseline-score">6.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="6.0">9.0</td>
+            <td class="score-cell" data-score="7.0" data-baseline="6.0">7.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="6.0">9.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="6.0">8.0</td>
+            <td class="score-cell" data-score="8.0" data-baseline="6.0">8.0</td>
           </tr>
           <tr>
             <td>Efficiency / Resource Cost</td>
-            <td>9.0</td>
-            <td>6.0</td>
-            <td>5.0</td>
-            <td>6.0</td>
-            <td>6.0</td>
-            <td>5.0</td>
+            <td class="baseline-score">9.0</td>
+            <td class="score-cell" data-score="6.0" data-baseline="9.0">6.0</td>
+            <td class="score-cell" data-score="5.0" data-baseline="9.0">5.0</td>
+            <td class="score-cell" data-score="6.0" data-baseline="9.0">6.0</td>
+            <td class="score-cell" data-score="6.0" data-baseline="9.0">6.0</td>
+            <td class="score-cell" data-score="5.0" data-baseline="9.0">5.0</td>
           </tr>
           <tr>
             <td>Emergent Reasoning / Creativity</td>
-            <td>5.0</td>
-            <td>9.0</td>
-            <td>9.0</td>
-            <td>10.0</td>
-            <td>9.0</td>
-            <td>7.0</td>
+            <td class="baseline-score">5.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="5.0">9.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="5.0">9.0</td>
+            <td class="score-cell" data-score="10.0" data-baseline="5.0">10.0</td>
+            <td class="score-cell" data-score="9.0" data-baseline="5.0">9.0</td>
+            <td class="score-cell" data-score="7.0" data-baseline="5.0">7.0</td>
           </tr>
           <tr class="average-row">
             <td><strong>Average</strong></td>
-            <td><strong>6.0</strong></td>
-            <td><strong>8.43</strong></td>
-            <td><strong>7.57</strong></td>
-            <td><strong>9.14</strong></td>
-            <td><strong>7.9</strong></td>
-            <td><strong>7.14</strong></td>
+            <td class="baseline-score"><strong>6.0</strong></td>
+            <td class="score-cell" data-score="8.43" data-baseline="6.0"><strong>8.43</strong></td>
+            <td class="score-cell" data-score="7.57" data-baseline="6.0"><strong>7.57</strong></td>
+            <td class="score-cell" data-score="9.14" data-baseline="6.0"><strong>9.14</strong></td>
+            <td class="score-cell" data-score="7.9" data-baseline="6.0"><strong>7.9</strong></td>
+            <td class="score-cell" data-score="7.14" data-baseline="6.0"><strong>7.14</strong></td>
           </tr>
         </tbody>
       </table>

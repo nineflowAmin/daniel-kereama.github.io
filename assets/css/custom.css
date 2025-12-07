@@ -2646,6 +2646,66 @@ svg .toroid-ring-2 {
   white-space: nowrap;
 }
 
+.scores-table .baseline-score {
+  background-color: rgba(107, 114, 128, 0.1);
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.scores-table .score-cell {
+  position: relative;
+  text-align: center;
+}
+
+.scores-table .score-cell .score-value {
+  display: block;
+  font-weight: 600;
+}
+
+.scores-table .score-cell .score-difference {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  line-height: 1.2;
+}
+
+.scores-table .score-cell.score-better {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: rgb(5, 150, 105);
+}
+
+.scores-table .score-cell.score-better .score-value {
+  color: rgb(5, 150, 105);
+}
+
+.scores-table .score-cell.score-better .score-difference.score-better {
+  color: rgb(5, 150, 105);
+}
+
+.scores-table .score-cell.score-worse {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: rgb(220, 38, 38);
+}
+
+.scores-table .score-cell.score-worse .score-value {
+  color: rgb(220, 38, 38);
+}
+
+.scores-table .score-cell.score-worse .score-difference.score-worse {
+  color: rgb(220, 38, 38);
+}
+
+.scores-table .score-cell.score-similar {
+  background-color: rgba(107, 114, 128, 0.1);
+  color: var(--foreground-secondary);
+}
+
+.scores-table .score-cell.score-similar .score-difference.score-neutral {
+  color: var(--foreground-tertiary);
+  font-weight: 500;
+}
+
 .scores-table tbody tr:hover {
   background: var(--background-secondary);
 }
