@@ -2523,6 +2523,7 @@ svg .toroid-ring-2 {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  table-layout: auto;
 }
 
 .scores-table thead {
@@ -2574,11 +2575,23 @@ svg .toroid-ring-2 {
   vertical-align: top;
 }
 
-.scores-table td:last-child {
+.scores-table .notes-column {
+  min-width: 300px;
+  max-width: 500px;
+  width: 35%;
+}
+
+.scores-table td.notes-column {
   font-size: 0.875rem;
   color: var(--foreground-tertiary);
   font-style: italic;
-  max-width: 400px;
+  line-height: 1.6;
+  padding: 1rem 1.25rem;
+  vertical-align: top;
+}
+
+.scores-table td:not(.notes-column) {
+  white-space: nowrap;
 }
 
 .scores-table tbody tr:hover {
@@ -2743,6 +2756,17 @@ svg .toroid-ring-2 {
 
   .scores-table th,
   .scores-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .scores-table .notes-column {
+    min-width: 200px;
+    max-width: 100%;
+    width: auto;
+  }
+
+  .scores-table td.notes-column {
+    font-size: 0.8rem;
     padding: 0.75rem 0.5rem;
   }
 
