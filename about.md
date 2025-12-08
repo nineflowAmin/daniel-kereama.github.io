@@ -697,8 +697,59 @@ title: "About"
       <p class="experience-description">
         Provided architectural guidance for business systems integration supporting Igneo Infrastructure 
         Partners' consolidation of FirstGas and associated energy assets into Clarus Group—a $2B+ energy 
-        infrastructure portfolio.
+        infrastructure portfolio serving 500,000+ homes and businesses across New Zealand.
       </p>
+      <ul class="experience-achievements">
+        <li>Led requirement gathering with stakeholders across multiple organizations nationwide during 
+        post-acquisition integration, ensuring new business systems minimized operational disruption</li>
+        <li>Championed data warehousing modernization: identified opportunity to consolidate legacy reporting 
+        systems across merged entities, proposed and secured approval for solution</li>
+        <li>Enhanced executive visibility through clear progress reporting and current workflow visualization 
+        for oversight committee</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Pipefish Pty Ltd (Rio Tinto) | Solution Architect</h3>
+        <span class="experience-date">Jan 2018 – Nov 2018</span>
+      </div>
+      <p class="experience-location">Brisbane, Australia</p>
+      <p class="experience-description">
+        Architected scalable CI/CD pipeline on AWS for BDD Test Automation Framework supporting Rio Tinto's 
+        RTTMS global Service Delivery platform (500K+ users).
+      </p>
+      <ul class="experience-achievements">
+        <li>Designed and implemented CI/CD pipeline on AWS Windows (TeamCity/TFS) supporting BDD framework 
+        (C# .NET, SpecFlow/Cucumber, Selenium, NUnit)</li>
+        <li>Secured executive approval through detailed proposal outlining costs, risks, and business benefits, 
+        collaborating with Solution Architects, Managers, and Infrastructure teams</li>
+        <li>Architected distributed testing framework using multiple Selenium WebDriver nodes for parallel UI 
+        testing across browsers</li>
+        <li>Developed comprehensive automated test suite (availability, smoke, security, end-to-end) validating 
+        ServiceNow portal pages and custom API-driven web forms</li>
+        <li>Provided training and mentorship to senior Solution Architects and Technical Specialists on 
+        BDD/SpecFlow, TeamCity configuration, Selenium/WebDriver, and framework maintenance</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Rio Tinto | Senior Technical Specialist</h3>
+        <span class="experience-date">Sep 2017 – Nov 2018</span>
+      </div>
+      <p class="experience-location">Brisbane, Australia</p>
+      <p class="experience-description">
+        Contributed to Rio Tinto's global ServiceNow platform through design, development, and testing of 
+        solutions within the Agile development process.
+      </p>
+      <ul class="experience-achievements">
+        <li>Delivered high-quality enhancements, integrations, and new modules for global ServiceNow platform, 
+        prioritizing maintainability and robustness</li>
+        <li>Fostered collaborative environment through mentoring team members and providing leadership when required</li>
+        <li>Influenced system functionality through active participation in design discussions and architectural 
+        recommendations</li>
+      </ul>
     </div>
 
     <div class="experience-item">
@@ -708,9 +759,56 @@ title: "About"
       </div>
       <p class="experience-location">Brisbane, Australia</p>
       <p class="experience-description">
-        Led frontend development for "Order Anywhere" project—pioneering geolocation-based pizza ordering 
-        that evolved into Domino's Hotspots (150,000+ locations). Spearheaded $1M+ CI improvement initiative 
-        optimizing build pipelines.
+        Engaged as one of 150+ consultants supporting Domino's historic digital transformation. Initially brought 
+        in for CI/CD optimization, built strong relationships with technical leadership and was selected from 
+        150-person consultant pool to lead development of "Order Anywhere" geolocation-based ordering system—the 
+        foundational technology that would evolve into Domino's Hotspots (launched 2018, 150,000+ locations).
+      </p>
+      <ul class="experience-achievements">
+        <li>Led frontend development for "Order Anywhere" project—pioneering geolocation-based pizza ordering 
+        using Google Geo APIs, Bootstrap, HTML5/SASS, jQuery, and KnockoutJS</li>
+        <li>Built responsive, mobile-first web experience integrating real-time GPS location services with 
+        Domino's ordering platform—establishing architectural patterns that would scale to 150,000+ hotspot 
+        locations by 2018</li>
+        <li>Spearheaded $1M+ CI improvement initiative optimizing build pipelines and eliminating flaky tests 
+        across Octopus Deploy, TeamCity, and Selenium test suites—accelerating release cadence during critical 
+        transformation period</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Liquid Interactive | Senior Software Developer</h3>
+        <span class="experience-date">Aug 2016 – Nov 2016</span>
+      </div>
+      <p class="experience-location">Brisbane, Australia</p>
+      <p class="experience-description">
+        Led legacy website migration to Sitecore 8.1 for multi-national client, delivering on time and 
+        exceeding expectations.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>GBST | Senior Software Developer</h3>
+        <span class="experience-date">Aug 2014 – Aug 2016</span>
+      </div>
+      <p class="experience-location">Brisbane, Australia</p>
+      <p class="experience-description">
+        Architected subscription-based online store for medical industry player with distributed architecture. 
+        Designed freight matrix module utilized by 6 major Australian online retail stores.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-header">
+        <h3>Tatts Group | Senior Web Developer</h3>
+        <span class="experience-date">Mar 2014 – Aug 2014</span>
+      </div>
+      <p class="experience-location">Brisbane, Australia</p>
+      <p class="experience-description">
+        Contributed to responsive online gaming platform using C# .NET, ASP.NET MVC Razor, Sitecore 8.0, 
+        and TypeScript.
       </p>
     </div>
   </div>
