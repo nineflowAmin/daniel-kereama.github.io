@@ -138,15 +138,31 @@ title: "About"
     <h2 class="section-title">Career Timeline & Industry Coverage</h2>
     <div class="timeline-container">
       <div class="timeline-item">
+        <div class="timeline-period">2005-2014</div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Foundation & Early Career Development</h3>
+          <div class="timeline-industries">
+            <span class="industry-tag">BSc Software Engineering</span>
+            <span class="industry-tag">Microsoft Certified Professional</span>
+            <span class="industry-tag">Technology Consulting</span>
+          </div>
+          <div class="timeline-focus">
+            <strong>Focus:</strong> Technical foundation, developer progression, consulting across multiple industries
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
         <div class="timeline-period">2014-2017</div>
         <div class="timeline-content">
           <h3 class="timeline-role">Software Development & Consulting</h3>
           <div class="timeline-industries">
             <span class="industry-tag">Finance (GBST)</span>
-            <span class="industry-tag">Retail (Domino's)</span>
+            <span class="industry-tag">Retail (Domino's, Tatts Group)</span>
+            <span class="industry-tag">Technology (Liquid Interactive)</span>
           </div>
           <div class="timeline-focus">
-            <strong>Focus:</strong> Technical depth & delivery
+            <strong>Focus:</strong> Technical depth, delivery excellence, CI/CD optimization, frontend innovation
           </div>
         </div>
       </div>
@@ -160,7 +176,21 @@ title: "About"
             <span class="industry-tag">Energy (Spark NZ for Clarus)</span>
           </div>
           <div class="timeline-focus">
-            <strong>Focus:</strong> Cross-system integration & stakeholder management
+            <strong>Focus:</strong> Cross-system integration, stakeholder management, enterprise architecture, cloud migration
+          </div>
+        </div>
+      </div>
+      
+      <div class="timeline-item">
+        <div class="timeline-period">2019-2022</div>
+        <div class="timeline-content">
+          <h3 class="timeline-role">Professional Development & Enterprise Transformation</h3>
+          <div class="timeline-industries">
+            <span class="industry-tag">Finance (Equifax)</span>
+            <span class="industry-tag">Cloud Transformation</span>
+          </div>
+          <div class="timeline-focus">
+            <strong>Focus:</strong> Enterprise cloud transformation, technical recovery, architecture practice development
           </div>
         </div>
       </div>
@@ -175,7 +205,7 @@ title: "About"
             <span class="industry-tag">AI Platform (NineFlow.AI)</span>
           </div>
           <div class="timeline-focus">
-            <strong>Focus:</strong> Platform architecture, cloud transformation, AI strategy & delivery
+            <strong>Focus:</strong> Platform architecture, cloud-native design, AI strategy, multi-agent systems & delivery
           </div>
         </div>
       </div>
