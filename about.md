@@ -10,12 +10,14 @@ title: "About"
     </div>
     <div class="about-content">
       <h1 class="text-gradient-nineflow">Daniel Kereama</h1>
-      <p class="about-title">Principal Cloud & Software Architect</p>
+      <p class="about-title">AI Platform Architect | Principal Cloud Architect</p>
       <p class="about-subtitle">Multi-Agent Systems & LLM Orchestration</p>
       <p class="lead">
-        Principal Cloud & Software Architect with 20+ years of high-value experience leading 
-        enterprise digital transformation and cloud-native modernization. Currently operating 
-        Nineflow.AI as an R&D practice to maintain capability at the architectural frontier.
+        Principal AI & Platform Architect with 20+ years delivering enterprise-grade platforms 
+        and, most recently, architecting a full end-to-end LLM + multi-agent AI platform deployed 
+        on GKE. Deep hands-on capability across AI orchestration, distributed systems, cloud-native 
+        architecture, and enterprise transformation. Currently operating Nineflow.AI as an R&D 
+        practice to maintain capability at the architectural frontier.
       </p>
       <div class="about-links">
         <a href="https://www.linkedin.com/in/daniel-kereama/" target="_blank" rel="noopener noreferrer" class="about-link">
@@ -31,17 +33,19 @@ title: "About"
   <div class="about-section">
     <h2 class="section-title">Professional Summary</h2>
     <p class="section-content">
-      Principal Cloud & Software Architect with 20+ years of high-value experience leading enterprise 
-      digital transformation and cloud-native modernization. Most recently, I architected and deployed 
-      a full end-to-end LLM + multi-agent AI platform on GKE (<strong class="text-gradient-nineflow">Nineflow.AI</strong>), 
-      demonstrating mastery in distributed systems, LLM orchestration, and complex cloud-native architecture. 
-      Adept at engaging senior stakeholders, driving technology roadmaps, and delivering pragmatic, 
-      production-ready platforms across diverse industries (Finance, Energy, Retail).
+      Principal AI & Platform Architect with 20+ years delivering enterprise-grade platforms 
+      and, most recently, architecting a full end-to-end LLM + multi-agent AI platform deployed 
+      on GKE (<strong class="text-gradient-nineflow">Nineflow.AI</strong>). Deep hands-on capability 
+      across AI orchestration, distributed systems, cloud-native architecture, and enterprise transformation. 
+      Adept at engaging senior stakeholders, shaping AI strategy, and delivering proof-of-value platforms 
+      that accelerate organizational AI adoption across diverse industries (Finance, Energy, Retail, Mining).
     </p>
     <p class="section-content">
-      My core value is translating complex business strategy into executable, scalable, and resilient software. 
-      Currently operating <strong class="text-gradient-nineflow">Nineflow.AI</strong> as an R&D practice to 
-      maintain capability at the architectural frontier.
+      My core value is architecting and building production-ready platforms that translate complex business 
+      strategy into executable, scalable, and resilient software systems. Currently operating 
+      <strong class="text-gradient-nineflow">Nineflow.AI</strong> as an R&D practice to maintain 
+      capability at the architectural frontier while seeking consulting/contract engagements applying 
+      practical AI platform architecture to real-world enterprise programmes.
     </p>
   </div>
 
@@ -164,14 +168,14 @@ title: "About"
       <div class="timeline-item">
         <div class="timeline-period">2022-2025</div>
         <div class="timeline-content">
-          <h3 class="timeline-role">Lead & Principal Architecture</h3>
+          <h3 class="timeline-role">Platform & Principal Architecture</h3>
           <div class="timeline-industries">
             <span class="industry-tag">Finance (Equifax)</span>
             <span class="industry-tag">Industrial Tech (Automated Electrics)</span>
             <span class="industry-tag">AI Platform (NineFlow.AI)</span>
           </div>
           <div class="timeline-focus">
-            <strong>Focus:</strong> Cloud transformation, AI strategy & platform delivery
+            <strong>Focus:</strong> Platform architecture, cloud transformation, AI strategy & delivery
           </div>
         </div>
       </div>
@@ -222,10 +226,11 @@ title: "About"
           preferences, and provide increasingly personalized experiences through 12D profile tracking.</p>
         </div>
         <div class="feature-card">
-          <h3>Production Architecture</h3>
-          <p>Enterprise-grade microservices architecture with 17 operational services deployed on 
-          Kubernetes (GKE), with comprehensive health monitoring, observability, and real-time 
-          streaming via SignalR.</p>
+          <h3>Production Platform Architecture</h3>
+          <p>Enterprise-grade microservices platform with 15 operational services deployed on 
+          Kubernetes (GKE), featuring comprehensive health monitoring, observability, real-time 
+          streaming via SignalR, and full infrastructure-as-code deployment. Complete platform 
+          built from infrastructure through backend to frontend.</p>
         </div>
         <div class="feature-card">
           <h3>Real-World Applications</h3>
@@ -541,11 +546,24 @@ title: "About"
           <li>AI Platform Design</li>
           <li>Model Context Protocol (MCP)</li>
           <li>Streaming Architectures</li>
+          <li>Platform Development & Deployment</li>
           <li>Ethical AI Principles</li>
+          <li>AI Governance Frameworks</li>
         </ul>
       </div>
       <div class="competency-category">
-        <h3>Enterprise Architecture</h3>
+        <h3>Cloud & Platform Architecture</h3>
+        <ul>
+          <li>Cloud-Native Platform Design</li>
+          <li>Microservices Architecture</li>
+          <li>Distributed Systems Architecture</li>
+          <li>Infrastructure as Code (Terraform)</li>
+          <li>Kubernetes Platform Orchestration</li>
+          <li>Platform Security & Governance</li>
+        </ul>
+      </div>
+      <div class="competency-category">
+        <h3>Enterprise Architecture & Leadership</h3>
         <ul>
           <li>Contextual/Conceptual/Logical Architecture</li>
           <li>Solution Architecture</li>
@@ -553,16 +571,7 @@ title: "About"
           <li>Technology Roadmapping</li>
           <li>Stakeholder Engagement</li>
           <li>Business Case Development</li>
-        </ul>
-      </div>
-      <div class="competency-category">
-        <h3>Technical Leadership</h3>
-        <ul>
-          <li>Cloud-Native Architecture (GKE/AWS)</li>
-          <li>Microservices Design</li>
-          <li>Infrastructure as Code (Terraform)</li>
           <li>CI/CD Pipeline Design</li>
-          <li>Performance Optimization</li>
           <li>POC Development & Validation</li>
         </ul>
       </div>
@@ -583,20 +592,30 @@ title: "About"
       </div>
       <p class="experience-location">Tauranga, New Zealand</p>
       <p class="experience-description">
-        End-to-end architecture, implementation, and deployment of a production-ready AI platform 
+        End-to-end platform architecture, implementation, and deployment of a production-ready AI platform 
         validating architectural patterns for LLM orchestration, multi-agent systems, and enterprise-grade 
-        cloud deployment.
+        cloud deployment. Built complete platform from infrastructure through backend to frontend.
       </p>
       <ul class="experience-achievements">
-        <li>Architected a 17-service AI platform (6 .NET 8, 3 Python, 2 React) with intelligent LLM routing 
-        gateway supporting GPT-5, GPT-4o, and Ollama</li>
+        <li>Architected and developed a 15-service AI platform (6 .NET 8, 3 Python, 2 React) with intelligent 
+        LLM routing gateway supporting GPT-4o, GPT-5 (multi-streaming), and Ollama</li>
         <li>Designed model-agnostic routing with &lt;500ms adaptive selection reducing vendor lock-in and cost</li>
         <li>Implemented multi-agent orchestration system enabling specialized agents to collaboratively solve 
-        complex tasks</li>
-        <li>Deployed complete platform to Google Kubernetes Engine (GKE) using Terraform IaC, Kustomize, 
-        and GitHub Actions CI/CD</li>
+        complex tasks—validated patterns directly applicable to enterprise automation and decision workflows</li>
+        <li>Integrated Model Context Protocol (MCP) to orchestrate AI tooling: web search, embeddings, NLP, 
+        structured reasoning, and external APIs</li>
+        <li>Built real-time streaming architecture with SignalR enabling live multi-agent conversation flows, 
+        contextual memory, and multi-turn reasoning</li>
+        <li>Deployed complete platform to Google Kubernetes Engine (GKE) using Terraform IaC, Kustomize env 
+        separation, GitHub Actions CI/CD, and autoscaling—validating patterns for enterprise-ready AI platforms</li>
+        <li>Implemented private networking, workload identity, encrypted persistent storage, RBAC policies, 
+        and TLS termination ensuring enterprise security posture</li>
+        <li>Designed resilient data layer using PostgreSQL (transactional data) and Redis (session/memory/caching) 
+        including zero-downtime migrations</li>
+        <li>Applied proven architecture patterns: DI, event-driven messaging, adaptive learning loops, facades, 
+        repository pattern, and domain-driven segregation</li>
         <li>Delivered functional multi-agent AI chat platform to live users within 2 months, demonstrating 
-        rapid prototyping and practical execution</li>
+        rapid prototyping and practical execution under uncertainty</li>
         <li>Embedded responsible AI governance: transparency, auditability, and human-centred decision boundaries</li>
       </ul>
     </div>
@@ -670,25 +689,26 @@ title: "About"
     <h2 class="section-title">Key Differentiators</h2>
     <div class="differentiators-grid">
       <div class="differentiator-item">
-        <strong>Hands-On Technical Depth + Architectural Breadth</strong>
-        <p>Progressed from developer → senior developer → solution architect → principal architect over 20 years, 
-        combining deep implementation expertise with strategic architectural thinking.</p>
+        <strong>Hands-On Platform Architecture + Development</strong>
+        <p>Progressed from developer → senior developer → solution architect → principal platform architect over 20 years, 
+        combining deep implementation expertise (C#, Python, microservices, distributed systems) with strategic platform 
+        architecture thinking. Can credibly engage developers on technical challenges while articulating vision to C-suite stakeholders.</p>
       </div>
       <div class="differentiator-item">
-        <strong>Proof of Advanced Systems Delivery</strong>
-        <p>Production-deployed LLM/Multi-Agent AI platform (17-service microservices architecture, complex orchestration, 
-        GKE deployment) delivered in 2 months—demonstrating ability to solve the most difficult problems in distributed 
-        systems, cloud-native design, and integration at speed.</p>
+        <strong>Proven AI Platform Architecture Delivery</strong>
+        <p>Production-deployed AI platform with 15-service microservices architecture, multi-agent orchestration, and LLM 
+        routing in 2 months—demonstrating both architectural design capability and hands-on implementation skills. Built 
+        entire platform from infrastructure (Terraform, Kubernetes) through backend (.NET 8, Python) to frontend (React).</p>
       </div>
       <div class="differentiator-item">
-        <strong>Cross-Layer Architecture Expertise</strong>
-        <p>Demonstrated capability across contextual (business), conceptual (architecture), and logical 
-        (implementation) layers—translating business vision into executable technical solutions.</p>
+        <strong>Cross-Layer Platform Architecture Expertise</strong>
+        <p>Demonstrated capability across contextual (business needs), conceptual (system design), and logical 
+        (technical implementation) architecture layers—translating business vision into executable platform solutions.</p>
       </div>
       <div class="differentiator-item">
-        <strong>Practitioner-Led Architecture</strong>
-        <p>Validates architectural decisions through hands-on implementation—recently built entire AI platforms 
-        from infrastructure through backend to frontend.</p>
+        <strong>Practitioner-Led Platform Architecture</strong>
+        <p>Validates architectural decisions through hands-on implementation—recently architected and built entire AI 
+        platforms from infrastructure through backend to frontend, ensuring pragmatic, implementable designs.</p>
       </div>
       <div class="differentiator-item">
         <strong>Stakeholder Engagement at All Levels</strong>
@@ -753,10 +773,11 @@ title: "About"
   <div class="about-section contact-section">
     <h2 class="section-title">Connect</h2>
     <p class="section-content">
-      Ongoing R&D practice maintaining leading-edge capability in AI and distributed systems architecture. 
-      Actively seeking Principal/Lead Architecture roles or high-impact consulting engagements where 20+ years 
-      of enterprise transformation expertise, combined with cutting-edge cloud and LLM platform delivery, can 
-      drive significant business value. Open to both fixed-term contract and permanent leadership positions.
+      Ongoing R&D practice maintaining leading-edge capability in AI platform architecture and distributed systems. 
+      Actively seeking Principal/Lead Platform Architecture roles or high-impact consulting engagements (6–18 months) 
+      focused on AI platforms, LLM orchestration, enterprise adoption, or multi-agent system integration. Applying 
+      20+ years of enterprise transformation expertise, combined with cutting-edge cloud and LLM platform delivery, 
+      to drive significant business value. Open to both fixed-term contract and permanent leadership positions.
     </p>
     <div class="contact-links">
       <a href="https://www.linkedin.com/in/daniel-kereama/" target="_blank" rel="noopener noreferrer" class="contact-link">

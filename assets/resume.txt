@@ -1,0 +1,314 @@
+DANIEL KERAMA 
+AI Platform Architect | Principal Cloud/Software Architect | Multi-Agent Systems & 
+LLM Orchestration 
+REDACTED(daniel.k@nineflow.ai | danielkereama@gmail.com)   
+(+64|0)-REDACTED | linkedin.com/in/danielkereama | Bay of Plenty, New Zealand 
+PROFESSIONAL SUMMARY 
+Principal AI & Platform Architect with 20+ years delivering enterprise-grade systems 
+and, most recently, architecting a full end-to-end LLM + multi-agent AI platform 
+deployed on GKE. Deep hands-on capability across AI orchestration, distributed 
+systems, cloud-native architecture, and enterprise transformation. Adept at engaging 
+senior stakeholders, shaping AI strategy, and delivering proof-of-value platforms that 
+accelerate organizational AI adoption. Currently operating NineFlow.AI as an R&D 
+practice to keep technical capability at the frontier while seeking consulting/contract 
+engagements applying practical AI platform architecture to real-world enterprise 
+programmes. 
+CORE COMPETENCIES 
+AI & Platform Architecture 
+LLM Orchestration & Routing • Multi-Agent Systems • AI Platform Design • Model 
+Context Protocol (MCP) • Streaming Architectures • Prompt Engineering • Ethical AI 
+Principles • AI Governance Frameworks 
+Enterprise Architecture 
+Contextual/Conceptual/Logical Architecture • Solution Architecture • Enterprise 
+Integration Patterns • Technology Roadmapping • Architecture Practice Development • 
+Stakeholder Engagement • Business Case Development 
+Technical Leadership 
+Cloud-Native Architecture (GKE/AWS) • Microservices Design • Infrastructure as Code 
+(Terraform) • CI/CD Pipeline Design • System Integration • Performance Optimization • 
+POC Development & Validation • Fail-Fast Methodology 
+Technology Stack 
+C# .NET 8 • Python • React/TypeScript • Kubernetes • Docker • PostgreSQL • Redis • 
+gRPC • SignalR • OpenAI/Anthropic/Google AI APIs • GitHub Actions • Terraform • 
+Kustomize
+PROFESSIONAL EXPERIENCE 
+NINEFLOW.AI | Tauranga, New Zealand 
+Principal Architect & Founder | Oct 2025 – Present End-to-end architecture, 
+implementation, and deployment of a production-ready AI platform validating 
+architectural patterns for LLM orchestration, multi-agent systems, and enterprise-grade 
+cloud deployment. 
+AI Platform Architecture & Orchestration 
+● Architected a 15-service AI platform (6 .NET 8, 3 Python, 2 React) with an 
+intelligent LLM routing gateway supporting GPT-4o, GPT‑5 (multi-streaming) 
+and Ollama. 
+● Designed model‑agnostic routing with <500ms adaptive selection reducing 
+vendor lock-in and cost. 
+● Implemented multi-agent orchestration system enabling specialized agents to 
+collaboratively solve complex tasks—validated patterns directly applicable to 
+enterprise automation and decision workflows. 
+● Integrated Model Context Protocol (MCP) to orchestrate AI tooling: web search, 
+embeddings, NLP, structured reasoning, and external APIs. 
+● Built real-time streaming architecture with SignalR enabling live multi-agent 
+conversation flows, contextual memory, and multi-turn reasoning. 
+Cloud-Native & Enterprise Architecture 
+● Deployed complete platform to Google Kubernetes Engine (GKE) using 
+Terraform IaC, Kustomize env separation, GitHub Actions CI/CD, and 
+autoscaling—validating patterns for enterprise-ready AI platforms. 
+● Implemented private networking, workload identity, encrypted persistent 
+storage, RBAC policies, and TLS termination ensuring enterprise security 
+posture. 
+● Designed a resilient data layer using PostgreSQL (transactional data) and Redis 
+(session/memory/caching) including zero-downtime migrations. 
+● Applied proven architecture patterns: DI, event-driven messaging, adaptive 
+learning loops, facades, repository pattern, and domain-driven segregation. 
+Business Value, Governance & Strategy 
+● Delivered functional multi-agent AI chat platform to live users within 2 months, 
+demonstrating rapid prototyping and practical execution under uncertainty. 
+● Developed commercial models (multi-tier SaaS, enterprise-hosted cluster) to test 
+viability of platform adoption. 
+● Embedded responsible AI governance: transparency, auditability, and 
+human-centred decision boundaries. 
+● Operated across contextual (business), conceptual (architecture), and logical 
+(implementation) layers—turning strategy into running software. 
+Technologies 
+.NET 8, Python, React, Kubernetes (GKE), Terraform, Redis, PostgreSQL, Docker, 
+SignalR, gRPC, OpenAI/Anthropic APIs, GitHub Actions, Kustomize 
+Current Status: Ongoing R&D practice maintaining leading-edge capability in AI 
+platform architecture. Actively seeking 6–18 month consulting or principal 
+architecture engagements focused on AI platforms, LLM orchestration, enterprise 
+adoption, or multi-agent system integration. 
+AUTOMATED ELECTRICS | Tauranga, New Zealand 
+Senior R&D Software Engineer – AI & Computer Vision | Mar 2024 – Jul 2025 (1 yr 
+5 mos) 
+Led architecture and implementation of high-throughput industrial imaging platform for 
+AI-based lumber defect detection during global timber industry's adoption of 
+AI-powered quality control and yield optimization systems. Delivered 
+enterprise-grade computer vision solution for New Zealand's wood processing 
+sector—an industry where AI is revolutionizing production efficiency and reducing waste 
+through real-time defect detection. 
+Technical Architecture & AI Implementation: 
+● Architected ImageAcquisitionService processing 360 gRPC requests/sec from 
+16 cameras at 92 FPS with sub-5ms capture times using C#, C++, 
+gRPC/Protobuf, DI, and Blazor—enabling real-time quality assessment for 
+high-speed lumber processing lines 
+● Designed event-driven, multithreaded data pipelines with ring buffers, channels, 
+semaphores, and cancellation tokens for fault-resilient, real-time camera 
+coordination 
+● Developed YOLOv8-based defect detection pipeline, training on 4,000 images 
+(2800x1200), achieving 85-90 MAP for real-time lumber grading across 3 
+classes—directly supporting sawmill yield optimization and quality control 
+automation 
+● Modernized technology stack with .NET 8, Azure DevOps CI/CD, Git, SQL 
+Server, and PostgreSQL for enhanced telemetry and diagnostics 
+Leadership & Collaboration: 
+● Collaborated with USA AI team and Canada optimization teams, ensuring 
+seamless cross-border delivery on complex technical initiatives 
+● Mentored junior .NET developer on async patterns, multi-threading, and service 
+resilience, fostering professional growth and team capability 
+● Revamped Shift Schedule UI/UX in Blazor with HTML5/SASS, Bootstrap 4, 
+delivering responsive, animated components 
+Key Technologies: C#, C++, Python, YOLO/TensorRT/CUDA, gRPC, Blazor, .NET 8, 
+SQL Server, PostgreSQL, Azure DevOps 
+Industry Context: Automated Electrics is a 30+ year New Zealand leader in 
+manufacturing automation and industrial control solutions for wood processing and 
+sawmill operations—positioning this work at the forefront of AI adoption in New 
+Zealand's critical timber industry during its digital transformation period (2024-2025). 
+EQUIFAX | Auckland, New Zealand 
+Lead Quality Assurance Engineer - Automation | May 2022 – Dec 2022 (8 mos) 
+Led technical recovery of $10M+ New Zealand workstream within Equifax's historic 
+US$1.5B+ global cloud transformation—part of the company's mission to become the 
+world's first cloud-native credit reporting company by decommissioning all mainframes 
+and data centers. Inherited legacy-to-cloud migration (IBM Mainframe/DB2 → GCP 
+microservices) that was 3 months behind schedule, demonstrating crisis leadership and 
+enterprise architecture capabilities during industry's largest cloud transformation 
+initiative. 
+Enterprise Architecture & Technical Leadership: 
+● Designed and secured executive sign-off for parallel testing framework validating 
+credit-scoring outputs across mainframe and cloud environments—ensuring 
+accuracy for Equifax's new cloud-native Data Fabric architecture while 
+maintaining PII compliance and data governance 
+● Architected production test-data pipeline generating anonymized PII datasets 
+with encryption-at-rest/in-transit controls for high-volume automated regression 
+testing—directly supporting security-first transformation following 2017 data 
+breach 
+● Eliminated manual testing by implementing automated pipeline testing on all 
+available anonymized production data, accelerating release readiness under tight 
+timelines while maintaining nine-layer, zero-trust security architecture 
+required for cloud migration 
+● Led cross-functional project team of 15 (executive sponsors, offshore vendors, 
+PMs, developers), coordinating alignment and maintaining transparent 
+risk/compliance reporting 
+Delivery Impact: 
+● Delivered migration release on schedule, achieving 98% pass rate on 
+production vs. cloud-migrated defect validation—contributing to Equifax's 
+goal of launching 100+ new cloud-native products annually 
+● Established data governance framework ensuring PII protection and regulatory 
+compliance throughout migration lifecycle—supporting Equifax's 
+transformation into cloud-native leader processing 90% of revenue through 
+Equifax Cloud 
+Key Technologies: GCP, IBM Mainframe/DB2, C#, Python, Test Automation 
+Frameworks, Data Pipeline Design 
+Strategic Context: This role positioned me at the center of one of the financial services 
+industry's largest and most complex cloud transformations—a US$1.5B+ initiative to 
+completely re-architect a global credit reporting platform serving millions of customers 
+while maintaining zero-downtime operations and meeting the highest security and 
+compliance standards post-data breach. 
+SPARK NEW ZEALAND | Waikato, New Zealand 
+Lead Solution Architect | Nov 2018 – Oct 2019 (1 yr) 
+Provided architectural guidance for business systems integration supporting Igneo 
+Infrastructure Partners' consolidation of FirstGas and associated energy assets 
+into Clarus Group—a $2B+ energy infrastructure portfolio serving 500,000+ homes and 
+businesses across New Zealand. 
+Enterprise Architecture & Stakeholder Management: 
+● Led requirement gathering with stakeholders across multiple organizations 
+nationwide during post-acquisition integration, ensuring new business systems 
+minimized operational disruption 
+● Optimized project delivery by advising on logical workstream breakdowns and 
+facilitating collaboration across acquiring and acquired organizations 
+● Championed data warehousing modernization: identified opportunity to 
+consolidate legacy reporting systems across merged entities, proposed and 
+secured approval for solution, initiated workstream, and transitioned to 
+development team for completion 
+● Enhanced executive visibility through clear progress reporting and current 
+workflow visualization for oversight committee 
+Project & Vendor Management: 
+● Established Jira framework and maintained ownership throughout project 
+lifecycle 
+● Fostered relationships with toolset vendors, implementing initiatives to improve 
+team productivity 
+Key Technologies: Enterprise Architecture Frameworks, Jira, Data Warehousing, 
+Business Intelligence, System Integration 
+Strategic Context: Engaged during the critical 2016-2019 integration phase following 
+Igneo's acquisition of FirstGas—the foundation for building Clarus into New Zealand's 
+largest energy infrastructure group (FirstGas, Rockgas, Flexgas) ultimately valued at 
+$2B+ in 2025 Brookfield acquisition. 
+PIPEFISH PTY LTD (RIO TINTO) | Brisbane, Australia 
+Solution Architect | Jan 2018 – Nov 2018 (11 mos) 
+Architected scalable CI/CD pipeline on AWS for BDD Test Automation Framework 
+supporting Rio Tinto’s RTTMS global Service Delivery platform (500K+ users). 
+Architecture & Implementation: - Designed and implemented CI/CD pipeline on AWS 
+Windows (TeamCity/TFS) supporting BDD framework (C# .NET, SpecFlow/Cucumber, 
+Selenium, NUnit) - Secured executive approval through detailed proposal outlining 
+costs, risks, and business benefits, collaborating with Solution Architects, Managers, 
+and Infrastructure teams - Architected distributed testing framework using multiple 
+Selenium WebDriver nodes for parallel UI testing across browsers - Developed 
+comprehensive automated test suite (availability, smoke, security, end-to-end) validating 
+ServiceNow portal pages and custom API-driven web forms 
+Knowledge Transfer & Mentorship: - Provided training and mentorship to senior 
+Solution Architects and Technical Specialists on BDD/SpecFlow, TeamCity 
+configuration, Selenium/WebDriver, and framework maintenance 
+Key Technologies: AWS, TeamCity, TFS, C# .NET, SpecFlow/Cucumber, Selenium, 
+NUnit, ServiceNow 
+RIO TINTO | Brisbane, Australia 
+Senior Technical Specialist | Sep 2017 – Nov 2018 (1 yr 3 mos) 
+Contributed to Rio Tinto’s global ServiceNow platform through design, development, 
+and testing of solutions within the Agile development process. 
+Technical Delivery: - Delivered high-quality enhancements, integrations, and new 
+modules for global ServiceNow platform, prioritizing maintainability and robustness - 
+Fostered collaborative environment through mentoring team members and providing 
+leadership when required - Influenced system functionality through active participation 
+in design discussions and architectural recommendations 
+Key Technologies: ServiceNow, Agile/Scrum, JavaScript, REST APIs, Web Services 
+DOMINO'S PIZZA ENTERPRISES | Brisbane, Australia 
+Senior Consultant (via Staff Augmentation) | Dec 2016 – Jun 2017 (7 mos) 
+Engaged as one of 150+ consultants supporting Domino's historic digital 
+transformation—part of the company's mission to reinvent itself as "an e-commerce 
+company that happens to sell pizza" following its 2008-2009 turnaround. Initially brought 
+in for CI/CD optimization, built strong relationships with technical leadership and was 
+selected from 150-person consultant pool to lead development of "Order Anywhere" 
+geolocation-based ordering system—the foundational technology that would evolve into 
+Domino's Hotspots (launched 2018, 150,000+ locations) and ultimately Pinpoint 
+Delivery (2023). 
+Technical Leadership & Innovation Delivery: 
+● Led frontend development for "Order Anywhere" project—pioneering 
+geolocation-based pizza ordering using Google Geo APIs, Bootstrap, 
+HTML5/SASS, jQuery, and KnockoutJS, enabling customers to order from parks, 
+beaches, and locations without traditional addresses 
+● Built responsive, mobile-first web experience integrating real-time GPS location 
+services with Domino's ordering platform—establishing architectural patterns that 
+would scale to 150,000+ hotspot locations by 2018 
+● Architected frontend components for location selection, map-based ordering 
+interfaces, and delivery tracking functionality—validating user experience 
+patterns that would become signature Domino's innovations 
+● Collaborated with backend teams on API integration for location services, order 
+routing, and delivery dispatch—ensuring seamless end-to-end customer 
+experience 
+CI/CD Pipeline Optimization & Process Improvement: 
+● Spearheaded $1M+ CI improvement initiative optimizing build pipelines and 
+eliminating flaky tests across Octopus Deploy, TeamCity, and Selenium test 
+suites—accelerating release cadence during critical transformation period 
+● Diagnosed and resolved performance bottlenecks in automated testing 
+infrastructure, reducing build times and improving deployment reliability for rapid 
+feature delivery 
+● Established relationships with technical leadership through proactive 
+problem-solving and demonstrated technical capability—earning trust to lead 
+high-visibility innovation projects 
+Strategic Context & Business Impact: 
+● Contributed to Domino's digital transformation during period when company 
+achieved 80%+ online sales target and established itself as world's largest pizza 
+company by retail sales ($12.2B+ global sales in 2017) 
+● "Order Anywhere" project represented early-stage validation of GPS-based 
+ordering concept that would become core competitive differentiator—Hotspots 
+launched April 2018 as "another delivery revolution" with 150,000+ locations 
+nationwide (USA) 
+● Work directly supported Domino's evolution from traditional pizza chain to 
+technology leader, with over 50% of global sales through digital channels by 
+2017 
+Key Technologies: Google Geo APIs, Bootstrap, HTML5/SASS, jQuery, KnockoutJS, 
+Octopus Deploy, TeamCity, Selenium, CI/CD Pipeline Optimization 
+Industry Recognition: The geolocation ordering innovation pioneered during this 
+period eventually earned Domino's Hotspots "Technology of the Year" recognition 
+(Marketing Dive, 2018) and established Domino's as digital innovation leader in QSR 
+industry. 
+EARLIER CAREER PROGRESSION 
+LIQUID INTERACTIVE | Senior Software Developer | Aug 2016 – Nov 2016 (4 mos) - 
+Led legacy website migration to Sitecore 8.1 for multi-national client, delivering on time 
+and exceeding expectations 
+GBST | Senior Software Developer | Aug 2014 – Aug 2016 (2 yrs 1 mo) - Architected 
+subscription-based online store for medical industry player with distributed architecture - 
+Designed freight matrix module utilized by 6 major Australian online retail stores 
+TATTS GROUP | Senior Web Developer | Mar 2014 – Aug 2014 (6 mos) - Contributed 
+to responsive online gaming platform (C# .NET, ASP.NET MVC Razor, Sitecore 8.0, 
+TypeScript) 
+EARLIER ROLES (2008-2014): Senior Developer, Programming Analyst, Technology 
+Consultant across Mandalay Technologies, Zespri International, Freelance, and News 
+Corp Australia 
+EDUCATION & PROFESSIONAL DEVELOPMENT 
+BSc (Software Engineering), University of Waikato (2005) 
+Microsoft Certified Professional (MCP) 
+Continuous Professional Development - Advanced AI/ML Technologies: OpenAI, 
+Anthropic, Google Gemini APIs - Cloud-Native Architecture: Kubernetes, GKE, 
+Terraform, Infrastructure as Code - Career Development Break (Jul 2023 – Mar 2024): 
+Technical skill advancement, industry engagement (LinkedIn Experts on Software 
+Development) 
+KEY DIFFERENTIATORS 
+✓ Hands-On Technical Depth + Architectural Breadth: Progressed from developer 
+→ senior developer → solution architect → principal architect over 20 years—combining 
+deep implementation expertise (C#, Python, microservices, distributed systems) with 
+strategic architectural thinking. Can credibly engage developers on technical challenges 
+while articulating vision to C-suite stakeholders. 
+✓ Proven AI Architecture Delivery: Production-deployed AI platform with 15-service 
+microservices architecture, multi-agent orchestration, and LLM routing in 2 
+months—demonstrating both architectural design capability and hands-on 
+implementation skills. 
+✓ Cross-Layer Architecture Expertise: Demonstrated capability across contextual 
+(business needs), conceptual (system design), and logical (technical implementation) 
+architecture layers—translating business vision into executable technical solutions. 
+✓ Practitioner-Led Architecture: Validates architectural decisions through hands-on 
+implementation—recently built entire AI platforms from infrastructure (Terraform, 
+Kubernetes) through backend (.NET 8, Python) to frontend (React)—ensuring 
+pragmatic, implementable designs. 
+✓ Stakeholder Engagement at All Levels: Track record securing executive sign-off 
+for technical initiatives (Equifax, Rio Tinto, Spark) while maintaining credibility with 
+development teams through deep technical knowledge and mentorship capability. 
+✓ Fail-Fast Execution with Production Results: Delivered functional AI chat platform 
+to POC within 2 months, validating concepts through practical implementation rather 
+than theoretical design—demonstrating rapid POC delivery and iteration. 
+✓ Enterprise Architecture Experience: 15+ years architecting solutions across 
+telecommunications, finance, retail, energy, and mining sectors—understanding how to 
+introduce AI platforms in highly transformational enterprise contexts. 
+✓ Ethical AI Leadership: Embedded responsible AI principles (transparency, 
+accountability, dignity) into architectural design—establishing governance frameworks 
+that balance innovation with safety. 
+REFERENCES 
+Available upon request 
+Last Updated: November 2025 
