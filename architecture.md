@@ -6,7 +6,7 @@ title: "Architecture"
 <style>
     .architecture-page {
         font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-        background: #f5f7fa;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         padding: 12px;
         display: flex;
         justify-content: center;
@@ -15,29 +15,41 @@ title: "Architecture"
     }
 
     .architecture-container {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        padding: 20px;
+        background: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+        padding: 24px;
         max-width: 1400px;
         width: 100%;
+        border: 1px solid rgba(0,0,0,0.05);
     }
 
     .architecture-header {
         text-align: center;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .architecture-header .toroid-logo {
+        width: 64px;
+        height: 64px;
+        filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.3));
     }
 
     .architecture-header h1 {
-        font-size: 24px;
+        font-size: 28px;
         color: #1a1a1a;
         margin-bottom: 6px;
-        font-weight: 600;
+        font-weight: 700;
+        letter-spacing: -0.5px;
     }
 
     .architecture-header p {
-        font-size: 13px;
-        color: #666;
+        font-size: 14px;
+        color: #555;
         font-weight: 400;
     }
 
@@ -51,12 +63,12 @@ title: "Architecture"
     }
 
     .layer-title {
-        font-size: 11px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.8px;
-        color: #666;
-        margin-bottom: 6px;
+        letter-spacing: 1px;
+        color: #444;
+        margin-bottom: 8px;
     }
 
     .services {
@@ -66,33 +78,41 @@ title: "Architecture"
     }
 
     .service {
-        background: white;
-        border-radius: 6px;
-        padding: 10px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 8px;
+        padding: 12px;
         min-width: 140px;
         flex: 1;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         border: 1.5px solid;
         position: relative;
+        backdrop-filter: blur(10px);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
 
     .service-name {
         font-size: 13px;
         font-weight: 600;
-        margin-bottom: 3px;
+        margin-bottom: 4px;
     }
 
     .service-port {
         font-size: 11px;
-        color: #666;
+        color: #555;
         font-family: 'Consolas', monospace;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
+        font-weight: 500;
     }
 
     .service-detail {
         font-size: 10px;
-        color: #888;
-        line-height: 1.5;
+        color: #666;
+        line-height: 1.6;
     }
 
     /* Color Themes */
@@ -136,9 +156,27 @@ title: "Architecture"
 
     .flow-arrow {
         text-align: center;
-        color: #90A4AE;
-        font-size: 20px;
-        margin: 6px 0;
+        color: #6366f1;
+        font-size: 24px;
+        margin: 8px 0;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+        animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+    }
+
+    .flow-arrow-bidirectional {
+        text-align: center;
+        color: #6366f1;
+        font-size: 24px;
+        margin: 8px 0;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+        animation: pulse 2s ease-in-out infinite;
     }
 
     .feature-grid {
@@ -151,46 +189,54 @@ title: "Architecture"
     }
 
     .feature {
-        padding: 12px;
-        background: #F8F9FA;
-        border-radius: 6px;
-        border-left: 3px solid #1976D2;
+        padding: 14px;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        border-radius: 8px;
+        border-left: 4px solid #6366f1;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        transition: transform 0.2s ease;
+    }
+
+    .feature:hover {
+        transform: translateX(4px);
     }
 
     .feature h3 {
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 600;
         color: #1a1a1a;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
 
     .feature p {
-        font-size: 10px;
-        color: #666;
-        line-height: 1.5;
+        font-size: 11px;
+        color: #555;
+        line-height: 1.6;
     }
 
     .tech-stack {
-        margin-top: 16px;
-        padding: 12px;
-        background: #FAFAFA;
-        border-radius: 6px;
+        margin-top: 20px;
+        padding: 16px;
+        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+        border-radius: 8px;
         text-align: center;
+        border: 1px solid rgba(0,0,0,0.05);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
 
     .tech-stack h3 {
-        font-size: 11px;
-        font-weight: 600;
+        font-size: 12px;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.8px;
-        color: #666;
-        margin-bottom: 8px;
+        letter-spacing: 1px;
+        color: #444;
+        margin-bottom: 10px;
     }
 
     .tech-stack p {
-        font-size: 11px;
-        color: #444;
-        line-height: 1.6;
+        font-size: 12px;
+        color: #333;
+        line-height: 1.8;
     }
 
     @media (max-width: 768px) {
@@ -220,6 +266,7 @@ title: "Architecture"
 <div class="architecture-page">
     <div class="architecture-container">
         <div class="architecture-header">
+            <img src="{{ '/assets/images/toroid-logo.svg' | relative_url }}" alt="Nineflow.AI" class="toroid-logo">
             <h1>NineFlow.AI System Architecture</h1>
             <p>Production Multi-Agent Orchestration Platform • 17 Microservices • Kubernetes (GKE)</p>
         </div>
@@ -242,7 +289,7 @@ title: "Architecture"
                 </div>
             </div>
 
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow-bidirectional">⇅</div>
 
             <!-- API Gateway Layer -->
             <div class="layer">
@@ -261,7 +308,7 @@ title: "Architecture"
                 </div>
             </div>
 
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow-bidirectional">⇅</div>
 
             <!-- Orchestration Layer -->
             <div class="layer">
@@ -275,7 +322,7 @@ title: "Architecture"
                 </div>
             </div>
 
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow-bidirectional">⇅</div>
 
             <!-- Platform Services -->
             <div class="layer">
@@ -299,7 +346,7 @@ title: "Architecture"
                 </div>
             </div>
 
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow-bidirectional">⇅</div>
 
             <!-- Agent Services -->
             <div class="layer">
@@ -333,7 +380,7 @@ title: "Architecture"
                 </div>
             </div>
 
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow-bidirectional">⇅</div>
 
             <!-- Specialized Services -->
             <div class="layer">
@@ -352,7 +399,7 @@ title: "Architecture"
                 </div>
             </div>
 
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow-bidirectional">⇅</div>
 
             <!-- LLM Providers -->
             <div class="layer">
@@ -373,7 +420,7 @@ title: "Architecture"
                 </div>
             </div>
 
-            <div class="flow-arrow">↓</div>
+            <div class="flow-arrow-bidirectional">⇅</div>
 
             <!-- Infrastructure -->
             <div class="layer">
