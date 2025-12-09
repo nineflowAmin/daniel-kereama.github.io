@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Beyond Static RAG: Closing the Feedback Loop 🧠"
-date: 2025-12-15 10:00:00 +0000
+date: 2025-12-09 10:00:00 +0000
 categories: [rag, memory-systems, ai-architecture, vector-databases, feedback-loops]
 description: "Moving from read-only RAG to a closed-loop memory system where agents evolve through continuous feedback. The system remembers not just facts, but how it reasoned—developing personality through vector accumulation."
 excerpt: "Most RAG implementations are strictly read-only. We've been working on solving the 'amnesic agent' problem by moving from a linear pipeline to a closed loop. The goal isn't just storage—it's evolution."
