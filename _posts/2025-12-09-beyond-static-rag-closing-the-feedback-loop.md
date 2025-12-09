@@ -12,8 +12,8 @@ post_slug: "beyond-static-rag-closing-the-feedback-loop"
 
 *Most RAG (Retrieval-Augmented Generation) implementations are strictly read-only. The AI retrieves context, answers the user, and then "forgets" until the next session. We've been working on solving the "amnesic agent" problem by moving from a linear pipeline to a closed loop. The goal isn't just storage—it's evolution.*
 
-![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/banner.jpg)
-*From linear retrieval to closed-loop evolution: the system remembers not just what it said, but how it reasoned.*
+![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/01-banner.jpg)
+*Transforming from static RAG to a continuous feedback loop: where every interaction builds organizational intelligence and competitive advantage.*
 
 ## The Problem: Amnesic Agents
 
@@ -73,6 +73,9 @@ It's been fascinating to watch the system develop a "personality" purely through
 
 Instead of just embedding the user's raw text, we project the query onto a semantic vector space—a multi-dimensional cognitive profile. This helps capture intent and state of mind, rather than just keyword matching.
 
+![The Profiling Layer]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/02-profiling-layer.jpg)
+*Understanding customer intent beyond keywords: cognitive profiling enables personalized experiences, improved conversion rates, and reduced support costs.*
+
 ### Implementation Pattern
 
 ```csharp
@@ -129,6 +132,9 @@ public class DimensionalVector
 ## 2. The Context Injection
 
 We perform a vector similarity search against past interactions and inject these "memories" directly into the prompt as a system persona. This gives the agent immediate historical grounding before it generates a single token.
+
+![The Context Injection]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/03-context-injection.jpg)
+*Learning from every interaction: the system retrieves past conversations, preferences, and solutions—eliminating repetition and delivering consistent, faster customer experiences.*
 
 ### Implementation Pattern
 
@@ -252,6 +258,9 @@ public class PgVectorMemoryRepository : IMemoryRepository
 ## 3. The Rationalization Phase
 
 This is the critical shift. The agent doesn't just return an answer to the user; it returns a structured JSON object containing:
+
+![The Rationalization Phase]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/04-rationalization-phase.jpg)
+*Explainable AI decisions: three-part output (response, reasoning, learning) enables transparency, builds trust, ensures compliance, and drives continuous improvement.*
 
 - **The Response** (for the user)
 - **The "Why"** (Internal Rationale)
@@ -377,6 +386,9 @@ Response Format:
 ## 4. The Feedback Commit
 
 We parse the vector and rationale from the response and write it back to the database (PostgreSQL + pgvector). This completes the loop.
+
+![The Feedback Commit]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/05-feedback-commit.jpg)
+*Closing the loop for continuous improvement: knowledge compounds with every interaction, making the system smarter, reducing training costs, and scaling organizational intelligence.*
 
 ### Implementation Pattern
 
@@ -584,6 +596,9 @@ We're exploring:
 2. **Cross-user pattern learning** - Anonymized aggregation of reasoning patterns (with privacy safeguards)
 3. **Active memory management** - Systems that decide which memories to retain, compress, or discard
 4. **Rationale-based fine-tuning** - Using accumulated rationales to improve model performance
+
+![Evolving Personality]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-evolving-personality.jpg)
+*AI system evolution over time: from initial deployment to mature system, metrics improve continuously—customer satisfaction increases, resolution time decreases, and investment compounds.*
 
 ## Conclusion
 
