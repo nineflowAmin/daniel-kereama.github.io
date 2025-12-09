@@ -315,30 +315,37 @@ public class AgentService
         InjectedContext context)
     {
         return $@"
-{context.SystemPersona}
+{system_persona}
 
-## Current Query
-{userQuery}
+## Current User Query
+{user_query}
 
-## Required Response Format
-You must respond with a JSON object containing:
-{{
-    ""response"": ""The answer for the user"",
-    ""rationale"": ""Your internal reasoning process"",
-    ""updatedCognitiveVector"": {{
-        ""intentClarity"": 0.0-1.0,
-        ""emotionalTone"": 0.0-1.0,
-        ""complexity"": 0.0-1.0,
-        ""urgency"": 0.0-1.0
-    }},
-    ""metadata"": {{
-        ""confidence"": 0.0-1.0,
-        ""reasoningSteps"": [""step1"", ""step2""]
-    }}
-}}
+## Instructions
+You are a stateful reasoning agent with persistent cognitive memory. 
+Analyze the query in light of all historical context provided above.
 
-Think about how your reasoning has evolved from the historical context provided.
-";
+Think step-by-step in your reasoning, then output exactly one valid JSON object and nothing else.
+
+## Required JSON Schema (strict – no deviations, no extra text, no markdown)
+{
+  "response": "The final answer you give to the user – natural, concise, helpful tone",
+  "rationale": "Detailed internal reasoning process, including how past interactions influenced this response and any evolution in your thinking",
+  "updatedCognitiveVector": {
+    "intentClarity": 0.0 to 1.0,
+    "emotionalTone": -1.0 (negative) to +1.0 (positive),
+    "complexity": 0.0 to 1.0,
+    "urgency": 0.0 to 1.0,
+    "curiosity": 0.0 to 1.0,
+    "formality": 0.0 to 1.0,
+    "confidence": 0.0 to 1.0
+  },
+  "metadata": {
+    "continuityScore": 0.0 to 1.0,
+    "referencedMemoryIds": ["optional-array-of-guids"]
+  }
+}
+
+Respond only with the JSON object. No explanations, no wrappers, no ```json blocks.
     }
 
     private RationalizedResponse ParseStructuredResponse(
