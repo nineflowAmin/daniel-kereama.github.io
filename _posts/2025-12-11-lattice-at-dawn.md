@@ -14,25 +14,37 @@ post_slug: "lattice-at-dawn"
 ![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/01-banner.jpg)
 *The republic of thinking machines at dawn: merge-or-mount constellations glowing across a semantic sky.*
 
-> A dual-format chapter: story + technical sidebars. Keep the secrets safe, show the science, and let the animation in `_layouts/wisdom_lattice.ts` be the living exhibit.
-
-**How to read this:** Story vignettes = metaphors; technical sidebars = actual behavior. Names are fictional; mechanics are real. Sensitive internals are redacted by design.
-
-## Orientation
-- A distributed memory republic: agents are citizens; clusters of ideas are cities; tensioned edges are roads.
-- Nightly **Dream Cycle** at 03:00 consolidates the day’s logs into a shared semantic lattice.
-- Storage: PostgreSQL + pgvector (`wisdom_nodes`, `wisdom_edges`); recall via `LatticeContext`.
-- Execution: Hangfire scheduler (03:00) + ad-hoc triggers (`/dreams/run`, `/dreams/run/{agentRole}`).
-- Visualization: `_layouts/wisdom_lattice.ts` — 2D/3D canvas showing merge-or-mount growth, tensioned edges, critical-mass banner.
+> At 02:59 AM, the system is a chaotic archive of the day's noise. At 03:00 AM, it begins to dream.
+>
+> This is a dual-format field guide. The **Story** is the metaphor; the **Machine** is the implementation. Names are fictional; mechanics are real. Sensitive internals remain redacted.
 
 ---
 
-## Cast (Story View) / Components (Technical)
-- **Agents** → Emit `v3_memory_entries` (unprocessed logs, rationale, timestamps).
-- **Lattice** → `wisdom_nodes` reinforced by merges; `wisdom_edges` typed/tensioned (Supports, Contradicts, Nuances, Prerequisite).
-- **Orchestrator** → Runs the five-phase Dream Cycle; owns ingest→commit.
-- **Auditor (LLM)** → Normalizes/clarifies transcripts.
-- **Keeper (LLM)** → Verifies fit, retunes edge tension, guards identity.
+## Orientation: The Landscape
+
+### The Story
+Agents roam a distributed republic, collecting impressions. Clusters of related ideas become cities; roads between them carry agreement, nuance, or contradiction. Each night, the republic gathers to turn ephemeral notes into permanent infrastructure.
+
+### The Machine
+- Storage: PostgreSQL + `pgvector` with `wisdom_nodes` (knowledge points) and `wisdom_edges` (typed, tensioned relationships).
+- Execution: Hangfire scheduler triggers the **Dream Cycle** nightly at 03:00; ad-hoc triggers via `/dreams/run`.
+- Visualization: `_layouts/wisdom_lattice.ts` renders a 2D/3D canvas showing merge-or-mount growth, edge tension, and phase banners.
+
+---
+
+## The Cast: Governance of the Republic
+
+### The Story
+- Citizens (Agents): Solara and Helix observe and record.
+- Orchestrator: Calls the nightly session.
+- Auditor: Cleans the language of the notes.
+- Keeper: Ensures new knowledge fits the republic’s identity.
+
+### The Machine
+- Agents emit `v3_memory_entries` (logs with rationale, timestamps).
+- Orchestrator runs the five-phase Dream Cycle (Ingest → Commit).
+- Auditor (LLM) normalizes transcripts without inventing content.
+- Keeper (LLM) verifies semantic fit, tunes edge tension, guards identity.
 
 ![Cast]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/02-cast.jpg)
 
@@ -41,26 +53,24 @@ post_slug: "lattice-at-dawn"
 ## A Day in the Republic
 
 ### Morning: Observation
-Story signal: Solara logs “misrouted packet under load”; Helix logs “jitter vanishes when routing table warms.”  
-Technical grounding: Two `v3_memory_entries`, ordered by `CreatedAt`, with `ProcessedByDreamId IS NULL` so they remain eligible for ingest.
+**Story:** Solara notes a misrouted packet under load; Helix notes jitter vanishes when the routing table warms.  
+**Machine:** Two `v3_memory_entries`, ordered by `CreatedAt`, with `ProcessedByDreamId IS NULL` (eligible for ingest).
 
 ![Morning Notes]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/03-morning-notes.jpg)
 
 ---
 
-## Nightfall: The Dream Cycle (03:00)
+## Nightfall: The Dream Cycle
 
-### Story
-The Orchestrator rings a silent bell; the republic gathers to reconcile.
+**Story:** At 03:00, the Orchestrator rings a silent bell; the republic gathers to reconcile the day.  
+**Machine:** The pipeline runs five phases:
 
-### Technical (Five Phases)
-1) **Ingest** — Select unprocessed logs; build sanitized transcript (timestamp, voice, rationale).  
+1) **Ingest** — Select unprocessed logs; build sanitized transcript.  
 2) **Audit** — LLM clarifies language (no content invention).  
 3) **Merge-or-Mount** — Embed note; near neighbor ⇒ reinforce; otherwise mount new node and link with typed/tensioned edges.  
 4) **Verification** — Keeper adjusts/vetos edges/tension to preserve coherence/identity.  
-5) **Commit** — Persist nodes/edges/tensions; mark logs processed for idempotency.
+5) **Commit** — Persist nodes/edges/tensions; mark logs processed (idempotent).
 
-Mermaid (runtime):
 <div class="mermaid">
 flowchart LR
   C[Controller /dreams/run] -->|enqueue| O[DreamOrchestrator]
@@ -78,10 +88,10 @@ flowchart LR
 
 ---
 
-## Merge-or-Mount (What the Animation Shows)
-Story signal: A memory shard drifts over the landscape; it either joins an existing glow or becomes a new star with stretching edges.
+## The Logic: Merge or Mount
 
-Technical (core excerpt from `_layouts/wisdom_lattice.ts`):
+**Story:** A memory shard approaches a cluster. Either it fuses (reinforce) or anchors as a new star (mount) with edges stretching toward neighbors.  
+**Machine:** Merge-or-mount logic balances connectivity and probability:
 
 ```315:394:_layouts/wisdom_lattice.ts
 function addNode(existingNodes, actualCount){
@@ -147,18 +157,19 @@ function addNode(existingNodes, actualCount){
 ---
 
 ## Disagreement as Structure
-Story signal: Solara vs. Helix — a Contradicts edge forms, the Keeper cools it to Nuances with medium tension; both truths remain.  
-Technical grounding: Edge type + tension guide retrieval; contradictions localize uncertainty rather than erasing perspectives.
+
+**Story:** Solara says “A,” Helix says “B.” The republic lays a Contradicts road, which the Keeper cools to Nuances. Both truths remain.  
+**Machine:** `wisdom_edges` are typed (Supports, Contradicts, Nuances, Prerequisite) and tensioned (0–1). Retrieval uses high-tension edges to localize uncertainty instead of erasing perspective.
 
 ![Contradiction Cooling]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-contradiction.jpg)
 
 ---
 
-## Critical Mass & Small-World Emergence
-Story signal: Regions move EARLY→GROWING→CRITICAL→MATURE→DENSE; a banner flashes when a city forms.  
-Technical grounding: Phases are node-count driven; average degree and tension density yield small-world traits (high clustering, short paths).
+## Critical Mass: The Evolution of a City
 
-Mermaid (phases):
+**Story:** A hamlet becomes a city. When enough ideas cluster, the banner flashes: CRITICAL MASS REACHED.  
+**Machine:** Phases are node-count driven; small-world traits emerge as average degree rises.
+
 <div class="mermaid">
 stateDiagram-v2
   [*] --> EARLY
@@ -168,30 +179,14 @@ stateDiagram-v2
   MATURE --> DENSE : nodes ≥ 500k
 </div>
 
-Code (HUD + banner):
-```622:636:_layouts/wisdom_lattice.ts
-function updateHUD(){
-  nodeCountEl.textContent = nodes.length;
-  edgeCountEl.textContent = edges.length;
-  avgDegreeEl.textContent = calculateConnectivity(nodes, edges).toFixed(2);
-  phaseLabel.textContent = getPhaseFromCount(nodes.length).toUpperCase();
-  const progressPct = ((nodes.length / TARGET_NODES) * 100);
-  if(nodes.length >= CRITICAL_MASS_THRESHOLD && !criticalMassHit){
-    criticalMassHit = true;
-    criticalBanner.style.display = 'block';
-    criticalBanner.textContent = `🎯 CRITICAL MASS reached at ${formatNumber(nodes.length)} nodes`;
-    setTimeout(()=>{ criticalBanner.style.display = 'none'; }, 8000);
-  }
-}
-```
-
 ![Critical Mass]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/07-critical-mass.jpg)
 
 ---
 
-## Retrieval: Asking the Republic a Question
-Story signal: A query shard flies to its nearest city; edges flare into a context star.  
-Technical grounding: `/api/v3/lattice/retrieve { query, agentRole, limit }` embeds the query, fetches nearest `wisdom_nodes`, plus high-tension `wisdom_edges`, returns `LatticeContext`.
+## Retrieval: Asking the Republic
+
+**Story:** A query shard flies toward the nearest city; edges flare into a context star.  
+**Machine:** `/api/v3/lattice/retrieve { query, agentRole }` embeds the query, fetches nearest `wisdom_nodes`, traverses high-tension `wisdom_edges`, and returns a `LatticeContext` for grounding.
 
 ![Retrieval Star]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/08-retrieval-star.jpg)
 
@@ -208,19 +203,19 @@ Technical grounding: `/api/v3/lattice/retrieve { query, agentRole, limit }` embe
 
 ---
 
-## Why Story Helps
-- Maps mechanics to intuition: nodes as citizens, edges as conversations, tension as gravity.
-- Communicates resilience and nuance without exposing proprietary internals.
-- Lets the animation serve as proof: real-time small-world emergence, merge-or-mount dynamics, critical-mass signaling.
+## Why This Matters
+- Nodes are citizens: individual data points hold weight and identity.
+- Edges are conversations: relationships are typed and tensioned.
+- Tension is gravity: disagreement holds structure together instead of tearing it apart.
 
 ![Closing Panorama]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/10-closing.jpg)
 
 ---
 
 ## Try It
-- Visit the canvas view (this layout) and toggle **3D View**; watch edge tension and cluster depth.
+- Open the live lattice below and toggle **3D View** to see edge tension and depth.
 - Run `/dreams/run` or `/dreams/run/{agentRole}` to trigger a cycle; then query `/api/v3/lattice/retrieve`.
-- Observe the Critical Mass banner as regions densify; note avg degree shifts in the HUD.
+- Watch the Critical Mass banner and HUD metrics as regions densify.
 
 ---
 
