@@ -684,6 +684,7 @@ permalink: /wisdom-lattice.html
   let rotation = { x: 0.3, y: 0 };
   let rotationAuto = { x: 0.3, y: 0 };
   let criticalMassHit = false;
+  let totalNodeCount = 0; // Track actual total node count separate from displayed nodes
 
   // Simulation containers
   let nodes = [];
@@ -743,6 +744,7 @@ permalink: /wisdom-lattice.html
       connections: 0
     }));
     edges = [];
+    totalNodeCount = 5; // Initialize total count
     criticalMassHit = false;
     updateHUD();
   }
@@ -1058,12 +1060,12 @@ permalink: /wisdom-lattice.html
 
   // Update HUD labels
   function updateHUD(){
-    nodeCountEl.textContent = formatNumber(nodes.length);
+    nodeCountEl.textContent = formatNumber(totalNodeCount);
     edgeCountEl.textContent = formatNumber(edges.length);
     avgDegreeEl.textContent = calculateConnectivity(nodes, edges).toFixed(2);
-    const phase = getPhaseFromCount(nodes.length);
+    const phase = getPhaseFromCount(totalNodeCount);
     phaseLabel.textContent = phase.toUpperCase();
-    const progressPct = ((nodes.length / TARGET_NODES) * 100);
+    const progressPct = ((totalNodeCount / TARGET_NODES) * 100);
     if(progressBar){
       progressBar.style.width = Math.min(progressPct, 100) + '%';
     }
@@ -1081,10 +1083,10 @@ permalink: /wisdom-lattice.html
       phaseNote.textContent = phaseMessages[phase] || '';
     }
     // critical mass banner
-      if(nodes.length >= CRITICAL_MASS_THRESHOLD && !criticalMassHit){
+      if(totalNodeCount >= CRITICAL_MASS_THRESHOLD && !criticalMassHit){
       criticalMassHit = true;
       criticalBanner.style.display = 'block';
-      criticalBanner.innerHTML = `🎯 <strong>CRITICAL MASS ACHIEVED</strong> at ${formatNumber(nodes.length)} nodes<br><span style="font-size:12px;font-weight:400;opacity:0.9;">Network structure stabilized • Small-world properties emerged • Hub dominance established</span>`;
+      criticalBanner.innerHTML = `🎯 <strong>CRITICAL MASS ACHIEVED</strong> at ${formatNumber(totalNodeCount)} nodes<br><span style="font-size:12px;font-weight:400;opacity:0.9;">Network structure stabilized • Small-world properties emerged • Hub dominance established</span>`;
       setTimeout(()=>{ criticalBanner.style.display = 'none'; }, 12000);
     }
   }
@@ -1096,7 +1098,7 @@ permalink: /wisdom-lattice.html
     if(isPlaying){
       timeAccumulator += speed;
 
-      const currentPhase = getPhaseFromCount(nodes.length);
+      const currentPhase = getPhaseFromCount(totalNodeCount);
       let nodesToAdd = 0;
       if(currentPhase === 'early') nodesToAdd = Math.floor(timeAccumulator / 30) * speed;
       else if(currentPhase === 'growing') nodesToAdd = Math.floor(timeAccumulator / 20) * speed * 10;
@@ -1108,14 +1110,13 @@ permalink: /wisdom-lattice.html
         timeAccumulator = 0;
         let updatedNodes = nodes.slice();
         let updatedEdges = edges.slice();
-        let newCount = nodes.length;
 
-        for(let i=0;i<nodesToAdd && newCount < TARGET_NODES; i++){
-          const { nodes: newNodes, newEdges } = addNode(updatedNodes, newCount);
+        for(let i=0;i<nodesToAdd && totalNodeCount < TARGET_NODES; i++){
+          const { nodes: newNodes, newEdges } = addNode(updatedNodes, totalNodeCount);
           updatedNodes = newNodes;
           newEdges.forEach(e => updatedEdges.push(e));
           if(updatedEdges.length > 400) updatedEdges = updatedEdges.slice(-400);
-          newCount++;
+          totalNodeCount++;
         }
 
         updatedNodes = applyForces(updatedNodes, updatedEdges);
@@ -1148,10 +1149,8 @@ permalink: /wisdom-lattice.html
   });
 
   resetBtn.addEventListener('click', () => {
-    seedNodes();
     timeAccumulator = 0;
-    nodes = nodes.slice(0,5);
-    edges = [];
+    seedNodes();
   });
 
   speedSlider.addEventListener('input', (e) => {
