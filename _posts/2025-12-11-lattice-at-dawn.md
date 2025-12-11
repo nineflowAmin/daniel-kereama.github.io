@@ -34,9 +34,6 @@ post_slug: "lattice-at-dawn"
 - **Auditor (LLM)** → Normalizes/clarifies transcripts.
 - **Keeper (LLM)** → Verifies fit, retunes edge tension, guards identity.
 
-Illustration prompt (cast):  
-*“Austere isometric city of glowing nodes; five colored agent lights feeding a central archivist; two translucent librarian/guardian figures; night sky of data points; techno-minimal.”*
-
 ![Cast]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/02-cast.jpg)
 
 ---
@@ -46,9 +43,6 @@ Illustration prompt (cast):
 ### Morning: Observation
 Story signal: Solara logs “misrouted packet under load”; Helix logs “jitter vanishes when routing table warms.”  
 Technical grounding: Two `v3_memory_entries`, ordered by `CreatedAt`, with `ProcessedByDreamId IS NULL` so they remain eligible for ingest.
-
-Illustration prompt:  
-*“Two distant observation towers sending light pulses to a central buffer, packets as photons, cool dawn tones.”*
 
 ![Morning Notes]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/03-morning-notes.jpg)
 
@@ -67,9 +61,9 @@ The Orchestrator rings a silent bell; the republic gathers to reconcile.
 5) **Commit** — Persist nodes/edges/tensions; mark logs processed for idempotency.
 
 Mermaid (runtime):
-```mermaid
+<div class="mermaid">
 flowchart LR
-  C[Controller<br/>/dreams/run] -->|enqueue| O[DreamOrchestrator]
+  C[Controller /dreams/run] -->|enqueue| O[DreamOrchestrator]
   H[Hangfire 03:00] -->|enqueue| O
   O -->|Phase 1| V3[V3MemoryEntries]
   O -->|Phase 2 & 4| L[LLM (Audit/Keeper)]
@@ -78,10 +72,7 @@ flowchart LR
   O -->|Phase 5| AS[agent_states]
   O -->|Phase 5| HD[holographic_deltas]
   O -->|mark processed| V3
-```
-
-Illustration prompt:  
-*“Nighttime control room with five concentric rings labeled ingest/audit/merge/verify/commit; beams of data moving inward then outward to a starfield lattice.”*
+</div>
 
 ![Dream Cycle]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/04-dream-cycle.jpg)
 
@@ -151,9 +142,6 @@ function addNode(existingNodes, actualCount){
 }
 ```
 
-Illustration prompt:  
-*“A new star drifting toward a cluster; if close, it fuses and brightens the cluster; if unique, it anchors and a few colored edges stretch toward it.”*
-
 ![Merge or Mount]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/05-merge-or-mount.jpg)
 
 ---
@@ -161,9 +149,6 @@ Illustration prompt:
 ## Disagreement as Structure
 Story signal: Solara vs. Helix — a Contradicts edge forms, the Keeper cools it to Nuances with medium tension; both truths remain.  
 Technical grounding: Edge type + tension guide retrieval; contradictions localize uncertainty rather than erasing perspectives.
-
-Illustration prompt:  
-*“Two nearby nodes with a red edge cooling to amber; a guardian hand subtly turning a tension dial.”*
 
 ![Contradiction Cooling]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-contradiction.jpg)
 
@@ -174,14 +159,14 @@ Story signal: Regions move EARLY→GROWING→CRITICAL→MATURE→DENSE; a banner
 Technical grounding: Phases are node-count driven; average degree and tension density yield small-world traits (high clustering, short paths).
 
 Mermaid (phases):
-```mermaid
+<div class="mermaid">
 stateDiagram-v2
   [*] --> EARLY
   EARLY --> GROWING : nodes < 1k
   GROWING --> CRITICAL : nodes ≥ 15k
   CRITICAL --> MATURE : nodes ≥ 50k
   MATURE --> DENSE : nodes ≥ 500k
-```
+</div>
 
 Code (HUD + banner):
 ```622:636:_layouts/wisdom_lattice.ts
@@ -200,9 +185,6 @@ function updateHUD(){
 }
 ```
 
-Illustration prompt:  
-*“Zoom sequence of a sparse cluster igniting into a dense glowing city; minimal HUD showing EARLY→GROWING→CRITICAL transitions; a subtle ‘Critical Mass’ ribbon.”*
-
 ![Critical Mass]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/07-critical-mass.jpg)
 
 ---
@@ -210,9 +192,6 @@ Illustration prompt:
 ## Retrieval: Asking the Republic a Question
 Story signal: A query shard flies to its nearest city; edges flare into a context star.  
 Technical grounding: `/api/v3/lattice/retrieve { query, agentRole, limit }` embeds the query, fetches nearest `wisdom_nodes`, plus high-tension `wisdom_edges`, returns `LatticeContext`.
-
-Illustration prompt:  
-*“A bright question shard descending onto a node cluster; neighboring edges light up in a star pattern, revealing a local context.”*
 
 ![Retrieval Star]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/08-retrieval-star.jpg)
 
@@ -225,9 +204,6 @@ Illustration prompt:
 - Retrieval path: Long-term recall via lattice; upstream systems inject “collective wisdom” context before conversation history.
 - Configuration: `Cortex:BaseUrl`; optional `SemanticRelationPath`; embedding service base URL; DreamProtocol thresholds (tokens, similarity, drift, gravity).
 
-Illustration prompt:  
-*“Ops dashboard in monochrome with three toggles: scheduler, embeddings, tension; minimal graphs for node count and avg degree.”*
-
 ![Ops Dashboard]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/09-ops-dashboard.jpg)
 
 ---
@@ -236,9 +212,6 @@ Illustration prompt:
 - Maps mechanics to intuition: nodes as citizens, edges as conversations, tension as gravity.
 - Communicates resilience and nuance without exposing proprietary internals.
 - Lets the animation serve as proof: real-time small-world emergence, merge-or-mount dynamics, critical-mass signaling.
-
-Illustration prompt (closing):  
-*“Wide view of the lattice as a glowing republic at night; subtle banner: ‘The Lattice at Dawn’.”*
 
 ![Closing Panorama]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/10-closing.jpg)
 
@@ -273,7 +246,8 @@ Want to see the behaviors in motion? The canvas below is the same `wisdom_lattic
 <style>
 .lattice-embed {
   position: relative;
-  padding-top: 100%;
+  padding-top: 125%;
+  min-height: 960px;
   margin: 18px 0 8px;
   border: 1px solid rgba(120,140,255,0.18);
   border-radius: 12px;
