@@ -241,6 +241,64 @@ layout: default
   }
   .phase-pill strong{ display:block; color:#ffffff; margin-bottom:4px; }
 
+  .legend-grid{
+    margin-top:24px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:14px;
+  }
+  .legend-pane{
+    position:relative;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid rgba(140,150,255,0.1);
+    background:radial-gradient(circle at 20% 20%, rgba(99,102,241,0.1), rgba(0,0,0,0)) , rgba(255,255,255,0.02);
+    box-shadow:0 10px 30px rgba(0,0,0,0.25), inset 0 0 0 1px rgba(255,255,255,0.02);
+  }
+  .legend-pane:before{
+    content:'';
+    position:absolute;
+    inset:-1px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.05);
+    pointer-events:none;
+  }
+  .legend-pane h3{
+    margin:0 0 10px;
+    font-size:15px;
+    letter-spacing:0.3px;
+    color:#e9f1ff;
+  }
+  .legend-pane ul{
+    margin:0;
+    padding-left:0;
+    list-style:none;
+    display:grid;
+    gap:8px;
+    color:#cfe0ff;
+    font-size:13px;
+    line-height:1.55;
+  }
+  .legend-pane li{
+    position:relative;
+    padding-left:18px;
+  }
+  .legend-pane li::before{
+    content:'✦';
+    position:absolute;
+    left:0;
+    color:#8b5cf6;
+    opacity:0.9;
+    font-size:10px;
+    top:2px;
+  }
+  .legend-pane small{
+    display:block;
+    color:#94b3ff;
+    margin-top:4px;
+    font-size:12px;
+  }
+
   /* small screens fallback */
   @media (max-width:980px){
     .stage { grid-template-columns: 1fr; }
@@ -354,6 +412,82 @@ layout: default
         <li><span class="bar"></span><span><strong>Graph evolution</strong> — merge-or-mount routing tuned by local connectivity.</span></li>
         <li><span class="bar"></span><span><strong>Forces</strong> — repulsion, spring edges, and gentle center gravity keep constellations coherent.</span></li>
         <li><span class="bar"></span><span><strong>3D projection</strong> — slow orbit reveals hidden clusters in depth.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="legend-grid">
+    <div class="legend-pane">
+      <h3>Network Phase Transitions</h3>
+      <ul>
+        <li><strong>Critical Mass (~15K)</strong><small>Structure stabilizes; emergent properties appear (≈√N × 15).</small></li>
+        <li>Average path length slides toward log(N).</li>
+        <li>Clustering coefficient plateaus — specialized domains form.</li>
+        <li>Small-world network traits emerge.</li>
+        <li>High-degree nodes crystallize into hubs.</li>
+      </ul>
+    </div>
+
+    <div class="legend-pane">
+      <h3>Maximum Connectivity (~50K)</h3>
+      <ul>
+        <li>Peak average degree; topology optimizes.</li>
+        <li>Each node keeps ~2–4 stable connections.</li>
+        <li>Preferential attachment grows high-weight hubs (scale-free onset).</li>
+        <li>Redundant edges pruned; critical paths preserved.</li>
+        <li>Transition into mature distributed memory fabric.</li>
+      </ul>
+    </div>
+
+    <div class="legend-pane">
+      <h3>Scale-Free Network (500K+)</h3>
+      <ul>
+        <li>Power-law degree distribution dominates.</li>
+        <li>Robust retrieval, graceful degradation.</li>
+        <li>Fault tolerance rises with distributed hubs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="legend-grid">
+    <div class="legend-pane">
+      <h3>Growth Dynamics</h3>
+      <ul>
+        <li><strong>Early (0–1K)</strong><small>Sparse seeds; high merge probability (30%).</small></li>
+        <li><strong>Growing (1K–15K)</strong><small>Connectivity rises; clusters emerge; multi-connection strategy begins.</small></li>
+        <li><strong>Critical (15K–50K)</strong><small>⚡ Phase transition; small-world structure forms.</small></li>
+        <li><strong>Mature (50K–500K)</strong><small>Stable topology; hubs dominate; optimized flow.</small></li>
+        <li><strong>Dense (500K–1M)</strong><small>Scale-free network; power-law distribution; resilient memory.</small></li>
+      </ul>
+    </div>
+
+    <div class="legend-pane">
+      <h3>Source Distribution</h3>
+      <ul>
+        <li><span class="dot" style="background:#8b5cf6"></span> Agent-A</li>
+        <li><span class="dot" style="background:#3b82f6"></span> Agent-B</li>
+        <li><span class="dot" style="background:#ef4444"></span> Agent-C</li>
+        <li><span class="dot" style="background:#10b981"></span> Agent-D</li>
+        <li><span class="dot" style="background:#f59e0b"></span> Agent-E</li>
+      </ul>
+    </div>
+
+    <div class="legend-pane">
+      <h3>Relationship Types</h3>
+      <ul>
+        <li><span class="bar" style="background:#10b981"></span> Reinforces<small>Validates existing pattern.</small></li>
+        <li><span class="bar" style="background:#ef4444"></span> Opposes<small>High-tension contradiction.</small></li>
+        <li><span class="bar" style="background:#f59e0b"></span> Qualifies<small>Adds contextual nuance.</small></li>
+        <li><span class="bar" style="background:#8b5cf6"></span> Builds-on<small>Prerequisite relationship.</small></li>
+      </ul>
+    </div>
+
+    <div class="legend-pane">
+      <h3>Technical Implementation</h3>
+      <ul>
+        <li>Graph evolution — merge vs. mount, guided by connectivity and distance.</li>
+        <li>Physics — repulsion, spring tension, center gravity, damping.</li>
+        <li>3D projection — slow orbit reveals depth-only clusters.</li>
       </ul>
     </div>
   </div>
