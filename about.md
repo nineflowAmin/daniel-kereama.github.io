@@ -33,19 +33,19 @@ title: "About"
   <div class="about-section">
     <h2 class="section-title">Professional Summary</h2>
     <p class="section-content">
-      Principal AI & Platform Architect with 20+ years delivering enterprise-grade platforms 
-      and, most recently, architecting a full end-to-end LLM + multi-agent AI platform deployed 
-      on GKE (<strong class="text-gradient-nineflow">Nineflow.AI</strong>). Deep hands-on capability 
-      across AI orchestration, distributed systems, cloud-native architecture, and enterprise transformation. 
-      Adept at engaging senior stakeholders, shaping AI strategy, and delivering proof-of-value platforms 
-      that accelerate organizational AI adoption across diverse industries (Finance, Energy, Retail, Mining).
+      I build production systems that integrate AI capabilities with real-world constraints. My work focuses on reliability, performance, and the operational behaviors that emerge when models, services, and users interact at scale.
     </p>
     <p class="section-content">
-      My core value is architecting and building production-ready platforms that translate complex business 
-      strategy into executable, scalable, and resilient software systems. Currently operating 
-      <strong class="text-gradient-nineflow">Nineflow.AI</strong> as an R&D practice to maintain 
-      capability at the architectural frontier while seeking consulting/contract engagements applying 
-      practical AI platform architecture to real-world enterprise programmes.
+      I have 20 years of engineering experience across distributed systems, .NET, cloud platforms, and high-throughput pipelines. Recent projects include designing an end-to-end AI vision-grading system that combines C#, C++, gRPC streaming, concurrency primitives, and fault-tolerant orchestration. The emphasis was predictable behavior under load, clear observability, rapid recovery paths, and robust integration between hardware, models, and human operators.
+    </p>
+    <p class="section-content">
+      I routinely work across the stack: backend services, APIs, model-driven workflows, agent coordination layers, and production monitoring. I partner closely with researchers and domain experts to move prototypes into stable, testable, and maintainable systems. My approach is iterative, data-driven, and grounded in system design fundamentals.
+    </p>
+    <p class="section-content">
+      I also explore multi-agent architectures and adaptive memory mechanisms, focusing on how context can be curated, shared, and transformed to support higher-quality reasoning. These explorations inform practical methods for reducing ambiguity, improving alignment, and enabling more reliable agent collaboration.
+    </p>
+    <p class="section-content">
+      I’m motivated by work that turns advanced capabilities into usable, trustworthy products. I operate well in environments of uncertainty, and I take end-to-end ownership from early design through deployment, optimization, and ongoing iteration.
     </p>
   </div>
 
