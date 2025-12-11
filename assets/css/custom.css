@@ -1832,6 +1832,24 @@ svg .toroid-ring-2 {
   flex: 1;
 }
 
+.summary-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: var(--foreground-tertiary);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.transcript-intro summary:hover .summary-chevron {
+  color: var(--foreground);
+}
+
+.transcript-intro[open] summary .summary-chevron {
+  transform: rotate(180deg);
+}
+
 .intro-content {
   padding: 0 1.5rem 2rem 1.5rem;
   border-top: 1px solid var(--border);

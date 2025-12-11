@@ -15,6 +15,11 @@ description: "A complete transcript of a Nineflow.AI Council session demonstrati
     <summary>
       <img src="{{ '/assets/images/icons/info.svg' | relative_url }}" alt="Info" class="info-icon" width="20" height="20">
       <span class="summary-text">About the Nineflow.AI Council</span>
+      <span class="summary-chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </span>
     </summary>
     <div class="intro-content">
       <h2>What is the Nineflow.AI Council?</h2>
