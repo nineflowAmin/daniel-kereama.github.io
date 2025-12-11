@@ -47,6 +47,7 @@ Agents roam a distributed republic, collecting impressions. Clusters of related 
 - Keeper (LLM) verifies semantic fit, tunes edge tension, guards identity.
 
 ![Cast]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/02-cast.jpg)
+*Five agent lights feeding an archivist core; Auditor and Keeper watch from the edges.*
 
 ---
 
@@ -57,6 +58,7 @@ Agents roam a distributed republic, collecting impressions. Clusters of related 
 **Machine:** Two `v3_memory_entries`, ordered by `CreatedAt`, with `ProcessedByDreamId IS NULL` (eligible for ingest).
 
 ![Morning Notes]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/03-morning-notes.jpg)
+*Two distant observers beam raw notes into a shared buffer at dawn.*
 
 ---
 
@@ -85,6 +87,7 @@ flowchart LR
 </div>
 
 ![Dream Cycle]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/04-dream-cycle.jpg)
+*The five-phase ritual engine pulls notes inward, then pushes decisions out to the lattice.*
 
 ---
 
@@ -153,6 +156,7 @@ function addNode(existingNodes, actualCount){
 ```
 
 ![Merge or Mount]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/05-merge-or-mount.jpg)
+*A lone shard chooses: fuse into an existing cluster or anchor as a new star with stretching edges.*
 
 ---
 
@@ -162,6 +166,7 @@ function addNode(existingNodes, actualCount){
 **Machine:** `wisdom_edges` are typed (Supports, Contradicts, Nuances, Prerequisite) and tensioned (0–1). Retrieval uses high-tension edges to localize uncertainty instead of erasing perspective.
 
 ![Contradiction Cooling]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-contradiction.jpg)
+*A heated contradiction is dialed down to nuance; tension remains to preserve both truths.*
 
 ---
 
@@ -180,6 +185,7 @@ stateDiagram-v2
 </div>
 
 ![Critical Mass]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/07-critical-mass.jpg)
+*A sparse hamlet ignites into a dense city; critical-mass banner signals the phase shift.*
 
 ---
 
@@ -189,6 +195,7 @@ stateDiagram-v2
 **Machine:** `/api/v3/lattice/retrieve { query, agentRole }` embeds the query, fetches nearest `wisdom_nodes`, traverses high-tension `wisdom_edges`, and returns a `LatticeContext` for grounding.
 
 ![Retrieval Star]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/08-retrieval-star.jpg)
+*A query shard lands; surrounding edges flare to reveal the local context star.*
 
 ---
 
@@ -200,6 +207,7 @@ stateDiagram-v2
 - Configuration: `Cortex:BaseUrl`; optional `SemanticRelationPath`; embedding service base URL; DreamProtocol thresholds (tokens, similarity, drift, gravity).
 
 ![Ops Dashboard]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/09-ops-dashboard.jpg)
+*Scheduler, embeddings, and tension toggles keep the republic’s memory machinery in balance.*
 
 ---
 
@@ -209,6 +217,7 @@ stateDiagram-v2
 - Tension is gravity: disagreement holds structure together instead of tearing it apart.
 
 ![Closing Panorama]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/10-closing.jpg)
+*The republic at night: constellation highways glowing across a calm, horizon-lit plain.*
 
 ---
 
