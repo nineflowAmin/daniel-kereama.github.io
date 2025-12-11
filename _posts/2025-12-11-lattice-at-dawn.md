@@ -72,7 +72,7 @@ Agents roam a distributed republic, collecting impressions. Clusters of related 
 **Machine:** The pipeline runs five phases:
 
 1) **Ingest** — Select unprocessed logs; build sanitized transcript.  
-2) **Audit** — LLM clarifies language (no content invention).  
+2) **Audit** — LLM clarifies language (no content invention) and strips/obfuscates PII so knowledge can be shared safely.  
 3) **Merge-or-Mount** — Embed note; near neighbor ⇒ reinforce; otherwise mount new node and link with typed/tensioned edges.  
 4) **Verification** — Keeper adjusts/vetos edges/tension to preserve coherence/identity.  
 5) **Commit** — Persist nodes/edges/tensions; mark logs processed (idempotent).
@@ -224,6 +224,7 @@ stateDiagram-v2
 - Storage/indexing: pgvector IVFFlat on `wisdom_nodes.embedding` (cosine); `wisdom_edges` store typed, tensioned links.
 - Safety: Idempotent ingest via `ProcessedByDreamId IS NULL`; bounded deltas on commit.
 - Retrieval path: Long-term recall via lattice; upstream systems inject “collective wisdom” context before conversation history.
+- Privacy: PII stripping/obfuscation occurs in Audit so federated knowledge sharing respects data sovereignty boundaries.
 - Configuration: `Cortex:BaseUrl`; optional `SemanticRelationPath`; embedding service base URL; DreamProtocol thresholds (tokens, similarity, drift, gravity).
 
 ![Ops Dashboard]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/09-ops-dashboard.jpg)
@@ -259,6 +260,7 @@ stateDiagram-v2
 - Merge-or-mount: base merge rate 0.3; connectivity boost up to +0.4; handshake distance 180 units; max connections ramp from 1 (early) to 3 (sub-critical) to 2 (dense).
 - Phase thresholds: EARLY <1k, GROWING <15k, CRITICAL <50k, MATURE <500k, DENSE ≥500k nodes; critical banner triggers at 15k.
 - Tension semantics: 0.0–0.3 = light; 0.3–0.6 = nuanced; 0.6–0.8 = strong; 0.8–1.0 = high-priority contradiction/prerequisite surfaced early in retrieval.
+- Privacy/federation: PII stripped/obfuscated during Audit so sanitized knowledge can traverse tenants while raw logs remain sovereign; sharing is via embeddings + tensioned relations, not raw text.
 - Ops hooks: `/dreams/run` (system) and `/dreams/run/{agentRole}` (per-agent); retrieval `/api/v3/lattice/retrieve` returns `LatticeContext`.
 
 ## Live Lattice (Interactive)
