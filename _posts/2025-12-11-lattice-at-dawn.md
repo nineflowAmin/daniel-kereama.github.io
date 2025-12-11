@@ -30,6 +30,10 @@ Agents roam a distributed republic, collecting impressions. Clusters of related 
 - Execution: Hangfire scheduler triggers the **Dream Cycle** nightly at 03:00; ad-hoc triggers via `/dreams/run`.
 - Visualization: `_layouts/wisdom_lattice.ts` renders a 2D/3D canvas showing merge-or-mount growth, edge tension, and phase banners.
 
+### One concrete use-case
+- **Story:** A busy “city” of incident learnings forms around networking anomalies; new sightings either reinforce known paths or surface a fresh contradiction.
+- **Machine:** Overnight, duplicate incident notes merge into existing `wisdom_nodes`, and high-tension `Contradicts` edges flag regressions. The next morning, `/api/v3/lattice/retrieve` returns the hotspot plus its tensions, so on-call engineers start with the contested facts instead of re-discovering them.
+
 ---
 
 ## The Cast: Governance of the Republic
@@ -105,6 +109,7 @@ function addNode(existingNodes, actualCount){
   const connectivityBoost = Math.min(currentConnectivity / 10, 0.4);
   const shouldMerge = Math.random() < (baseMergeRate + connectivityBoost) && existingNodes.length > 0;
   if(shouldMerge && existingNodes.length < DISPLAY_NODES){
+    // reinforcement path: merge into an existing node, increase weight
     const targetIdx = Math.floor(Math.random()*existingNodes.length);
     const updated = existingNodes.slice();
     updated[targetIdx] = Object.assign({}, updated[targetIdx], { weight: updated[targetIdx].weight + 1 });
@@ -119,6 +124,7 @@ function addNode(existingNodes, actualCount){
       }
       return { nodes: existingNodes, newEdges: [] };
     }
+    // anchor-and-link path: create a new node and connect locally
     const newNode = { id: actualCount, x: Math.random()*CANVAS_SIZE, y: Math.random()*CANVAS_SIZE, z: Math.random()*CANVAS_SIZE, weight: 1, type: randomType, vx: 0, vy: 0, vz: 0, connections: 0 };
     const newEdges = [];
     const maxConnections = actualCount < CRITICAL_MASS_THRESHOLD ? 1 : (actualCount < MAX_CONNECTIVITY_NODES ? 3 : 2);
@@ -163,7 +169,7 @@ function addNode(existingNodes, actualCount){
 ## Disagreement as Structure
 
 **Story:** Solara says “A,” Helix says “B.” The republic lays a Contradicts road, which the Keeper cools to Nuances. Both truths remain.  
-**Machine:** `wisdom_edges` are typed (Supports, Contradicts, Nuances, Prerequisite) and tensioned (0–1). Retrieval uses high-tension edges to localize uncertainty instead of erasing perspective.
+**Machine:** `wisdom_edges` are typed (Supports, Contradicts, Nuances, Prerequisite) and tensioned (0–1). Retrieval uses high-tension edges to localize uncertainty instead of erasing perspective; e.g., a tension of 0.8 is surfaced early to signal a strong conflict or prerequisite that must be addressed.
 
 ![Contradiction Cooling]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-contradiction.jpg)
 *A heated contradiction is dialed down to nuance; tension remains to preserve both truths.*
@@ -196,6 +202,33 @@ stateDiagram-v2
 
 ![Retrieval Star]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/08-retrieval-star.jpg)
 *A query shard lands; surrounding edges flare to reveal the local context star.*
+
+---
+
+## Micro example (redacted)
+
+```json
+// wisdom_node (truncated)
+{ "id": 10452, "type": "Agent-B", "weight": 7, "embedding": "[...]", "origin": "network" }
+
+// edges from this node
+[
+  { "target": 8173, "type": "Supports", "tension": 0.18 },
+  { "target": 9102, "type": "Contradicts", "tension": 0.82 },
+  { "target": 11201, "type": "Nuances", "tension": 0.44 }
+]
+
+// dream cycle log (snippet)
+{
+  "phase": "Commit",
+  "agent": "Network",
+  "processedEntries": 48,
+  "newNodes": 5,
+  "reinforcedNodes": 12,
+  "edgesCreated": 9,
+  "criticalMassBanner": false
+}
+```
 
 ---
 
@@ -233,6 +266,13 @@ stateDiagram-v2
 - [The Living Council: Relational Safety for Human-AI Coevolution]({{ site.baseurl }}/the-living-council-relational-safety-for-human-ai-coevolution/)
 
 ---
+
+## Appendix for Architects (at-a-glance)
+- Target scale: 1M nodes displayed as a 200-node active window; edges capped to keep the canvas performant (~400 recent edges).
+- Merge-or-mount: base merge rate 0.3; connectivity boost up to +0.4; handshake distance 180 units; max connections ramp from 1 (early) to 3 (sub-critical) to 2 (dense).
+- Phase thresholds: EARLY <1k, GROWING <15k, CRITICAL <50k, MATURE <500k, DENSE ≥500k nodes; critical banner triggers at 15k.
+- Tension semantics: 0.0–0.3 = light; 0.3–0.6 = nuanced; 0.6–0.8 = strong; 0.8–1.0 = high-priority contradiction/prerequisite surfaced early in retrieval.
+- Ops hooks: `/dreams/run` (system) and `/dreams/run/{agentRole}` (per-agent); retrieval `/api/v3/lattice/retrieve` returns `LatticeContext`.
 
 ## Live Lattice (Interactive)
 Want to see the behaviors in motion? The canvas below is the same `wisdom_lattice` visualization running in-page.
