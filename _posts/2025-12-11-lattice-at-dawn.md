@@ -246,7 +246,8 @@ Want to see the behaviors in motion? The canvas below is the same `wisdom_lattic
 <style>
 .lattice-embed {
   position: relative;
-  padding-top: 125%;
+  width: 100%;
+  height: min(1200px, 90vh);
   min-height: 960px;
   margin: 18px 0 8px;
   border: 1px solid rgba(120,140,255,0.18);
