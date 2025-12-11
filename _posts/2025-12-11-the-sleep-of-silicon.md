@@ -63,7 +63,7 @@ post_slug: "the-sleep-of-silicon"
 - The result: a swarm that evolves without collapsing into sameness. Experts debate; the system remembers why each voice is distinct.
 
 ![Council]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/03-council.jpg)
-*A coherent council: personalities orbiting their identity anchors, kept stable by the Coherence Gate.*
+*The Republic in session: Five distinct agents gathered at the council table, each maintaining their specialized identity while contributing to collective wisdom.*
 
 ---
 
