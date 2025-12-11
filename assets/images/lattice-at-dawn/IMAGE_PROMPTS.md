@@ -1,13 +1,13 @@
-Image generation guide for `lattice-at-dawn` (match filenames below). Use consistent style: techno-minimal, dark cosmic palette, crisp lines, subtle glow, no text overlays.
+Image generation guide for `lattice-at-dawn`. Style: techno-minimal, cosmic noir, high dynamic range, clean vectors, subtle bloom. Archetype palette for agent colors: violet (#8b5cf6), blue (#3b82f6), red (#ef4444), green (#10b981), amber (#f59e0b). No text overlays.
 
-1) `01-banner.jpg` — “Wide view of a glowing data republic at night; constellation cities connected by luminous edges; horizon hinting at dawn; austere, high-contrast, cosmic.”
-2) `02-cast.jpg` — “Isometric city of glowing nodes; five colored agent lights feeding a central archivist; two translucent librarian/guardian figures; night sky of data points; techno-minimal.”
-3) `03-morning-notes.jpg` — “Two distant observation towers sending light pulses to a central buffer, packets as photons, cool dawn tones.”
-4) `04-dream-cycle.jpg` — “Nighttime control room with five concentric rings labeled ingest/audit/merge/verify/commit; beams of data moving inward then outward to a starfield lattice.”
-5) `05-merge-or-mount.jpg` — “A new star drifting toward a cluster; if close, it fuses and brightens the cluster; if unique, it anchors and a few colored edges stretch toward it.”
-6) `06-contradiction.jpg` — “Two nearby nodes with a red edge cooling to amber; a guardian hand subtly turning a tension dial; restrained, precise.”
-7) `07-critical-mass.jpg` — “Zoom sequence of a sparse cluster igniting into a dense glowing city; minimal HUD hinting EARLY→GROWING→CRITICAL; subtle ‘Critical Mass’ ribbon.”
-8) `08-retrieval-star.jpg` — “A bright question shard descending onto a node cluster; neighboring edges light up in a star pattern, revealing a local context.”
-9) `09-ops-dashboard.jpg` — “Ops dashboard in monochrome with three toggles: scheduler, embeddings, tension; small graphs for node count and avg degree; clean UI.”
-10) `10-closing.jpg` — “Wide view of the lattice as a glowing republic at night; subtle banner energy suggesting ‘The Lattice at Dawn’; calm, cinematic.”
+1) `01-banner.jpg` — “Cinematic wide shot of a data republic at night, constellation cities connected by luminous edges, faint dawn gradient on horizon, starfield sky, glossy ground reflections, palette anchored in violet/blue/amber accents, high-detail, volumetric haze, 8k.”
+2) `02-cast.jpg` — “Isometric city of glowing nodes, five primary agent lights (violet, blue, red, green, amber) feeding a central archivist core; two translucent librarian/guardian figures hovering; dark cosmic background with sparse data points; hard edges, subtle bloom; high-res.”
+3) `03-morning-notes.jpg` — “Two distant observation towers on a dark plane sending coherent light pulses to a central buffer disk, photons as thin beams, cool dawn rim light; hints of violet/blue ambient, crisp linework, cinematic depth of field.”
+4) `04-dream-cycle.jpg` — “Nighttime control room, five concentric neon rings labeled ingest/audit/merge/verify/commit (labels implied, no text), beams of data flowing inward then outward to a starfield lattice; dark UI glass, violet/blue/green accent lights; high-fidelity render.”
+5) `05-merge-or-mount.jpg` — “A lone bright star-node drifting toward a cluster; if close, it fuses and brightens the cluster; if unique, it anchors and a few colored edges stretch toward it (violet/blue/red/green/amber); shallow depth of field, cosmic backdrop.”
+6) `06-contradiction.jpg` — “Two nearby nodes connected by a heated red edge cooling to amber; a minimal guardian hand silhouette turning a tension dial; restrained composition, dark negative space, precise glows in archetype colors.”
+7) `07-critical-mass.jpg` — “Zoom sequence frames of a sparse cluster igniting into a dense glowing city; overlay-style HUD hints of EARLY→GROWING→CRITICAL (no text, just subtle progression markers); violet/blue/amber city glow; a discreet ‘critical mass’ ribbon motif.”
+8) `08-retrieval-star.jpg` — “A bright question shard descending onto a node cluster; neighboring edges light up in a star pattern, revealing local context; cool blues with violet highlights, thin amber accents; crisp, high-detail particles.”
+9) `09-ops-dashboard.jpg` — “Minimal ops dashboard in monochrome slate with three primary toggles glowing in archetype colors (scheduler/violet, embeddings/blue, tension/amber); small clean graphs for node count and avg degree; futuristic glass UI, no text.”
+10) `10-closing.jpg` — “Wide, calm night vista of the lattice as a glowing republic; constellation highways across a dark plain; subtle energy ribbon implying ‘The Lattice at Dawn’; balanced violet/blue/amber palette, cinematic lighting, serene atmosphere.”
 
