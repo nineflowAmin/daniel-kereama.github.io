@@ -77,21 +77,8 @@ Agents roam a distributed republic, collecting impressions. Clusters of related 
 4) **Verification** — Keeper adjusts/vetos edges/tension to preserve coherence/identity.  
 5) **Commit** — Persist nodes/edges/tensions; mark logs processed (idempotent).
 
-<div class="mermaid">
-flowchart LR
-  C[Controller /dreams/run] -->|enqueue| O[DreamOrchestrator]
-  H[Hangfire 03:00] -->|enqueue| O
-  O -->|Phase 1| V3[V3MemoryEntries]
-  O -->|Phase 2 & 4| L[LLM (Audit/Keeper)]
-  O -->|Phase 3| WN[wisdom_nodes]
-  O -->|Edges| WE[wisdom_edges]
-  O -->|Phase 5| AS[agent_states]
-  O -->|Phase 5| HD[holographic_deltas]
-  O -->|mark processed| V3
-</div>
-
-![Dream Cycle]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/04-dream-cycle.jpg)
-*The five-phase ritual engine pulls notes inward, then pushes decisions out to the lattice.*
+![Dream Cycle]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/flow-diagram.jpg)
+*Five-phase Dream Cycle: enqueue → ingest → audit → merge-or-mount → verify → commit, feeding nodes, edges, agent state, and deltas.*
 
 ---
 
