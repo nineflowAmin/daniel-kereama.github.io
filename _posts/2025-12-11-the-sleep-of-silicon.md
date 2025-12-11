@@ -12,7 +12,7 @@ post_slug: "the-sleep-of-silicon"
 {% include author-blurb.html %}
 
 ![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/01-banner.jpg)
-*Silicon at rest, dreaming in geometry: tensioned filaments glowing across a dark field.*
+*The Wisdom Lattice in Growing Phase: 3.8K nodes and 172 relationships forming constellations—living memory architecture in real-time evolution.*
 
 > The industry is deafened by calls for more—more parameters, more context, more compute. But underneath the noise, the signal is clear: the future is biological, not mechanical.
 
