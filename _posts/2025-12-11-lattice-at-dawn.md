@@ -28,7 +28,7 @@ Agents roam a distributed republic, collecting impressions. Clusters of related 
 ### The Machine
 - Storage: PostgreSQL + `pgvector` with `wisdom_nodes` (knowledge points) and `wisdom_edges` (typed, tensioned relationships).
 - Execution: Hangfire scheduler triggers the **Dream Cycle** nightly at 03:00; ad-hoc triggers via `/dreams/run`.
-- Visualization: `_layouts/wisdom_lattice.ts` renders a 2D/3D canvas showing merge-or-mount growth, edge tension, and phase banners.
+- Visualization: Interactive 2D/3D canvas showing merge-or-mount growth, edge tension, and phase banners.
 
 ### One concrete use-case
 - **Story:** A busy “city” of incident learnings forms around networking anomalies; new sightings either reinforce known paths or surface a fresh contradiction.
@@ -87,7 +87,7 @@ Agents roam a distributed republic, collecting impressions. Clusters of related 
 **Story:** A memory shard approaches a cluster. Either it fuses (reinforce) or anchors as a new star (mount) with edges stretching toward neighbors.  
 **Machine:** Merge-or-mount logic balances connectivity and probability:
 
-```315:394:_layouts/wisdom_lattice.ts
+```javascript
 function addNode(existingNodes, actualCount){
   const types = ['Agent-A','Agent-B','Agent-C','Agent-D','Agent-E'];
   const randomType = types[Math.floor(Math.random()*types.length)];
