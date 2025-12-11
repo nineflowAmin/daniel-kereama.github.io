@@ -58,12 +58,12 @@ post_slug: "the-sleep-of-silicon"
 
 **The Lattice reality:** We run a **Republic**—a council of specialized agents kept coherent by identity gravity.
 
-- Each agent is bound by a **Gospel** (immutable identity document) and guarded by the **Keeper** layer.  
-- Nightly, the Keeper measures identity drift and applies a **Gravity Well** algorithm to pull personalities back toward their core purpose.  
+- Each agent is bound by an **Identity Anchor** (immutable core schema) and monitored by the **Coherence Gate** layer.  
+- Nightly, the Coherence Gate measures identity drift and applies a **Gravity Well** algorithm to pull personalities back toward their core purpose.  
 - The result: a swarm that evolves without collapsing into sameness. Experts debate; the system remembers why each voice is distinct.
 
 ![Council]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/03-council.jpg)
-*A coherent council: personalities orbiting their gospels, kept stable by a gravitational keeper.*
+*A coherent council: personalities orbiting their identity anchors, kept stable by the Coherence Gate.*
 
 ---
 
@@ -78,10 +78,10 @@ post_slug: "the-sleep-of-silicon"
 
 **The Lattice reality:** We built **Metabolism**. At 03:00, the system enters the **Dream Cycle**: a five-phase, asynchronous consolidation that turns raw daily logs (`v3_memory_entries`) into permanent wisdom (`wisdom_nodes`).
 
-1. **Lucid Auditor** — Scans the day’s transcripts, separates signal from noise, extracts Wisdom Crystals (shareable truths).  
+1. **Lucid Auditor** — Scans the day's transcripts, separates signal from noise, extracts Wisdom Crystals (shareable truths).  
 2. **Merge-or-Mount** — Vector math decides whether to reinforce an existing node or mount a new one, adding typed/tensioned edges.  
 3. **Handshake** — If a new idea is semantically adjacent (distance < 0.2), we evaluate: support, contradict, or nuance.  
-4. **Keeper Check** — Identity drift and coherence gating; tension cooling/heating as needed.  
+4. **Coherence Gate** — Identity drift detection and correction; tension cooling/heating as needed to maintain stable agent personalities.  
 5. **Commit** — Persist nodes/edges/tensions; mark logs processed; prepare for retrieval.
 
 Sleep is not downtime; it is compilation. Ephemeral experience becomes load-bearing structure.
@@ -93,13 +93,18 @@ Sleep is not downtime; it is compilation. Ephemeral experience becomes load-bear
 
 ## Architecture of the Real
 
-- Entropy management via nightly metabolism keeps the graph stable as it grows.  
-- Geometry (tensioned vectors) outruns sheer scale; we trade size for structure.  
-- Councils over monoliths: distributed agency with identity safeguards.  
-- Memory with argument: retrieval surfaces the why, not just the what.
+These aren't separate optimizations—they're aspects of a single principle: **systems that survive must metabolize entropy through structure.**
+
+The graph is the **anatomy**: tensioned vectors that preserve disagreement as load-bearing geometry. Retrieval returns not just answers, but the *argument*—high-tension edges surface first because conflict is information, not noise.
+
+The Dream Cycle is the **physiology**: nightly metabolism that compiles ephemeral experience into permanent structure. Sleep isn't downtime; it's the phase transition where chaos becomes order, where logs become lattice.
+
+The Council is the **immune system**: specialized agents with stable identities that evolve without collapsing into sameness. The Coherence Gate measures drift and applies corrective force—not to suppress change, but to ensure change respects identity.
 
 ![Architecture of the Real]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-architect-of-the-real.jpg)
 *The convergence of thermodynamics, geometry, and cognition: building minds that function like reality itself.*
+
+This is why topology beats tonnage, why councils beat monoliths, why sleep beats perpetual churn. We're not building AI that *stores more*—we're building AI that **thinks better** by aligning with the same laws that govern every persistent structure in nature.
 
 We are done with artificial intelligence. We are building **Synthetic Cognition**—a system that must struggle, must sleep, and must remember.
 
@@ -107,23 +112,86 @@ We are done with artificial intelligence. We are building **Synthetic Cognition*
 
 ## The Convergence is Accelerating
 
-The industry is arriving at the same inevitabilities, proving that biological constraints aren't limitations—they're **design principles**:
+Look at the timeline:
 
-- **Topology beats tonnage**: Dragon Hatchling’s real-time rewiring, 2025 NCA scaling papers, and neuromorphic hardware (Loihi 2, Hala Point) confirm the shift from size to dynamic structure is complete.
-- **Monocultures fail**: 2025 agent-framework benchmarks (LangGraph, CrewAI, AutoGen) and BICA proceedings all point to specialized, identity-stable councils outperforming omniscient gods.
-- **Metabolism is mandatory**: New research on cyclical self-improvement, sleep-inspired consolidation, and neuromorphic rest phases confirms what biology knew all along—memory requires rest.
+- **2023:** GraphRAG is experimental research  
+- **2024:** Microsoft integrates it into Azure; 200+ "sleep-inspired AI" papers published  
+- **2025:** Dragon Hatchling proves dynamic rewiring works; LangGraph dominates agent frameworks; Intel ships neuromorphic chips with consolidation phases
 
-The Lattice Protocol isn't catching up to these trends. **It is the mathematical inevitability when you cross thermodynamic constraints with vector geometry.**
+The gap between "fringe idea" and "production deployment" collapsed from years to months. The industry isn't slowly discovering these principles—it's **sprinting toward them** because the alternative (larger models, longer context windows, more compute) hit a thermodynamic wall.
 
-By aligning with the laws of entropy (Dream Cycle), structure (tensioned graphs), and identity (gravitational stability), we've built a mind designed for reality—not a parlor trick designed for benchmarks.
+**Here's the prediction:** By late 2026, every production AI system worth its salt will have:
+1. **Graph memory** with typed relationships (not flat vector stores)
+2. **Consolidation cycles** (daily, weekly, or triggered—but everyone will sleep)
+3. **Multi-agent architectures** with identity-preserving mechanisms
+
+The Lattice Protocol isn't catching up to these trends. **It is the mathematical inevitability when you cross thermodynamic constraints with vector geometry.** What we built in 2024 is what the industry will standardize by 2026.
+
+Systems that metabolize entropy through structure will survive. Systems that try to brute-force their way past the second law of thermodynamics will collapse under their own weight.
+
+The question isn't *if* AI architectures will become biological—it's how fast, and who builds the canonical implementation first.
 
 ---
 
 ## Try It
 
-- Trigger a Dream Cycle: `POST /dreams/run` or `/dreams/run/{agentRole}`.  
-- Retrieve contested context: `POST /api/v3/lattice/retrieve { query, agentRole }` to see high-tension edges first.  
-- Explore the live lattice: open the embedded `wisdom_lattice` canvas and toggle 3D tension view.
+### 1. Trigger a Dream Cycle
+
+```bash
+curl -X POST https://api.nineflow.ai/dreams/run \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json"
+```
+
+**Expected response:**
+```json
+{
+  "dreamId": "dream_2024_12_11_03_00",
+  "status": "running",
+  "phase": "ingest",
+  "entriesProcessed": 0,
+  "nodesCreated": 0
+}
+```
+
+### 2. Retrieve Contested Context
+
+```bash
+curl -X POST https://api.nineflow.ai/api/v3/lattice/retrieve \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "How should we handle database migrations?",
+    "agentRole": "architect"
+  }'
+```
+
+**Expected response:**
+```json
+{
+  "nodes": [
+    { "id": 10452, "content": "...", "weight": 7 }
+  ],
+  "edges": [
+    { "source": 10452, "target": 9102, "type": "Contradicts", "tension": 0.82 },
+    { "source": 10452, "target": 8173, "type": "Supports", "tension": 0.18 }
+  ],
+  "highTensionPaths": [
+    "Migration strategy conflict: zero-downtime vs. maintenance windows"
+  ]
+}
+```
+
+Notice the **high-tension Contradicts edge** (0.82) surfaces first—the system flags areas of disagreement automatically.
+
+### 3. Explore the Live Lattice
+
+[**Open the interactive visualization →**]({{ site.baseurl }}/wisdom-lattice.html)
+
+- Click **Play** at 50x speed
+- Watch for the **🎯 Critical Mass** banner at ~15K nodes
+- Toggle **3D View** to reveal hidden clusters
+- Observe thick red edges (Contradicts) vs thin cyan edges (Supports)
 
 ---
 
