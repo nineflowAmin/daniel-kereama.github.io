@@ -16,6 +16,8 @@ post_slug: "lattice-at-dawn"
 
 > A dual-format chapter: story + technical sidebars. Keep the secrets safe, show the science, and let the animation in `_layouts/wisdom_lattice.ts` be the living exhibit.
 
+**How to read this:** Story vignettes = metaphors; technical sidebars = actual behavior. Names are fictional; mechanics are real. Sensitive internals are redacted by design.
+
 ## Orientation
 - A distributed memory republic: agents are citizens; clusters of ideas are cities; tensioned edges are roads.
 - Nightly **Dream Cycle** at 03:00 consolidates the day’s logs into a shared semantic lattice.
@@ -42,8 +44,8 @@ Illustration prompt (cast):
 ## A Day in the Republic
 
 ### Morning: Observation
-Story: Solara logs “misrouted packet under load”; Helix logs “jitter vanishes when routing table warms.”  
-Technical: Two `v3_memory_entries`, ordered by `CreatedAt`, with `ProcessedByDreamId IS NULL`.
+Story signal: Solara logs “misrouted packet under load”; Helix logs “jitter vanishes when routing table warms.”  
+Technical grounding: Two `v3_memory_entries`, ordered by `CreatedAt`, with `ProcessedByDreamId IS NULL` so they remain eligible for ingest.
 
 Illustration prompt:  
 *“Two distant observation towers sending light pulses to a central buffer, packets as photons, cool dawn tones.”*
@@ -59,10 +61,10 @@ The Orchestrator rings a silent bell; the republic gathers to reconcile.
 
 ### Technical (Five Phases)
 1) **Ingest** — Select unprocessed logs; build sanitized transcript (timestamp, voice, rationale).  
-2) **Audit** — LLM clarifies language.  
+2) **Audit** — LLM clarifies language (no content invention).  
 3) **Merge-or-Mount** — Embed note; near neighbor ⇒ reinforce; otherwise mount new node and link with typed/tensioned edges.  
-4) **Verification** — Keeper adjusts/vetos edges/tension.  
-5) **Commit** — Persist nodes/edges/tensions; mark logs processed.
+4) **Verification** — Keeper adjusts/vetos edges/tension to preserve coherence/identity.  
+5) **Commit** — Persist nodes/edges/tensions; mark logs processed for idempotency.
 
 Mermaid (runtime):
 ```mermaid
@@ -86,7 +88,7 @@ Illustration prompt:
 ---
 
 ## Merge-or-Mount (What the Animation Shows)
-Story: A memory shard drifts over the landscape; it either joins an existing glow or becomes a new star with stretching edges.
+Story signal: A memory shard drifts over the landscape; it either joins an existing glow or becomes a new star with stretching edges.
 
 Technical (core excerpt from `_layouts/wisdom_lattice.ts`):
 
@@ -157,8 +159,8 @@ Illustration prompt:
 ---
 
 ## Disagreement as Structure
-Story: Solara vs. Helix — a Contradicts edge forms, the Keeper cools it to Nuances with medium tension; both truths remain.
-Tech: Edge type + tension shape retrieval; contradictions localize uncertainty rather than erasing perspectives.
+Story signal: Solara vs. Helix — a Contradicts edge forms, the Keeper cools it to Nuances with medium tension; both truths remain.  
+Technical grounding: Edge type + tension guide retrieval; contradictions localize uncertainty rather than erasing perspectives.
 
 Illustration prompt:  
 *“Two nearby nodes with a red edge cooling to amber; a guardian hand subtly turning a tension dial.”*
@@ -168,8 +170,8 @@ Illustration prompt:
 ---
 
 ## Critical Mass & Small-World Emergence
-Story: Regions move EARLY→GROWING→CRITICAL→MATURE→DENSE; a banner flashes when a city forms.
-Tech: Phases are node-count driven; average degree and tension density yield small-world traits (high clustering, short paths).
+Story signal: Regions move EARLY→GROWING→CRITICAL→MATURE→DENSE; a banner flashes when a city forms.  
+Technical grounding: Phases are node-count driven; average degree and tension density yield small-world traits (high clustering, short paths).
 
 Mermaid (phases):
 ```mermaid
@@ -206,8 +208,8 @@ Illustration prompt:
 ---
 
 ## Retrieval: Asking the Republic a Question
-Story: A query shard flies to its nearest city; edges flare into a context star.
-Tech: `/api/v3/lattice/retrieve { query, agentRole, limit }` embeds the query, fetches nearest `wisdom_nodes`, plus high-tension `wisdom_edges`, returns `LatticeContext`.
+Story signal: A query shard flies to its nearest city; edges flare into a context star.  
+Technical grounding: `/api/v3/lattice/retrieve { query, agentRole, limit }` embeds the query, fetches nearest `wisdom_nodes`, plus high-tension `wisdom_edges`, returns `LatticeContext`.
 
 Illustration prompt:  
 *“A bright question shard descending onto a node cluster; neighboring edges light up in a star pattern, revealing a local context.”*
