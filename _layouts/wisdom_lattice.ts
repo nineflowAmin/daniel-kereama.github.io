@@ -134,6 +134,113 @@ layout: default
   .legend .item { display:flex; gap:8px; align-items:center; font-size:13px; color:#bcd3ff; }
   .dot { width:12px; height:12px; border-radius:50%; box-shadow:0 0 8px rgba(255,255,255,0.04) }
 
+  .progress-wrap{
+    margin-top:12px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+  .progress-label{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:#c6dcff;
+    letter-spacing:0.2px;
+  }
+  .progress-bar{
+    height:8px;
+    background:rgba(255,255,255,0.06);
+    border-radius:999px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.05);
+  }
+  .progress-fill{
+    display:block;
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg, #3b82f6, #8b5cf6);
+    box-shadow:0 0 10px rgba(99,102,241,0.45);
+    transition:width 0.25s ease-out;
+  }
+
+  .phase-note{
+    margin-top:10px;
+    font-size:13px;
+    line-height:1.5;
+    color:#9fb8ff;
+    background:rgba(255,255,255,0.02);
+    border:1px solid rgba(255,255,255,0.04);
+    padding:10px;
+    border-radius:8px;
+  }
+
+  .info-grid{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+    gap:14px;
+  }
+
+  .info-card{
+    padding:14px;
+    border-radius:10px;
+    border:1px solid rgba(140,150,255,0.08);
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  }
+  .info-card h3{
+    margin:0 0 8px;
+    font-size:15px;
+    letter-spacing:0.2px;
+    color:#e7efff;
+  }
+  .info-list{ list-style:none; margin:0; padding:0; display:grid; gap:8px; }
+  .info-list li{
+    display:flex;
+    gap:8px;
+    align-items:flex-start;
+    color:#bcd3ff;
+    font-size:13px;
+    line-height:1.5;
+  }
+  .info-list .bar{
+    margin-top:6px;
+    width:18px;
+    height:2px;
+    flex-shrink:0;
+    border-radius:999px;
+    background:rgba(255,255,255,0.35);
+  }
+
+  .tag-legend{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+  .tag-row{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#c6dcff;
+    font-size:13px;
+  }
+
+  .phase-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+    margin-top:10px;
+  }
+  .phase-pill{
+    padding:12px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.05);
+    background:rgba(255,255,255,0.015);
+    color:#cfe6ff;
+    font-size:13px;
+    line-height:1.5;
+  }
+  .phase-pill strong{ display:block; color:#ffffff; margin-bottom:4px; }
+
   /* small screens fallback */
   @media (max-width:980px){
     .stage { grid-template-columns: 1fr; }
@@ -155,7 +262,7 @@ layout: default
 
       <div>
         <label style="display:block; font-size:13px; color:#bcd3ff; margin-bottom:6px;">Simulation speed: <span id="speedLabel">1</span>x</label>
-        <input id="speedSlider" type="range" min="1" max="50" value="1" style="width:100%;">
+        <input id="speedSlider" type="range" min="1" max="100" value="1" style="width:100%;">
       </div>
 
       <div class="hud">
@@ -178,8 +285,20 @@ layout: default
         <div style="font-weight:800; font-size:18px; color:#f4f9ff;" id="phaseLabel">EARLY</div>
       </div>
 
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span>Network Progress</span>
+          <span id="progressValue">0%</span>
+        </div>
+        <div class="progress-bar"><span class="progress-fill" id="progressBar"></span></div>
+      </div>
+
       <div id="criticalBanner" class="banner" style="display:none;margin-top:12px;">
         🎯 CRITICAL MASS ACHIEVED
+      </div>
+
+      <div class="phase-note" id="phaseNote">
+        Early growth: low connectivity, seeds finding neighbors.
       </div>
 
       <div class="legend" aria-hidden="true">
@@ -193,6 +312,49 @@ layout: default
 
     <div class="panel canvas-wrap">
       <canvas id="latticeCanvas" width="800" height="800"></canvas>
+    </div>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <h3>Source Distribution</h3>
+      <div class="tag-legend">
+        <div class="tag-row"><span class="dot" style="background:#8b5cf6"></span>Agent-A</div>
+        <div class="tag-row"><span class="dot" style="background:#3b82f6"></span>Agent-B</div>
+        <div class="tag-row"><span class="dot" style="background:#ef4444"></span>Agent-C</div>
+        <div class="tag-row"><span class="dot" style="background:#10b981"></span>Agent-D</div>
+        <div class="tag-row"><span class="dot" style="background:#f59e0b"></span>Agent-E</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>Relationship Types</h3>
+      <ul class="info-list">
+        <li><span class="bar" style="background:#10b981"></span><span><strong>Reinforces</strong> — validates existing pattern</span></li>
+        <li><span class="bar" style="background:#ef4444"></span><span><strong>Opposes</strong> — high-tension contradiction</span></li>
+        <li><span class="bar" style="background:#f59e0b"></span><span><strong>Qualifies</strong> — contextual nuance</span></li>
+        <li><span class="bar" style="background:#8b5cf6"></span><span><strong>Builds-on</strong> — prerequisite link</span></li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>Network Phases</h3>
+      <div class="phase-grid">
+        <div class="phase-pill"><strong>Early</strong> Sparse seed crystals seeking anchors.</div>
+        <div class="phase-pill"><strong>Growing</strong> Clusters form; merge-or-mount decisions accelerate.</div>
+        <div class="phase-pill"><strong>Critical</strong> ⚡ Small-world structure forms; hubs emerge.</div>
+        <div class="phase-pill"><strong>Mature</strong> Topology stabilizes; paths shorten.</div>
+        <div class="phase-pill"><strong>Dense</strong> Scale-free behavior and resilient memory fabric.</div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <h3>Implementation Notes</h3>
+      <ul class="info-list">
+        <li><span class="bar"></span><span><strong>Graph evolution</strong> — merge-or-mount routing tuned by local connectivity.</span></li>
+        <li><span class="bar"></span><span><strong>Forces</strong> — repulsion, spring edges, and gentle center gravity keep constellations coherent.</span></li>
+        <li><span class="bar"></span><span><strong>3D projection</strong> — slow orbit reveals hidden clusters in depth.</span></li>
+      </ul>
     </div>
   </div>
 </div>
@@ -232,12 +394,15 @@ layout: default
   const resetBtn = document.getElementById('resetBtn');
   const speedSlider = document.getElementById('speedSlider');
   const speedLabel = document.getElementById('speedLabel');
+  const progressBar = document.getElementById('progressBar');
+  const progressValue = document.getElementById('progressValue');
 
   const nodeCountEl = document.getElementById('nodeCount');
   const edgeCountEl = document.getElementById('edgeCount');
   const avgDegreeEl = document.getElementById('avgDegree');
   const phaseLabel = document.getElementById('phaseLabel');
   const criticalBanner = document.getElementById('criticalBanner');
+  const phaseNote = document.getElementById('phaseNote');
 
   // State
   let isPlaying = false;
@@ -621,11 +786,28 @@ layout: default
 
   // Update HUD labels
   function updateHUD(){
-    nodeCountEl.textContent = nodes.length;
-    edgeCountEl.textContent = edges.length;
+    nodeCountEl.textContent = formatNumber(nodes.length);
+    edgeCountEl.textContent = formatNumber(edges.length);
     avgDegreeEl.textContent = calculateConnectivity(nodes, edges).toFixed(2);
-    phaseLabel.textContent = getPhaseFromCount(nodes.length).toUpperCase();
+    const phase = getPhaseFromCount(nodes.length);
+    phaseLabel.textContent = phase.toUpperCase();
     const progressPct = ((nodes.length / TARGET_NODES) * 100);
+    if(progressBar){
+      progressBar.style.width = Math.min(progressPct, 100) + '%';
+    }
+    if(progressValue){
+      progressValue.textContent = progressPct.toFixed(1) + '%';
+    }
+    if(phaseNote){
+      const phaseMessages = {
+        early: 'Early growth: low connectivity, seeds finding neighbors.',
+        growing: 'Growing: clusters emerge and merge-or-mount choices intensify.',
+        critical: 'Critical: small-world structure flashes into place; hubs dominate.',
+        mature: 'Mature: optimized paths, resilient topology, predictable flows.',
+        dense: 'Dense: scale-free behavior with robust distributed memory fabric.'
+      };
+      phaseNote.textContent = phaseMessages[phase] || '';
+    }
     // critical mass banner
     if(nodes.length >= CRITICAL_MASS_THRESHOLD && !criticalMassHit){
       criticalMassHit = true;
