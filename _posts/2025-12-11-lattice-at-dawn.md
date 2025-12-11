@@ -261,7 +261,7 @@ Want to see the behaviors in motion? The canvas below is the same `wisdom_lattic
 <div class="lattice-embed">
   <iframe
     title="Wisdom Lattice Live"
-    src="/wisdom-lattice.html"
+    src="{{ site.baseurl }}/wisdom-lattice.html"
     loading="lazy"
     allowfullscreen
     referrerpolicy="no-referrer"
