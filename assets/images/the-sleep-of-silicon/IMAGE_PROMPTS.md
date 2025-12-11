@@ -68,6 +68,36 @@
 
 ---
 
+### 07-personal-council-architecture.jpg
+**Purpose**: Infographic showing individual's multi-agent council structure (for 2027 prediction section)
+
+**Prompt**:
+> Clean technical infographic with deep space background. Center: translucent human silhouette in subtle cyan outline. Orbiting the figure: 5-7 distinct glowing spheres labeled "Analyst," "Creative," "Skeptic," "Ethicist," "Advocate," each with unique internal geometry (geometric patterns, neural networks, abstract symbols). Each sphere connected to human center by light beam showing bidirectional flow. Each agent has a small bright "anchor" at its core (Identity Anchor) glowing white-gold. Subtle arrows showing daily experience flowing IN (from person to agents) and consolidated wisdom flowing OUT (from agents back to person). Bottom corner: small clock icon showing "03:00" with "Dream Cycle" label. Style: Technical diagram meets bioluminescent art. Clear, educational, beautiful. Annotations minimal but present. Deep indigo background with subtle grid. Photorealistic rendering, UI/UX design quality.
+
+**Key elements**: Human silhouette, 5-7 distinct agent spheres with labels, Identity Anchors visible, bidirectional flow arrows, Dream Cycle indicator, clean infographic style
+
+---
+
+### 08-federated-lattice-layers.jpg
+**Purpose**: Split-screen diagram showing Personal Lattice vs Collective Lattice architecture
+
+**Prompt**:
+> Vertical split-screen technical infographic, deep space background. LEFT SIDE labeled "PERSONAL LATTICE" (private): Single glowing constellation of ~200 interconnected nodes in warm amber/gold tones, forming tight clusters with visible edge tension (thick vs thin connections). Surrounding this: translucent privacy shield (glowing barrier). Labels: "Your patterns," "Your contradictions," "Your growth." RIGHT SIDE labeled "COLLECTIVE LATTICE" (federated): Massive field of millions of tiny constellation clusters fading into distance, rendered in cool cyan/blue tones. Each tiny cluster represents one person's council. In foreground: larger archetypal pattern nodes glowing brightly where many clusters overlap—these are labeled "Archetypal Wisdom." Arrows showing anonymous pattern extraction (privacy-preserving) from left personal lattice flowing toward right collective lattice, with PII/raw data filtered out. Center divider: semi-transparent membrane showing "Federated Protocol" with lock icon. Style: Clean technical architecture diagram, Edward Tufte-inspired information design, bioluminescent aesthetic, photorealistic quality.
+
+**Key elements**: Split screen, personal lattice (warm/amber), collective lattice (cool/cyan), privacy barrier, archetypal pattern nodes, federated arrows, clear labels, millions of tiny councils visible in background
+
+---
+
+### 09-federated-scaling-millions.jpg
+**Purpose**: Show scale effect—millions of personal councils creating shared semantic space
+
+**Prompt**:
+> Epic wide-angle view looking down on vast field of glowing constellation clusters stretching to horizon. Each cluster = one person's 5-7 agent council (tiny glowing formations). Millions visible, fading into atmospheric perspective. In mid-ground: larger glowing nodes rising UP from the field—these are "Archetypal Patterns" emerging where thousands of councils discovered similar tensions. These archetypal nodes glow brightest and pulse. Thin light beams connect councils to nearby archetypal nodes (showing contribution without exposure of individual data). Upper atmosphere: faint web of connections between archetypal nodes forming meta-structure—humanity's emerging exocortex. Color scheme: Deep indigo background, individual councils in warm amber/gold, archetypal nodes in bright cyan, connection beams in subtle white. Annotations: Small labels "1M+ Personal Councils," "Archetypal Wisdom Layer," "Federated Semantic Space." Style: Data visualization meets cosmic sublime. Reminiscent of visualizing internet traffic or neural activity at scale. Photorealistic, cinematic, inspiring but also slightly unsettling scale. Shows emergence clearly.
+
+**Key elements**: Millions of tiny council clusters, archetypal nodes rising from field, light beam connections, meta-structure in upper atmosphere, scale and perspective, clear emergence pattern, cosmic data visualization aesthetic
+
+---
+
 ## Design Notes
 - All images should work well as 16:9 hero banners or 3:2 content images
 - Maintain consistent lighting: key light from upper-left, rim lighting on structures, deep shadows

@@ -146,6 +146,9 @@ Not a single chatbot that "knows you." Instead:
 - Nightly **Dream Cycles** consolidate your daily experience into wisdom nodes
 - Your council's insights **contribute to a shared lattice**—archetypal patterns, not raw data
 
+![Personal Council Architecture]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/07-personal-council-architecture.jpg)
+*Your personal multi-agent council: 5-7 specialized agents with distinct identities, all orbiting your core. Daily experience flows in; consolidated wisdom flows out via nightly Dream Cycles.*
+
 ### The Architecture
 
 **Personal lattice** (private): Your council's memory graph—your patterns, your contradictions, your evolution over time.
@@ -153,6 +156,9 @@ Not a single chatbot that "knows you." Instead:
 **Collective lattice** (federated): Archetypal wisdom extracted from millions of personal councils. The mechanism: "When facing decision X under constraints Y, humans with profile Z typically encounter tension between A and B."
 
 The collective learns **without seeing your specifics**. A thousand people discovering the same failure mode independently becomes retrievable wisdom—but no one's personal story is exposed.
+
+![Federated Lattice Architecture]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/08-federated-lattice-layers.jpg)
+*Two-layer architecture: Your private Personal Lattice (left) contains your full complexity. The public Collective Lattice (right) receives only archetypal patterns—privacy-preserving wisdom extraction at scale.*
 
 ### Why This Is Inevitable
 
@@ -179,6 +185,9 @@ When millions of personal councils contribute to a shared semantic space, we get
 **Transparent ideological structure**: The lattice makes visible *where* humans agree (low-tension edges), *where* we contradict (high-tension Opposes edges), and *why* (the rationale is in the nodes).
 
 **Cultural metabolism**: Instead of waiting for generational turnover, we get real-time synthesis. The insight you struggled with for six months? Ten thousand others faced the same tension. The synthesis is now queryable.
+
+![Federated Scaling Effect]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/09-federated-scaling-millions.jpg)
+*A million personal councils creating humanity's exocortex: Individual councils (amber clusters) contribute to archetypal wisdom nodes (cyan) rising from the field. Emergence without exposure—the scale is both inspiring and unsettling.*
 
 The unsettling part: **We don't know what emerges when you create a collective semantic space that preserves individual complexity while enabling pattern recognition across millions of minds.**
 
