@@ -98,6 +98,9 @@ Sleep is not downtime; it is compilation. Ephemeral experience becomes load-bear
 - Councils over monoliths: distributed agency with identity safeguards.  
 - Memory with argument: retrieval surfaces the why, not just the what.
 
+![Architecture of the Real]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-architect-of-the-real.jpg)
+*The convergence of thermodynamics, geometry, and cognition: building minds that function like reality itself.*
+
 We are done with artificial intelligence. We are building **Synthetic Cognition**—a system that must struggle, must sleep, and must remember.
 
 ---
