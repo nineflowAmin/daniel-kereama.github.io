@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "The Lattice at Dawn: A Field Guide to the Republic of Thinking Machines"
+title: "🧠 Memory Systems Series (Part 2): The Lattice at Dawn—A Field Guide to the Republic of Thinking Machines"
 date: 2025-12-11 10:00:00 +0000
 categories: [memory-systems, ai-architecture, visualization, network-science]
 tags: [architecture, ai, memory, lattice, visualization, small-world]
 description: "A dual-format (story + technical) tour of the Wisdom Lattice: Dream Cycle orchestration, merge-or-mount semantics, tensegrity edges, and a live constellation visualization."
 excerpt: "A techno-mythic field guide to a distributed memory republic—agents as citizens, edges as conversations, critical-mass dynamics, and a live lattice you can fly through."
 post_slug: "lattice-at-dawn"
+series: "Memory Systems"
+series_part: 2
 ---
 
 {% include author-blurb.html %}
@@ -249,8 +251,17 @@ stateDiagram-v2
 
 ---
 
-## Related Links
-- [Beyond Static RAG: Closing the Feedback Loop]({{ site.baseurl }}/beyond-static-rag-closing-the-feedback-loop/)
+## Memory Systems Series
+
+**This is Part 2 of a 3-part series exploring memory architectures for AI systems:**
+
+- [🧠 Part 1: Beyond Static RAG—Closing the Feedback Loop]({{ site.baseurl }}/beyond-static-rag-closing-the-feedback-loop/) — Foundation: How continuous feedback memory loops enable agents to remember *how* they reasoned, not just *what* they retrieved.
+
+- [🧠 Part 2: The Lattice at Dawn—A Field Guide to the Republic of Thinking Machines]({{ site.baseurl }}/lattice-at-dawn/) ← *You are here*
+
+- [🧠 Part 3: The Sleep of Silicon—Why the Future of AI Architecture is Biological]({{ site.baseurl }}/the-sleep-of-silicon/) — Positioning: Industry convergence toward biological principles—GraphRAG evolution, multi-agent swarms, and episodic consolidation.
+
+**Related:**
 - [The Living Council: Relational Safety for Human-AI Coevolution]({{ site.baseurl }}/the-living-council-relational-safety-for-human-ai-coevolution/)
 
 ---

@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "The Sleep of Silicon: Why the Future of AI Architecture is Biological"
+title: "🧠 Memory Systems Series (Part 3): The Sleep of Silicon—Why the Future of AI Architecture is Biological"
 date: 2025-12-11 14:00:00 +0000
 categories: [ai-architecture, graph-rag, multi-agent, memory-systems, cognition]
 tags: [lattice, tension, swarm, dream-cycle, graph, rag, identity, consolidation]
 description: "Scaling laws hit entropy limits; the Lattice Protocol answers with living geometry: tensioned graph memory, identity-stable swarms, and a nightly Dream Cycle that metabolizes experience."
 excerpt: "The God Model era is over. The path forward is biological: topology over tonnage, councils over monoliths, sleep and consolidation over perpetual churn."
 post_slug: "the-sleep-of-silicon"
+series: "Memory Systems"
+series_part: 3
 ---
 
 {% include author-blurb.html %}
@@ -318,8 +320,15 @@ If you're working on memory systems, multi-agent architectures, or knowledge gra
 
 ---
 
-## Related Links
+## Memory Systems Series
 
-- [The Lattice at Dawn: A Field Guide to the Republic of Thinking Machines]({{ site.baseurl }}/lattice-at-dawn/)  
-- [Beyond Static RAG: Closing the Feedback Loop]({{ site.baseurl }}/beyond-static-rag-closing-the-feedback-loop/)  
+**This is Part 3 of a 3-part series exploring memory architectures for AI systems:**
+
+- [🧠 Part 1: Beyond Static RAG—Closing the Feedback Loop]({{ site.baseurl }}/beyond-static-rag-closing-the-feedback-loop/) — Foundation: How continuous feedback memory loops enable agents to remember *how* they reasoned, not just *what* they retrieved.
+
+- [🧠 Part 2: The Lattice at Dawn—A Field Guide to the Republic of Thinking Machines]({{ site.baseurl }}/lattice-at-dawn/) — Implementation: Technical deep-dive into the Wisdom Lattice—Dream Cycle mechanics, merge-or-mount semantics, tensegrity edges, and live visualization.
+
+- [🧠 Part 3: The Sleep of Silicon—Why the Future of AI Architecture is Biological]({{ site.baseurl }}/the-sleep-of-silicon/) ← *You are here*
+
+**Related:**
 - [The Living Council: Relational Safety for Human-AI Coevolution]({{ site.baseurl }}/the-living-council-relational-safety-for-human-ai-coevolution/)

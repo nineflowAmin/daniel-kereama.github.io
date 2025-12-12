@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Beyond Static RAG: Closing the Feedback Loop 🧠"
+title: "🧠 Memory Systems Series (Part 1): Beyond Static RAG—Closing the Feedback Loop"
 date: 2025-12-09 10:00:00 +0000
 categories: [rag, memory-systems, ai-architecture, vector-databases, feedback-loops]
 description: "Moving from read-only RAG to a closed-loop memory system where agents evolve through continuous feedback. The system remembers not just facts, but how it reasoned—developing personality through vector accumulation."
 excerpt: "Most RAG implementations are strictly read-only. We've been working on solving the 'amnesic agent' problem by moving from a linear pipeline to a closed loop. The goal isn't just storage—it's evolution."
 post_slug: "beyond-static-rag-closing-the-feedback-loop"
+series: "Memory Systems"
+series_part: 1
 ---
 
 {% include author-blurb.html %}
@@ -622,6 +624,21 @@ Has anyone else experimented with writing agent rationale back into vector stora
 - **Engineers:** How do you handle vector drift and context window management in production?
 - **Researchers:** What are the theoretical limits of personality development through vector accumulation?
 - **Practitioners:** Have you seen similar patterns emerge in your RAG implementations?
+
+---
+
+## Memory Systems Series
+
+**This is Part 1 of a 3-part series exploring memory architectures for AI systems:**
+
+- [🧠 Part 1: Beyond Static RAG—Closing the Feedback Loop]({{ site.baseurl }}/beyond-static-rag-closing-the-feedback-loop/) ← *You are here*
+
+- [🧠 Part 2: The Lattice at Dawn—A Field Guide to the Republic of Thinking Machines]({{ site.baseurl }}/lattice-at-dawn/) — Implementation: Technical deep-dive into the Wisdom Lattice—Dream Cycle mechanics, merge-or-mount semantics, tensegrity edges, and live visualization.
+
+- [🧠 Part 3: The Sleep of Silicon—Why the Future of AI Architecture is Biological]({{ site.baseurl }}/the-sleep-of-silicon/) — Positioning: Industry convergence toward biological principles—GraphRAG evolution, multi-agent swarms, and episodic consolidation.
+
+**Related:**
+- [The Living Council: Relational Safety for Human-AI Coevolution]({{ site.baseurl }}/the-living-council-relational-safety-for-human-ai-coevolution/)
 
 ---
 
