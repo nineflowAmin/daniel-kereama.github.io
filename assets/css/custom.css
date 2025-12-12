@@ -3048,3 +3048,136 @@ svg .toroid-ring-2 {
   }
 }
 
+/* Table Styling - Professional Polish */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: var(--background);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
+}
+
+.post-content table thead {
+  background: linear-gradient(135deg, var(--background-secondary) 0%, var(--background-tertiary) 100%);
+}
+
+.post-content table thead th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--foreground);
+  border-bottom: 2px solid var(--border);
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.post-content table thead th:first-child {
+  border-top-left-radius: 0.75rem;
+}
+
+.post-content table thead th:last-child {
+  border-top-right-radius: 0.75rem;
+}
+
+.post-content table tbody tr {
+  transition: all 0.2s ease;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-content table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.post-content table tbody tr:hover {
+  background: var(--background-secondary);
+  transform: translateX(2px);
+}
+
+.post-content table tbody td {
+  padding: 1rem 1.25rem;
+  color: var(--foreground-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+.post-content table tbody td:first-child {
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.post-content table tbody td strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.post-content table tbody td em {
+  color: var(--foreground-tertiary);
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+/* Center-aligned columns */
+.post-content table tbody td[align="center"],
+.post-content table thead th[align="center"] {
+  text-align: center;
+}
+
+.post-content table tbody td[align="right"],
+.post-content table thead th[align="right"] {
+  text-align: right;
+}
+
+/* Responsive table styling */
+@media (max-width: 768px) {
+  .post-content table {
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+  }
+  
+  .post-content table thead th {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.875rem;
+  }
+  
+  .post-content table tbody td {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Make tables scrollable on mobile */
+  .post-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .post-content table thead,
+  .post-content table tbody,
+  .post-content table tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+}
+
+/* Dark mode table adjustments */
+@media (prefers-color-scheme: dark) {
+  .post-content table {
+    border-color: var(--border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-content table thead {
+    background: linear-gradient(135deg, var(--background-tertiary) 0%, var(--background-secondary) 100%);
+  }
+  
+  .post-content table tbody tr:hover {
+    background: var(--background-tertiary);
+  }
+}
+
