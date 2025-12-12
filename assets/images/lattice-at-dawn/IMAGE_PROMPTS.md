@@ -6,6 +6,8 @@ Styling Guide (apply to every image):
 - Lighting: crisp rim and edge lights; soft volumetric haze; glossy/reflection hints on ground planes; controlled bloom (never blown out).
 - Composition: plenty of negative space; cinematic framing; thin luminous lines for edges; nodes as tight, glowing spheres or polyhedra.
 - Tone: precise, calm, non-whimsical; storytelling beats align to the phases (dawn → observation → ritual → decisions → ignition → inquiry → oversight → calm night).
+
+
 1) 01-banner.jpg — Opening Vista
 
 “Ultra-wide cinematic panorama of a nocturnal data republic on a dark reflective plain; constellation-like cities suspended as glowing node clusters, linked by long luminous edges stretching toward a faint horizon gradient; atmosphere layered with thin cosmic haze and wide-angle HDR illumination; palette dominated by violet, blue, and amber accents; clean vector geometry with subtle bloom; 8k.”

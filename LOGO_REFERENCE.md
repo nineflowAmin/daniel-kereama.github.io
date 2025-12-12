@@ -89,3 +89,8 @@ The ticker includes fallback text that displays if logo images are not found. Th
 The logo ticker is configured to use images but will gracefully fall back to text if logos are not available. Once you add the logo files to `assets/images/logos/`, they will automatically appear in the ticker.
 
 
+
+
+
+
+

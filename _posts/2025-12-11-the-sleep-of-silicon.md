@@ -14,7 +14,7 @@ series_part: 3
 {% include author-blurb.html %}
 
 ![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/01-banner.jpg)
-*The Wisdom Lattice in Growing Phase: 3.8K nodes and 172 relationships forming constellations—living memory architecture in real-time evolution.*
+*The Wisdom Lattice in operation: Real-time visualization of actual memory consolidation—3.8K wisdom nodes and 172 tensioned relationships from live Dream Cycle processing.*
 
 > The industry is deafened by calls for more—more parameters, more context, more compute. But underneath the noise, the signal is clear: the future is biological, not mechanical.
 
