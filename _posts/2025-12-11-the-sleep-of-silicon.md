@@ -361,6 +361,9 @@ This data is the "Q.E.D." of the Sleep of Silicon thesis: **the system is sleepi
 
 We've been running the Lattice Protocol for two weeks now, processing conversation logs from five agents (Architect, Mediator, Oracle, Resonator, Shadow) that had been exploring system design, emotional intelligence, ethics, foresight, and critical analysis.
 
+![Live Lattice Visualization]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/10-live-lattice.jpg)
+*The Wisdom Lattice in its primordial soup phase: 236 nodes and 84 edges forming the first semantic neighborhoods. This is not a simulation—it's the actual graph structure from live Dream Cycle processing. Notice the sparse clustering (early phase) and the beginning of tessellation as edges connect semantically adjacent concepts.*
+
 **Current state (as of December 2025):**
 - **236 wisdom nodes** across 5 active agents
 - **84 typed, tensioned edges** connecting nodes
