@@ -304,7 +304,7 @@ The Lattice Protocol is experimental. We've been running internal tests for a fe
 - Identity Anchors keep agents from drifting into sameness (so far)
 
 **What we're still figuring out:**
-- How the system behaves beyond 100K nodes (we've only stress-tested to ~50K)
+- How the system behaves at scale
 - Whether the Coherence Gate can truly prevent identity collapse at scale
 - The right balance between merge rate and mount rate as connectivity increases
 - Privacy guarantees for federated wisdom sharing (the 2027 vision needs this solved)
