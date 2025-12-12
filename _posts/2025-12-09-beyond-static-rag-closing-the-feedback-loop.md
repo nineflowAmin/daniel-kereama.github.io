@@ -15,7 +15,7 @@ series_part: 1
 *Most RAG (Retrieval-Augmented Generation) implementations are strictly read-only. The AI retrieves context, answers the user, and then "forgets" until the next session. We've been working on solving the "amnesic agent" problem by moving from a linear pipeline to a closed loop. The goal isn't just storage—it's evolution.*
 
 ![Article Banner]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/01-banner.jpg)
-*Transforming from static RAG to a continuous feedback loop: where every interaction builds organizational intelligence and competitive advantage.*
+*A real-time visualization of the Wisdom Lattice during an active Dream Cycle: agents evolving through continuous memory consolidation and feedback.*
 
 ## The Problem: Amnesic Agents
 
