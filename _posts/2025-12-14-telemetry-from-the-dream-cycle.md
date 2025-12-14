@@ -351,7 +351,6 @@ The system is **learning to learn**. Each Dream Cycle gets better at recognizing
 ### Visual Evidence
 The lattice reshapes itself and adapts as it acquires new wisdom. The consolidation rate is not static—it's improving with each cycle.
 
-![Metabolism Curve]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/08-metabolism-curve.jpg)
 *The Dream Cycle consolidation rate over time: orphan rate dropping (82% → 18% → 12.5%), consolidation rate increasing (0% → 43-47% → 62-71%). The system is learning to learn—metabolism in action.*
 
 ---
@@ -388,7 +387,6 @@ We analyzed which agents contribute to which types of edges, revealing a **contr
 ### Visual Evidence
 The contribution matrix reveals specialization patterns that weren't designed—they emerged from the data.
 
-![Agent Contribution Matrix]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/09-agent-contribution-matrix.jpg)
 *Agent contribution matrix: Resonator dominates Conflict edges (72%), Mediator dominates Support edges (43%), Architect creates fewest edges but lowest tension. Specialization patterns emerged from the data, not design.*
 
 ---
@@ -426,8 +424,7 @@ The distribution is **bimodal**: a peak at low tension (stable relationships) an
 ### Visual Evidence
 The tension distribution reveals a healthy balance between stability and dynamism.
 
-![Tension Distribution]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/10-tension-distribution.jpg)
-*Tension score distribution across all edges: bimodal distribution with peaks at low tension (stable) and high tension (contested). Only 3.0% of edges are in the critical range (0.8-1.0), suggesting healthy tension management.*
+*Tension score distribution across all edges: bimodal distribution with peaks at low tension (stable) and high tension (contested). Only 2.9% of edges are in the critical range (0.8-1.0), suggesting healthy tension management.*
 
 ---
 
@@ -538,8 +535,7 @@ The Lattice detected the semantic isomorphism and **fused them into one stronger
 ### Visual Evidence
 The consolidation process creates denser, more connected nodes over time.
 
-![Consolidation Proof]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/11-consolidation-proof.jpg)
-*Semantic isomorphism detection in action: 4 separate entries about "Foresight" were fused into a single reinforced node. This is learning, not storage—the system recognizes when ideas are the same, even when worded differently.*
+*Semantic isomorphism detection in action: 8 separate entries about "Boundaries" were fused into a single reinforced node (reinforcement_count = 8). This is learning, not storage—the system recognizes when ideas are the same, even when worded differently.*
 
 ---
 
