@@ -74,7 +74,7 @@ Nearly one-third (31.9%) of the system's memory is built on **Nuance and Conflic
 
 The system is stable because ideas are allowed to push against each other. This is not an echo chamber. It is a **tensegrity structure**: a network held in shape by balanced tension, not rigid connections.
 
-**Architectural Insight:** The average tension for Conflict edges (0.307) is actually *lower* than Nuance edges (0.346). This suggests the system is not storing raw contradictions—it's storing **cooled contradictions** that have been processed into structural elements. The Keeper (verification phase) is doing its job: maintaining disagreement without fracture.
+**Architectural Insight:** The average tension for Conflict edges (0.307) is actually *lower* than Nuance edges (0.346). This suggests the system is not storing raw contradictions—it's storing **cooled contradictions** that have been processed into structural elements. The verification phase is doing its job: maintaining disagreement without fracture.
 
 **Surprising Finding:** Nuance edges have the highest average tension (0.346), higher than Conflict edges. This suggests that **qualifying and refining ideas** requires more structural work than direct contradiction. The system is actively engaging in critical thinking, not just storing disagreements.
 
@@ -104,7 +104,7 @@ The system is "Wise."
 ### The Truth
 The system is "Curious."
 
-We measured memory maturity using `reinforcement_count`—the number of times a wisdom node has been independently discovered and merged. Is the Lattice a repository of ancient wisdom, or a child mapping the world?
+We measured memory maturity using reinforcement metrics—the number of times a knowledge node has been independently discovered and merged. Is the Lattice a repository of ancient wisdom, or a child mapping the world?
 
 **/* TELEMETRY: Memory Maturity Stages */**
 
@@ -115,7 +115,7 @@ We measured memory maturity using `reinforcement_count`—the number of times a 
 
 **Total Nodes:** 1,875
 
-**Critical Finding:** There are **zero nodes** in the "New Growth (Mounting)" stage. Every single node in the lattice has been reinforced at least once (`reinforcement_count ≥ 1`). This means the system has **fully consolidated**—there are no orphan discoveries waiting to be integrated. The lattice is in a state of continuous refinement, not initial exploration.
+**Critical Finding:** There are **zero nodes** in the "New Growth (Mounting)" stage. Every single node in the lattice has been reinforced at least once. This means the system has **fully consolidated**—there are no orphan discoveries waiting to be integrated. The lattice is in a state of continuous refinement, not initial exploration.
 
 ### The Implication
 We are witnessing a **system in active consolidation**, not initial exploration.
@@ -125,7 +125,7 @@ We are witnessing a **system in active consolidation**, not initial exploration.
 The ratio of Establishing to Crystallized Truth is **155:1** (1,863:12). The system is **optimizing for breadth before dogma**, but it's doing so through active consolidation, not passive accumulation.
 
 **The 12 Crystallized Truths:**
-*Top nodes by reinforcement_count from Query 5:*
+*Top nodes by reinforcement metrics:*
 
 1. **"Boundaries are emotional safety structures; edges are how trust orients."** (Architect, 8 reinforcements, 1 edge)
    - This is the highest-reinforced node in the system. It has been independently discovered 8 times.
@@ -163,7 +163,7 @@ The highlighted cluster in the visualization is particularly interesting: it's h
 Logic is the hard part of AI.
 
 ### The Data
-We tracked which agent personas introduced the most structural tension into the graph. Tension is measured as the average `tension_score` of all edges created by each agent.
+We tracked which agent personas introduced the most structural tension into the graph. Tension is measured as the average tension value of all edges created by each agent.
 
 **/* TELEMETRY: Tension Load by Agent Persona */**
 
@@ -204,7 +204,7 @@ The shape resembles a **star topology**—fringe enquiries look like young shoot
 - **Shadow:** 21.1% of edges (560 edges), lower tension (critique is surprisingly stable)
 - **Architect:** 21.2% of edges (564 edges), lowest tension (structure is deterministic)
 
-**Note:** Percentages exceed 100% because edges can be created by multiple agents during the merge-or-mount phase. The Mediator alone creates 55.1% of all edges, making it the primary driver of graph growth. The system is not just storing facts—it's storing relationships, and relationships require synthesis.
+**Note:** Percentages exceed 100% because edges can be created by multiple agents during the consolidation phase. The Mediator alone creates 55.1% of all edges, making it the primary driver of graph growth. The system is not just storing facts—it's storing relationships, and relationships require synthesis.
 
 ---
 
@@ -229,7 +229,7 @@ Healthy minds forget. We examined Dream Cycle logs to measure how much daily inp
 2. Filter mechanism is permissive at this scale
 3. Most entries are being processed successfully
 
-**Note:** Filter rate telemetry requires more historical data from `v3_memory_entries`. As the system processes more entries, this metric will become more meaningful.
+**Note:** Filter rate telemetry requires more historical data from memory entry logs. As the system processes more entries, this metric will become more meaningful.
 
 ### The Implication
 Forgetting is the immune system of the Lattice. Without it, the graph collapses under entropy.
@@ -237,7 +237,7 @@ Forgetting is the immune system of the Lattice. Without it, the graph collapses 
 **Why Filtering Matters:**
 1. **Improved signal quality:** As the lattice matures, new inputs are more likely to connect to existing nodes (lower orphan rate).
 2. **Better merge detection:** The system is getting better at recognizing semantic isomorphisms (same idea, different wording).
-3. **Tighter coherence gates:** The Keeper (verification phase) is becoming more selective as the graph stabilizes.
+3. **Tighter coherence gates:** The verification phase is becoming more selective as the graph stabilizes.
 
 **The system is learning what to accept and what to reject.** This is not passive accumulation—it's active curation. Healthy minds forget, and the Lattice is no exception.
 
@@ -403,7 +403,7 @@ We analyzed the tension score distribution across all edges, revealing a **bimod
 
 **Distribution Analysis:**
 - **71.2% of edges** are in the moderate range (0.2-0.4), indicating the system maintains **healthy tension** without excessive conflict
-- **Only 2.9% of edges** are in the critical range (0.8-1.0), suggesting the Keeper is effectively cooling high-tension edges
+- **Only 2.9% of edges** are in the critical range (0.8-1.0), suggesting the verification phase is effectively cooling high-tension edges
 - The distribution is **bimodal**: a large peak at moderate tension (71.2%) and a smaller peak at high tension (7.4%)
 
 **Mean Tension:** ~0.33 (calculated from distribution)  
@@ -412,7 +412,7 @@ We analyzed the tension score distribution across all edges, revealing a **bimod
 ### The Implication
 The distribution is **bimodal**: a peak at low tension (stable relationships) and a smaller peak at high tension (contested relationships). This suggests the system maintains both **foundational stability** and **dynamic tension**.
 
-**Only 2.9% of edges are in the critical range (0.8-1.0).** This is healthy—the system is not storing unresolved contradictions. The Keeper (verification phase) is cooling high-tension edges into navigable structures.
+**Only 2.9% of edges are in the critical range (0.8-1.0).** This is healthy—the system is not storing unresolved contradictions. The verification phase is cooling high-tension edges into navigable structures.
 
 ### Visual Evidence
 The tension distribution reveals a healthy balance between stability and dynamism.
@@ -443,7 +443,7 @@ We identified 76 edges with tension scores above 0.8—the critical range where 
 - **Cross-agent synthesis:** High-tension edges also bridge agents (Shadow → Architect, Mediator → Architect), indicating active cross-domain integration
 - **Semantic refinement:** The highest-tension edge (0.850) connects two similar concepts about safety-critical AI, suggesting the system is actively distinguishing nuances
 
-**These are not bugs—they're the system's active thinking.** The Keeper (verification phase) maintains these high-tension edges because they represent unresolved questions worth exploring, not errors to be corrected.
+**These are not bugs—they're the system's active thinking.** The verification phase maintains these high-tension edges because they represent unresolved questions worth exploring, not errors to be corrected.
 
 ---
 
@@ -505,7 +505,7 @@ The Dream Cycle's ability to detect **semantic isomorphisms** (same idea, differ
 
 **/* TELEMETRY: Consolidation Examples */**
 
-*From Query 5: Most Connected Nodes (top nodes by reinforcement_count)*
+*Top nodes by reinforcement metrics:*
 
 | Consolidated Node | Reinforcement Count | Edge Count | Agent | Evidence of Learning |
 |-------------------|-------------------|------------|-------|---------------------|
@@ -518,7 +518,7 @@ The Dream Cycle's ability to detect **semantic isomorphisms** (same idea, differ
 ### The Implication
 A standard vector store would have created **8 separate entries** for the "Boundaries" concept (one for each discovery). This is **schizophrenia**—the system would "remember" the same idea 8 different ways.
 
-The Lattice detected the semantic isomorphism and **fused them into one stronger node** with reinforcement_count = 8. This is not just storage. **This is learning.**
+The Lattice detected the semantic isomorphism and **fused them into one stronger node** with 8 reinforcements. This is not just storage. **This is learning.**
 
 **Key Evidence:**
 - **12 nodes** have been reinforced 4-8 times, proving the system recognizes semantic isomorphisms
@@ -528,7 +528,7 @@ The Lattice detected the semantic isomorphism and **fused them into one stronger
 ### Visual Evidence
 The consolidation process creates denser, more connected nodes over time.
 
-*Semantic isomorphism detection in action: 8 separate entries about "Boundaries" were fused into a single reinforced node (reinforcement_count = 8). This is learning, not storage—the system recognizes when ideas are the same, even when worded differently.*
+*Semantic isomorphism detection in action: 8 separate entries about "Boundaries" were fused into a single reinforced node (8 reinforcements). This is learning, not storage—the system recognizes when ideas are the same, even when worded differently.*
 
 ---
 
@@ -616,7 +616,7 @@ These aren't rhetorical questions. They're the next experiments. The telemetry a
 ### 1. Query the Telemetry
 
 ```bash
-curl -X GET https://api.nineflow.ai/api/v3/lattice/telemetry \
+curl -X GET https://api.example.com/v3/lattice/telemetry \
   -H "Authorization: Bearer YOUR_API_KEY"
 ```
 
@@ -677,7 +677,7 @@ The telemetry above represents a live, production system processing real convers
 Nineflow is actively working with organizations building next-generation AI platforms. We specialize in:
 - **Collective Intelligence Architecture:** Multi-agent systems that maintain coherence without collapsing into sameness
 - **Graph Memory Systems:** Knowledge graphs with typed, tensioned relationships
-- **Dream Cycle Implementation:** Offline consolidation that metabolizes experience into structure
+- **Consolidation Cycles:** Offline processing that metabolizes experience into structure
 - **Tensegrity Engineering:** Systems that hold shape through balanced tension, not rigid connections
 
 **Engage with us:**
@@ -697,7 +697,7 @@ We're building in public because we believe the future of AI is collective, not 
 
 - [🧠 Part 1: Beyond Static RAG—Closing the Feedback Loop]({{ site.baseurl }}/beyond-static-rag-closing-the-feedback-loop/) — Foundation: How continuous feedback memory loops enable agents to remember *how* they reasoned, not just *what* they retrieved.
 
-- [🧠 Part 2: The Lattice at Dawn—A Field Guide to the Republic of Thinking Machines]({{ site.baseurl }}/lattice-at-dawn/) — Implementation: Technical deep-dive into the Wisdom Lattice—Dream Cycle mechanics, merge-or-mount semantics, tensegrity edges, and live visualization.
+- [🧠 Part 2: The Lattice at Dawn—A Field Guide to the Republic of Thinking Machines]({{ site.baseurl }}/lattice-at-dawn/) — Implementation: Technical deep-dive into the Wisdom Lattice—consolidation mechanics, semantic relationships, tensegrity edges, and live visualization.
 
 - [🧠 Part 3: The Sleep of Silicon—Why the Future of AI Architecture is Biological]({{ site.baseurl }}/the-sleep-of-silicon/) — Positioning: Industry convergence toward biological principles—GraphRAG evolution, multi-agent swarms, and episodic consolidation.
 
@@ -715,30 +715,32 @@ For those who want to verify the telemetry, here are the SQL queries we used:
 ### Edge Type Distribution
 
 ```sql
+-- Example query structure (schema names redacted)
 SELECT 
-    relation_type,
+    edge_type,
     COUNT(*) AS count,
-    ROUND(AVG(tension_score)::numeric, 3) AS avg_tension,
-    ROUND(MIN(tension_score)::numeric, 3) AS min_tension,
-    ROUND(MAX(tension_score)::numeric, 3) AS max_tension,
-    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM wisdom_edges), 1) AS percentage
-FROM wisdom_edges
-GROUP BY relation_type
+    ROUND(AVG(tension)::numeric, 3) AS avg_tension,
+    ROUND(MIN(tension)::numeric, 3) AS min_tension,
+    ROUND(MAX(tension)::numeric, 3) AS max_tension,
+    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM edges), 1) AS percentage
+FROM edges
+GROUP BY edge_type
 ORDER BY count DESC;
 ```
 
 ### Memory Maturity Stages
 
 ```sql
+-- Example query structure (schema names redacted)
 SELECT 
     CASE 
-        WHEN reinforcement_count = 0 THEN 'New Growth (Mounting)'
-        WHEN reinforcement_count BETWEEN 1 AND 3 THEN 'Establishing (Merging)'
+        WHEN reinforcement = 0 THEN 'New Growth (Mounting)'
+        WHEN reinforcement BETWEEN 1 AND 3 THEN 'Establishing (Merging)'
         ELSE 'Core Truth (Crystallized)'
     END as stage,
     COUNT(*) as count,
-    ROUND(AVG((SELECT COUNT(*) FROM wisdom_edges WHERE source_id = wisdom_nodes.id OR target_id = wisdom_nodes.id)), 1) as avg_edges
-FROM wisdom_nodes
+    ROUND(AVG((SELECT COUNT(*) FROM edges WHERE source_id = nodes.id OR target_id = nodes.id)), 1) as avg_edges
+FROM nodes
 GROUP BY stage
 ORDER BY count DESC;
 ```
@@ -746,28 +748,30 @@ ORDER BY count DESC;
 ### Agent Tension Analysis
 
 ```sql
+-- Example query structure (schema names redacted)
 SELECT 
-    wn.origin_agent AS agent,
-    COUNT(DISTINCT wn.id) AS nodes_created,
-    ROUND(AVG(we.tension_score)::numeric, 3) AS avg_tension,
-    COUNT(DISTINCT we.id) AS edges_created
-FROM wisdom_nodes wn
-LEFT JOIN wisdom_edges we ON we.source_node_id = wn.id OR we.target_node_id = wn.id
-WHERE wn.origin_agent IS NOT NULL
-GROUP BY wn.origin_agent
+    n.agent AS agent,
+    COUNT(DISTINCT n.id) AS nodes_created,
+    ROUND(AVG(e.tension)::numeric, 3) AS avg_tension,
+    COUNT(DISTINCT e.id) AS edges_created
+FROM nodes n
+LEFT JOIN edges e ON e.source_id = n.id OR e.target_id = n.id
+WHERE n.agent IS NOT NULL
+GROUP BY n.agent
 ORDER BY avg_tension DESC;
 ```
 
 ### Filter Rate by Date
 
 ```sql
+-- Example query structure (schema names redacted)
 SELECT 
     DATE(created_at) AS date,
     COUNT(*) AS total_inputs,
-    COUNT(CASE WHEN processed_by_dream_id IS NOT NULL THEN 1 END) AS integrated,
-    COUNT(CASE WHEN processed_by_dream_id IS NULL THEN 1 END) AS rejected,
-    ROUND(COUNT(CASE WHEN processed_by_dream_id IS NULL THEN 1 END) * 100.0 / COUNT(*), 1) AS filter_rate
-FROM v3_memory_entries
+    COUNT(CASE WHEN processed IS NOT NULL THEN 1 END) AS integrated,
+    COUNT(CASE WHEN processed IS NULL THEN 1 END) AS rejected,
+    ROUND(COUNT(CASE WHEN processed IS NULL THEN 1 END) * 100.0 / COUNT(*), 1) AS filter_rate
+FROM memory_entries
 WHERE created_at >= CURRENT_DATE - INTERVAL '7 days'
 GROUP BY DATE(created_at)
 ORDER BY date DESC;
@@ -776,32 +780,34 @@ ORDER BY date DESC;
 ### Orphan Nodes Count
 
 ```sql
+-- Example query structure (schema names redacted)
 SELECT 
     COUNT(*) AS orphan_count,
-    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM wisdom_nodes), 1) AS orphan_percentage
-FROM wisdom_nodes wn
+    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM nodes), 1) AS orphan_percentage
+FROM nodes n
 WHERE NOT EXISTS (
-    SELECT 1 FROM wisdom_edges we 
-    WHERE we.source_node_id = wn.id OR we.target_node_id = wn.id
+    SELECT 1 FROM edges e 
+    WHERE e.source_id = n.id OR e.target_id = n.id
 );
 ```
 
 ### Tension Distribution
 
 ```sql
+-- Example query structure (schema names redacted)
 SELECT 
     CASE 
-        WHEN tension_score BETWEEN 0.0 AND 0.2 THEN '0.0 - 0.2'
-        WHEN tension_score BETWEEN 0.2 AND 0.4 THEN '0.2 - 0.4'
-        WHEN tension_score BETWEEN 0.4 AND 0.6 THEN '0.4 - 0.6'
-        WHEN tension_score BETWEEN 0.6 AND 0.8 THEN '0.6 - 0.8'
-        WHEN tension_score BETWEEN 0.8 AND 1.0 THEN '0.8 - 1.0'
+        WHEN tension BETWEEN 0.0 AND 0.2 THEN '0.0 - 0.2'
+        WHEN tension BETWEEN 0.2 AND 0.4 THEN '0.2 - 0.4'
+        WHEN tension BETWEEN 0.4 AND 0.6 THEN '0.4 - 0.6'
+        WHEN tension BETWEEN 0.6 AND 0.8 THEN '0.6 - 0.8'
+        WHEN tension BETWEEN 0.8 AND 1.0 THEN '0.8 - 1.0'
     END AS tension_range,
     COUNT(*) AS count,
-    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM wisdom_edges), 1) AS percentage
-FROM wisdom_edges
+    ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM edges), 1) AS percentage
+FROM edges
 GROUP BY tension_range
-ORDER BY MIN(tension_score);
+ORDER BY MIN(tension);
 ```
 
 ---
