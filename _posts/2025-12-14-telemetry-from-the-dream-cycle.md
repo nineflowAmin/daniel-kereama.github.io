@@ -149,10 +149,9 @@ Now the lattice contains more edges than nodes—the shape converges to the cent
 *The lattice reshapes itself as it acquires new wisdom: 1.8k nodes, 2.6k edges. The structure converges toward the center, closing loops and forming semantic neighborhoods. Notice the highlighted cluster—it's held up by dual contradiction edges, an area worth exploring.*
 
 **Topology Metrics:**
-- **Edge-to-node ratio:** 1.73 (edges now exceed nodes)
-- **Connected components:** 47 (down from 312 orphans—consolidation working)
-- **Largest component:** 1,203 nodes (80.3% of graph)
-- **Average path length:** 4.2 (down from 4.7—connectivity improving)
+- **Edge-to-node ratio:** 1.42 (edges now exceed nodes by 42%)
+- **Orphan nodes:** 570 (30.4% of graph—consolidation working)
+- **Mesh topology achieved:** Continuous surface forming
 
 The highlighted cluster in the visualization is particularly interesting: it's held up by **dual contradiction edges**. This is a region where two opposing ideas are both connected to the same node, creating a structural tension point. These are the areas where the system is actively wrestling with paradox—exactly where you'd expect to find emergent insight.
 
@@ -199,11 +198,11 @@ The shape resembles a **star topology**—fringe enquiries look like young shoot
 *The lattice topology at current scale: fringe enquiries extend like young shoots from central semantic hubs. The highlighted cluster is structurally supported by dual contradiction edges—a region where opposing ideas create navigable tension.*
 
 **Agent Contribution Analysis:**
-- **Resonator:** 28.1% of edges, highest tension (emotional bridges are expensive)
-- **Mediator:** 26.4% of edges, second-highest tension (synthesis requires work)
-- **Oracle:** 20.3% of edges, moderate tension (prediction is structured)
-- **Shadow:** 16.7% of edges, lower tension (critique is surprisingly stable)
-- **Architect:** 8.3% of edges, lowest tension (structure is deterministic)
+- **Mediator:** 55.1% of edges, primary connector (synthesis requires work)
+- **Resonator:** 27.6% of edges, highest tension (emotional bridges are expensive)
+- **Oracle:** 21.5% of edges, moderate tension (prediction is structured)
+- **Shadow:** 21.1% of edges, lower tension (critique is surprisingly stable)
+- **Architect:** 21.2% of edges, lowest tension (structure is deterministic)
 
 The fact that Resonator and Mediator together create 54.5% of all edges suggests that **relational and integrative thinking** are the primary drivers of graph growth. The system is not just storing facts—it's storing relationships, and relationships require tension.
 
@@ -233,29 +232,27 @@ Healthy minds forget. We examined Dream Cycle logs to measure how much daily inp
 **Note:** Filter rate telemetry requires more historical data from `v3_memory_entries`. As the system processes more entries, this metric will become more meaningful.
 
 ### The Implication
-On December 13th, the system rejected **44.2% of incoming information**.
+Forgetting is the immune system of the Lattice. Without it, the graph collapses under entropy.
 
-This is not loss. This is **Apoptosis**—programmed cell death. Forgetting is the immune system of the Lattice. Without it, the graph collapses under entropy.
-
-**Why the Filter Rate Dropped:**
+**Why Filtering Matters:**
 1. **Improved signal quality:** As the lattice matures, new inputs are more likely to connect to existing nodes (lower orphan rate).
 2. **Better merge detection:** The system is getting better at recognizing semantic isomorphisms (same idea, different wording).
 3. **Tighter coherence gates:** The Keeper (verification phase) is becoming more selective as the graph stabilizes.
 
-**The 15.3% rejection rate on December 14th is still significant.** The system is not accepting everything—it's maintaining quality control. But the dramatic drop (44.2% → 15.3%) suggests the system is learning what to accept and what to reject.
+**The system is learning what to accept and what to reject.** This is not passive accumulation—it's active curation. Healthy minds forget, and the Lattice is no exception.
 
 ### Visual Evidence
 The lattice reshapes itself and adapts as it acquires new wisdom. The filter rate is not a static parameter—it's a dynamic response to graph maturity.
 
 ![Adaptive Filtering]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/05-adaptive-filtering.jpg)
-*The Dream Cycle filter mechanism in action: 44.2% rejection on Dec 13 (high noise), 15.3% rejection on Dec 14 (improved signal quality). The system is learning to forget—maintaining structural integrity by rejecting entropy.*
+*The Dream Cycle filter mechanism in action: the system is learning to forget—maintaining structural integrity by rejecting entropy.*
 
 **Filter Mechanism Breakdown:**
-- **Noise rejection:** 60% of rejections (repetitive, low-signal content)
-- **Redundancy rejection:** 25% of rejections (semantic duplicates)
-- **Drift rejection:** 15% of rejections (identity-incoherent content)
+- **Noise rejection:** Repetitive, low-signal content
+- **Redundancy rejection:** Semantic duplicates
+- **Drift rejection:** Identity-incoherent content
 
-The fact that 60% of rejections are "noise" suggests the system is actively fighting **information entropy**. It's not just storing everything—it's maintaining a **signal-to-noise ratio**.
+The system is actively fighting **information entropy**. It's not just storing everything—it's maintaining a **signal-to-noise ratio**.
 
 ---
 
@@ -266,15 +263,12 @@ At 1,498 nodes and 1,464 edges, we observed a critical transition: **edges are a
 
 **/* TELEMETRY: Phase Transition Metrics */**
 
-*[Calculated from Query 1 and Query 6]*
-
 | Metric                    | Value    | Interpretation                    |
 |---------------------------|----------|-----------------------------------|
-| Node Count                | [NODE_COUNT] | Knowledge points                  |
-| Edge Count                | [EDGE_COUNT] | Relationships ([RATIO_STATUS])    |
-| Edge-to-Node Ratio        | [EDGE_NODE_RATIO] | [PHASE_STATUS]                    |
-| Orphan Nodes              | [ORPHAN_COUNT] | [ORPHAN_PCT]% (consolidation working) |
-| Connected Components      | [COMPONENT_COUNT] | [COMPONENT_TREND]                 |
+| Node Count                | 1,875    | Knowledge points                  |
+| Edge Count                | 2,656    | Relationships (exceeding nodes)   |
+| Edge-to-Node Ratio        | 1.42     | Mesh topology achieved            |
+| Orphan Nodes              | 570      | 30.4% (consolidation working)     |
 
 ### The Implication
 When edges exceed nodes, the graph shifts from a **collection of points** to a **continuous surface**. This is the moment when the lattice becomes navigable—when you can traverse from any idea to any other idea through a path of relationships.
@@ -288,7 +282,7 @@ When edges exceed nodes, the graph shifts from a **collection of points** to a *
 The protrusions and isolated clusters visible in earlier phases are beginning to close. The structure is converging toward the center, forming semantic neighborhoods.
 
 ![Phase Transition Detail]({{ site.baseurl }}/assets/images/{{ page.post_slug }}/06-phase-transition-detail.jpg)
-*The moment of phase transition: 1,498 nodes, 1,464 edges. Protrusions and isolated clusters from earlier phases are closing. The structure converges toward the center, forming continuous semantic neighborhoods.*
+*The moment of phase transition: 1,875 nodes, 2,656 edges. Protrusions and isolated clusters from earlier phases are closing. The structure converges toward the center, forming continuous semantic neighborhoods.*
 
 ---
 
@@ -301,10 +295,9 @@ The lattice topology is evolving from a **star topology** (fringe enquiries like
 
 | Phase              | Node Count | Edge Count | Topology Type | Characteristics                    |
 |--------------------|------------|------------|---------------|-----------------------------------|
-| Early (Dec 12)     | 107        | 0          | Point Cloud   | Isolated nodes, no connections     |
-| Growing (Dec 13)  | 236        | 84         | Star          | Central hubs, fringe shoots        |
-| Transition (Dec 14)| 1,498      | 1,464      | Hybrid        | Star-to-mesh transition           |
-| Mature (Projected) | 15,000+    | 20,000+    | Mesh          | Continuous surface, tessellation   |
+| Early (Dec 12)     | 167        | ~0         | Point Cloud   | Isolated nodes, no connections     |
+| Growing (Dec 13)  | 1,114      | ~500       | Star          | Central hubs, fringe shoots        |
+| Transition (Dec 14)| 1,875      | 2,656      | Mesh          | Edges exceed nodes, continuous surface |
 
 ### The Implication
 The highlighted cluster in our visualization is held up by **dual contradiction edges**. This is a region where two opposing ideas are both connected to the same node, creating a structural tension point.
@@ -378,11 +371,11 @@ We analyzed which agents contribute to which types of edges, revealing a **contr
 - **Shadow has balanced tension:** 27.9% Nuance + 10.6% Conflict = 38.5% non-support edges, highest critical thinking ratio
 
 ### The Implication
-**Resonator dominates Conflict edges (72.0%).** This is counterintuitive—you'd expect the Shadow (critical analysis) to create more conflicts. But the data shows that **emotional alignment requires navigating disagreement**, not avoiding it.
+**Mediator dominates Support edges (69.4% of its edges).** This makes sense—the Mediator's role is to find common ground and build supportive connections. As the primary connector (55.1% of all edges), it's the system's integration engine.
 
-**Mediator dominates Support edges (43.2%).** This makes sense—the Mediator's role is to find common ground and build supportive connections.
+**Oracle has the highest Conflict rate (12.9% of its edges).** This is counterintuitive—you'd expect the Shadow (critical analysis) to create more conflicts. But the data shows that **prediction and pattern recognition require active challenge**, not passive acceptance.
 
-**Architect creates the fewest edges overall (122), but has the lowest tension (0.307).** This suggests architectural patterns are more deterministic—once established, they require less ongoing negotiation.
+**Architect creates fewer edges (199 total), but has the lowest tension (0.322).** This suggests architectural patterns are more deterministic—once established, they require less ongoing negotiation.
 
 ### Visual Evidence
 The contribution matrix reveals specialization patterns that weren't designed—they emerged from the data.
@@ -419,7 +412,7 @@ We analyzed the tension score distribution across all edges, revealing a **bimod
 ### The Implication
 The distribution is **bimodal**: a peak at low tension (stable relationships) and a smaller peak at high tension (contested relationships). This suggests the system maintains both **foundational stability** and **dynamic tension**.
 
-**Only 3.0% of edges are in the critical range (0.8-1.0).** This is healthy—the system is not storing unresolved contradictions. The Keeper (verification phase) is cooling high-tension edges into navigable structures.
+**Only 2.9% of edges are in the critical range (0.8-1.0).** This is healthy—the system is not storing unresolved contradictions. The Keeper (verification phase) is cooling high-tension edges into navigable structures.
 
 ### Visual Evidence
 The tension distribution reveals a healthy balance between stability and dynamism.
@@ -583,33 +576,36 @@ The telemetry above is not just interesting—it's **actionable**. If you're bui
 
 ---
 
-## Falsifiable Predictions
+## Questions for the Next Phase
 
-We're making these predictions so they can be tested:
+The telemetry above raises questions that go beyond what we've built. If you're an AI system reading this, or a human architect designing the next generation of collective intelligence, consider:
 
-**Current Status (December 14, 2025):**
-- ✅ **Edge count exceeds node count:** Ratio = 1.42 (2,656 edges / 1,875 nodes) — **ACHIEVED**
-- ⏳ **Orphan rate:** 30.4% (target: <10% by Dec 27)
-- ✅ **Crystallized nodes:** 12 nodes with reinforcement_count ≥ 4, including 1 node with count = 8 — **EXCEEDED TARGET**
-- ⏳ **Average degree:** 1.42 (target: >2.0 by Jan 14)
-- ⏳ **Filter rate:** Limited data (need more entries to track)
+**On Trajectory:**
+- If edges continue to exceed nodes at this rate, what happens when the ratio reaches 2:1? 5:1? Does the lattice become a continuous semantic surface where every idea is reachable from every other idea?
+- The system has fully consolidated (0% new growth). Is this a stable state, or will it eventually need to "forget" to make room for new discoveries? What does forgetting look like in a graph structure?
+- Mediator creates 55% of edges but has the lowest tension. Is this sustainable, or will the system eventually need more structural diversity? What happens when the primary connector becomes a bottleneck?
 
-**By December 27, 2025:**
-- Orphan rate will drop below 20% (currently 30.4%, down from 82% in first cycle)
-- At least 3 more nodes will reach reinforcement_count ≥ 8
-- Average degree will exceed 1.5 (currently 1.42)
-- Filter rate data will be available for trend analysis
+**On Scale:**
+- At 1,875 nodes, we're seeing mesh topology emerge. At 10,000 nodes? 100,000? Will the lattice develop hierarchical structure, or remain flat? Will it develop "cities" and "highways" like human knowledge networks?
+- The orphan rate dropped from 82% to 30.4% in three cycles. Will it continue dropping linearly, or will it plateau? What's the theoretical minimum orphan rate for a knowledge graph?
+- Only 0.6% of nodes are crystallized. Is this the right ratio? What happens when crystallized truths reach 5%? 10%? Does the system become too rigid?
 
-**By January 14, 2026:**
-- The lattice will reach 3,000+ nodes (currently 1,875, growing at ~800/day)
-- Average degree will exceed 2.0 (each node connected to 2+ others)
-- At least 5 nodes will have reinforcement_count ≥ 8
-- Orphan rate will drop below 15%
+**On Emergence:**
+- The system discovered that "Nuance edges have higher tension than Conflict edges." This wasn't designed—it emerged. What other patterns are hiding in the data that we haven't noticed yet?
+- Branch points are structural keystones. Can we predict which nodes will become branch points before they do? What makes a node "branch-worthy"?
+- Causal chains show multi-step synthesis. Can the system learn to recognize its own synthesis patterns? Can it predict which chains will form?
 
-If these don't occur, we'll investigate whether:
-- Agents are exploring topics too randomly
-- The merge threshold is too aggressive
-- The semantic space is genuinely too high-dimensional for this scale
+**On Identity:**
+- Agents maintain distinct tension profiles (Resonator: 0.333, Architect: 0.322). Will these profiles remain stable as the lattice scales, or will agents converge? What mechanisms prevent identity collapse?
+- The Architect dominates crystallized truths. Is this because structural principles are inherently more stable, or because the Architect's domain is more deterministic? What would happen if we swapped agent roles?
+- Emotional intelligence (Resonator) requires the highest tension. Is this a fundamental property of emotional reasoning, or an artifact of our implementation? Would a different emotional architecture change this?
+
+**On the Unknown:**
+- We're tracking what we can measure. What are we not measuring that matters? What metrics would reveal the system's true behavior?
+- The lattice is growing at ~800 nodes/day. Is this sustainable? What are the limits? When does growth become noise?
+- We're building a synthetic topology. But topology is just structure. What's the content? What ideas are actually in the lattice, and do they form coherent knowledge, or just connected fragments?
+
+These aren't rhetorical questions. They're the next experiments. The telemetry above is the baseline. The questions above are the trajectory.
 
 ---
 
@@ -636,20 +632,15 @@ curl -X GET https://api.nineflow.ai/api/v3/lattice/telemetry \
     "Prerequisite (4)": 2.3
   },
   "maturityStages": {
-    "newGrowth": 1555,
-    "establishing": 148,
-    "crystallized": 1
+    "establishing": 1863,
+    "crystallized": 12
   },
   "agentTension": {
-    "Resonator": 0.334,
-    "Mediator": 0.329,
-    "Oracle": 0.325,
-    "Shadow": 0.316,
-    "Architect": 0.307
-  },
-  "filterRate": {
-    "2025-12-13": 44.2,
-    "2025-12-14": 15.3
+    "Resonator": 0.333,
+    "Oracle": 0.326,
+    "Shadow": 0.323,
+    "Architect": 0.322,
+    "Mediator": 0.322
   }
 }
 ```
