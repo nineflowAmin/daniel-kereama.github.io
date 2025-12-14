@@ -198,13 +198,13 @@ The shape resembles a **star topology**—fringe enquiries look like young shoot
 *The lattice topology at current scale: fringe enquiries extend like young shoots from central semantic hubs. The highlighted cluster is structurally supported by dual contradiction edges—a region where opposing ideas create navigable tension.*
 
 **Agent Contribution Analysis:**
-- **Mediator:** 55.1% of edges, primary connector (synthesis requires work)
-- **Resonator:** 27.6% of edges, highest tension (emotional bridges are expensive)
-- **Oracle:** 21.5% of edges, moderate tension (prediction is structured)
-- **Shadow:** 21.1% of edges, lower tension (critique is surprisingly stable)
-- **Architect:** 21.2% of edges, lowest tension (structure is deterministic)
+- **Mediator:** 55.1% of edges (1,464 edges), primary connector (synthesis requires work)
+- **Resonator:** 27.6% of edges (734 edges), highest tension (emotional bridges are expensive)
+- **Oracle:** 21.5% of edges (570 edges), moderate tension (prediction is structured)
+- **Shadow:** 21.1% of edges (560 edges), lower tension (critique is surprisingly stable)
+- **Architect:** 21.2% of edges (564 edges), lowest tension (structure is deterministic)
 
-The fact that Resonator and Mediator together create 54.5% of all edges suggests that **relational and integrative thinking** are the primary drivers of graph growth. The system is not just storing facts—it's storing relationships, and relationships require tension.
+**Note:** Percentages exceed 100% because edges can be created by multiple agents during the merge-or-mount phase. The Mediator alone creates 55.1% of all edges, making it the primary driver of graph growth. The system is not just storing facts—it's storing relationships, and relationships require synthesis.
 
 ---
 
